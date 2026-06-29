@@ -1,0 +1,1904 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BetterHealth | Precision Brain and Mental Health</title>
+  <meta name="description" content="A self-pay medical practice connecting mental health, brain function, biomarkers, physiology, behavior and recovery into one measurable care plan.">
+  <style>
+    :root {
+      --ink: #0f1f1f;
+      --muted: #536260;
+      --line: rgba(15, 31, 31, .13);
+      --paper: #f6f3ec;
+      --cream: #fffcf4;
+      --sage: #738b7f;
+      --deep: #153533;
+      --gold: #b99d69;
+      --aqua: #7bbeb2;
+      --rose: #c48f80;
+      --shadow: 0 24px 80px rgba(15, 31, 31, .13);
+      --radius: 8px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% -10%, rgba(123, 190, 178, .28), transparent 34rem),
+        linear-gradient(180deg, #fbf7ee 0%, #f3efe6 45%, #fbf8f0 100%);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .18;
+      mix-blend-mode: multiply;
+      background-image:
+        linear-gradient(rgba(21, 53, 51, .06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(21, 53, 51, .06) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(180deg, black, transparent 70%);
+      z-index: -1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(15, 31, 31, .08);
+      background: rgba(251, 248, 240, .82);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-inner {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 760;
+      letter-spacing: .01em;
+    }
+
+    .mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      color: var(--cream);
+      background: conic-gradient(from 210deg, var(--deep), #2c6862, var(--gold), var(--deep));
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .28);
+    }
+
+    .mark::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border: 2px solid currentColor;
+      border-left-color: transparent;
+      border-radius: 50%;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: rgba(15, 31, 31, .72);
+      font-size: .93rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .nav-cta {
+      border: 1px solid rgba(15, 31, 31, .16);
+      border-radius: 999px;
+      padding: 10px 16px;
+      color: var(--cream);
+      background: var(--deep);
+      box-shadow: 0 10px 26px rgba(21, 53, 51, .18);
+    }
+
+    .nav-tools {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+      gap: 3px;
+      padding: 3px;
+      border: 1px solid rgba(15, 31, 31, .14);
+      border-radius: 999px;
+      background: rgba(255, 252, 244, .74);
+    }
+
+    .lang-toggle button {
+      border: 0;
+      border-radius: 999px;
+      padding: 7px 10px;
+      color: rgba(15, 31, 31, .66);
+      background: transparent;
+      cursor: pointer;
+      font-size: .78rem;
+      font-weight: 740;
+      letter-spacing: .04em;
+    }
+
+    .lang-toggle button.active {
+      color: var(--cream);
+      background: var(--deep);
+    }
+
+    main {
+      overflow: hidden;
+    }
+
+    .hero {
+      min-height: calc(92vh - 72px);
+      display: grid;
+      align-items: center;
+      padding: 58px 0 42px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 520px);
+      gap: clamp(32px, 5vw, 76px);
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      color: var(--deep);
+      font-size: .78rem;
+      font-weight: 720;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin-bottom: 24px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 7vw, 6.6rem);
+      line-height: .94;
+      letter-spacing: -.035em;
+      font-weight: 520;
+    }
+
+    .lead {
+      max-width: 700px;
+      margin-bottom: 28px;
+      color: #31403e;
+      font-size: clamp(1.08rem, 1.6vw, 1.34rem);
+      line-height: 1.55;
+    }
+
+    .hero-actions,
+    .section-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      border: 1px solid rgba(15, 31, 31, .16);
+      border-radius: 999px;
+      padding: 13px 20px;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: var(--cream);
+      background: var(--deep);
+      box-shadow: 0 16px 40px rgba(21, 53, 51, .22);
+    }
+
+    .btn-secondary {
+      color: var(--deep);
+      background: rgba(255, 252, 244, .58);
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 44px;
+      max-width: 780px;
+    }
+
+    .trust-item {
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 1.65rem;
+      line-height: 1;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+    }
+
+    .trust-item span {
+      display: block;
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: .91rem;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 640px;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(145deg, rgba(255, 252, 244, .96), rgba(224, 232, 221, .78)),
+        linear-gradient(180deg, #efe8da, #dfe9e4);
+      border: 1px solid rgba(15, 31, 31, .12);
+    }
+
+    .clinic-window {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, .55), transparent 45%),
+        radial-gradient(circle at 70% 20%, rgba(123, 190, 178, .42), transparent 19rem);
+    }
+
+    .room-line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 145px;
+      height: 1px;
+      background: rgba(15, 31, 31, .11);
+    }
+
+    .scan-wall {
+      position: absolute;
+      top: 58px;
+      right: 42px;
+      width: 250px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .scan {
+      aspect-ratio: 1.12;
+      border-radius: 8px;
+      background:
+        radial-gradient(circle at 48% 45%, transparent 0 19%, rgba(123, 190, 178, .55) 20% 22%, transparent 23%),
+        radial-gradient(circle at 46% 50%, rgba(21, 53, 51, .88), rgba(21, 53, 51, .55) 42%, rgba(21, 53, 51, .12) 43%),
+        linear-gradient(135deg, rgba(21, 53, 51, .78), rgba(15, 31, 31, .92));
+      border: 1px solid rgba(255, 255, 255, .45);
+      box-shadow: inset 0 0 0 1px rgba(15, 31, 31, .16);
+    }
+
+    .console {
+      position: absolute;
+      left: 34px;
+      right: 34px;
+      bottom: 32px;
+      border-radius: 14px;
+      padding: 22px;
+      background: rgba(255, 252, 244, .88);
+      border: 1px solid rgba(15, 31, 31, .12);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 28px 70px rgba(15, 31, 31, .16);
+    }
+
+    .console-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    .status-dot {
+      display: inline-flex;
+      width: 9px;
+      height: 9px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: #4f9a83;
+      box-shadow: 0 0 0 6px rgba(79, 154, 131, .12);
+    }
+
+    .domain-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .domain {
+      display: grid;
+      grid-template-columns: 112px 1fr 38px;
+      gap: 12px;
+      align-items: center;
+      color: #33423f;
+      font-size: .91rem;
+    }
+
+    .bar {
+      height: 9px;
+      overflow: hidden;
+      border-radius: 99px;
+      background: rgba(15, 31, 31, .09);
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: var(--w);
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--deep), var(--aqua));
+      animation: loadbar 1.1s ease both;
+    }
+
+    @keyframes loadbar {
+      from { width: 0; }
+    }
+
+    .floating-note {
+      position: absolute;
+      left: 34px;
+      top: 86px;
+      width: 215px;
+      padding: 18px;
+      border-radius: 12px;
+      color: var(--cream);
+      background: rgba(21, 53, 51, .92);
+      box-shadow: 0 18px 48px rgba(15, 31, 31, .2);
+    }
+
+    .floating-note strong {
+      display: block;
+      margin-bottom: 9px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+    }
+
+    .floating-note span {
+      color: rgba(255, 252, 244, .78);
+      font-size: .9rem;
+    }
+
+    .protocol-card {
+      position: absolute;
+      right: 34px;
+      top: 330px;
+      width: 250px;
+      padding: 18px;
+      border-radius: 12px;
+      background: rgba(255, 252, 244, .86);
+      border: 1px solid rgba(15, 31, 31, .12);
+      box-shadow: 0 18px 42px rgba(15, 31, 31, .12);
+    }
+
+    .protocol-card strong {
+      display: block;
+      margin-bottom: 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.28rem;
+      font-weight: 500;
+    }
+
+    .protocol-row {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 10px;
+      padding: 9px 0;
+      border-top: 1px solid rgba(15, 31, 31, .08);
+      color: var(--muted);
+      font-size: .86rem;
+    }
+
+    .protocol-row b {
+      color: var(--deep);
+      font-weight: 760;
+    }
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .section.dark {
+      color: var(--cream);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(123, 190, 178, .18), transparent 28rem),
+        linear-gradient(180deg, #102726, #132f2d);
+    }
+
+    .section.soft {
+      background: rgba(255, 252, 244, .54);
+      border-block: 1px solid rgba(15, 31, 31, .08);
+    }
+
+    .section-kicker {
+      margin-bottom: 14px;
+      color: var(--sage);
+      font-size: .78rem;
+      font-weight: 760;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .dark .section-kicker {
+      color: var(--aqua);
+    }
+
+    .section-title {
+      max-width: 870px;
+      margin-bottom: 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.1rem, 4vw, 4.4rem);
+      line-height: 1;
+      letter-spacing: -.025em;
+      font-weight: 500;
+    }
+
+    .section-copy {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .dark .section-copy {
+      color: rgba(255, 252, 244, .74);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(320px, 1fr);
+      gap: clamp(34px, 6vw, 84px);
+      align-items: start;
+    }
+
+    .thesis {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 42px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--line);
+    }
+
+    .thesis-card {
+      min-height: 250px;
+      padding: 28px;
+      background: rgba(255, 252, 244, .78);
+    }
+
+    .thesis-card small {
+      color: var(--sage);
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .thesis-card h3 {
+      margin: 18px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.72rem;
+      line-height: 1.08;
+      font-weight: 500;
+    }
+
+    .thesis-card p {
+      color: var(--muted);
+    }
+
+    .system-lab {
+      padding: 28px;
+      border-radius: 16px;
+      background: rgba(255, 252, 244, .82);
+      border: 1px solid rgba(15, 31, 31, .1);
+      box-shadow: var(--shadow);
+    }
+
+    .symptom-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 24px 0;
+    }
+
+    .chip {
+      border: 1px solid rgba(15, 31, 31, .14);
+      border-radius: 999px;
+      padding: 9px 12px;
+      color: #2b3b38;
+      background: rgba(255, 252, 244, .68);
+      cursor: pointer;
+    }
+
+    .chip.active {
+      color: var(--cream);
+      background: var(--deep);
+      border-color: var(--deep);
+    }
+
+    .hypothesis {
+      border-top: 1px solid rgba(15, 31, 31, .11);
+      padding-top: 20px;
+    }
+
+    .hypothesis h3 {
+      margin-bottom: 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.65rem;
+      font-weight: 500;
+    }
+
+    .hypothesis p {
+      color: var(--muted);
+    }
+
+    .signal-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .signal {
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(21, 53, 51, .06);
+      color: #354541;
+      font-size: .9rem;
+    }
+
+    .micro-map {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .micro-card {
+      min-height: 132px;
+      padding: 18px;
+      border-radius: 12px;
+      background: rgba(255, 252, 244, .7);
+      border: 1px solid rgba(15, 31, 31, .1);
+    }
+
+    .micro-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .micro-card span {
+      display: block;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .pathway {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .step {
+      position: relative;
+      padding: 24px;
+      min-height: 240px;
+      border-radius: 12px;
+      color: var(--cream);
+      background: rgba(255, 252, 244, .08);
+      border: 1px solid rgba(255, 252, 244, .14);
+    }
+
+    .step span {
+      color: var(--aqua);
+      font-size: .8rem;
+      font-weight: 760;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .step h3 {
+      margin: 58px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.62rem;
+      line-height: 1.05;
+      font-weight: 500;
+    }
+
+    .step p {
+      color: rgba(255, 252, 244, .7);
+      font-size: .96rem;
+    }
+
+    .continuity {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .continuity-item {
+      padding: 18px;
+      border-radius: 12px;
+      color: rgba(255, 252, 244, .82);
+      background: rgba(255, 252, 244, .06);
+      border: 1px solid rgba(255, 252, 244, .12);
+    }
+
+    .continuity-item b {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--cream);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    .science-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 44px;
+    }
+
+    .science-card,
+    .program,
+    .proof-card,
+    .faq-item {
+      border: 1px solid rgba(15, 31, 31, .1);
+      border-radius: 12px;
+      background: rgba(255, 252, 244, .72);
+    }
+
+    .science-card {
+      display: grid;
+      grid-template-columns: 74px 1fr;
+      gap: 20px;
+      padding: 24px;
+      align-items: start;
+    }
+
+    .science-icon {
+      width: 74px;
+      height: 74px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: var(--deep);
+      background:
+        radial-gradient(circle, rgba(123, 190, 178, .7) 0 26%, transparent 27%),
+        linear-gradient(135deg, rgba(185, 157, 105, .24), rgba(123, 190, 178, .18));
+      border: 1px solid rgba(15, 31, 31, .1);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.6rem;
+    }
+
+    .science-card h3 {
+      margin-bottom: 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.48rem;
+      font-weight: 500;
+    }
+
+    .science-card p {
+      color: var(--muted);
+    }
+
+    .programs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 42px;
+    }
+
+    .program {
+      display: flex;
+      min-height: 500px;
+      flex-direction: column;
+      padding: 28px;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .program:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 70px rgba(15, 31, 31, .12);
+    }
+
+    .program.featured {
+      color: var(--cream);
+      background: linear-gradient(180deg, #173d39, #102725);
+    }
+
+    .program-label {
+      color: var(--sage);
+      font-size: .78rem;
+      font-weight: 760;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .featured .program-label {
+      color: var(--aqua);
+    }
+
+    .program h3 {
+      margin: 18px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .price {
+      margin: 0 0 16px;
+      color: var(--deep);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.35rem;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .price small {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      font-size: .86rem;
+      line-height: 1.35;
+    }
+
+    .featured .price {
+      color: var(--cream);
+    }
+
+    .featured .price small {
+      color: rgba(255, 252, 244, .65);
+    }
+
+    .program p {
+      color: var(--muted);
+    }
+
+    .featured p {
+      color: rgba(255, 252, 244, .74);
+    }
+
+    .program ul {
+      margin: 22px 0 28px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      color: #3d4b48;
+    }
+
+    .featured ul {
+      color: rgba(255, 252, 244, .82);
+    }
+
+    .program li {
+      display: flex;
+      gap: 10px;
+    }
+
+    .program li::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      flex: 0 0 7px;
+      margin-top: .55em;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .program .btn {
+      margin-top: auto;
+    }
+
+    .self-pay-note {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border-radius: 12px;
+      color: #33423f;
+      background: rgba(185, 157, 105, .13);
+      border: 1px solid rgba(185, 157, 105, .24);
+    }
+
+    .resource-grid,
+    .location-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .resource-card,
+    .location-card {
+      min-height: 170px;
+      padding: 22px;
+      border-radius: 12px;
+      background: rgba(255, 252, 244, .72);
+      border: 1px solid rgba(15, 31, 31, .1);
+    }
+
+    .resource-card h3,
+    .location-card h3 {
+      margin-bottom: 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+    }
+
+    .resource-card p,
+    .location-card p {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .diagnostic-matrix {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .matrix-panel {
+      padding: 22px;
+      border-radius: 12px;
+      background: rgba(255, 252, 244, .72);
+      border: 1px solid rgba(15, 31, 31, .1);
+    }
+
+    .matrix-panel h3 {
+      margin-bottom: 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .matrix-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 12px;
+      padding: 12px 0;
+      border-top: 1px solid rgba(15, 31, 31, .09);
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .matrix-row b {
+      color: var(--deep);
+    }
+
+    .optimization {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .modality-board {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .modality {
+      min-height: 150px;
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(255, 252, 244, .08);
+      border: 1px solid rgba(255, 252, 244, .14);
+    }
+
+    .modality strong {
+      display: block;
+      margin-bottom: 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+    }
+
+    .modality span {
+      color: rgba(255, 252, 244, .68);
+      font-size: .94rem;
+    }
+
+    .proof {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .proof-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .proof-card {
+      padding: 22px;
+    }
+
+    .proof-card h3 {
+      margin-bottom: 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.45rem;
+      font-weight: 500;
+    }
+
+    .proof-card p {
+      color: var(--muted);
+    }
+
+    .intake {
+      border-radius: 18px;
+      padding: clamp(26px, 4vw, 48px);
+      color: var(--cream);
+      background:
+        linear-gradient(90deg, rgba(21, 53, 51, .94), rgba(21, 53, 51, .72)),
+        radial-gradient(circle at 85% 20%, rgba(185, 157, 105, .5), transparent 24rem);
+      box-shadow: var(--shadow);
+    }
+
+    .intake-grid {
+      display: grid;
+      grid-template-columns: 1fr 390px;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .intake h2 {
+      margin-bottom: 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 4vw, 4.2rem);
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .intake p {
+      color: rgba(255, 252, 244, .76);
+      font-size: 1.08rem;
+    }
+
+    .mini-form {
+      padding: 22px;
+      border-radius: 12px;
+      background: rgba(255, 252, 244, .1);
+      border: 1px solid rgba(255, 252, 244, .16);
+    }
+
+    .mini-form label {
+      display: block;
+      margin-bottom: 8px;
+      color: rgba(255, 252, 244, .82);
+      font-size: .86rem;
+    }
+
+    .mini-form input,
+    .mini-form textarea {
+      width: 100%;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255, 252, 244, .16);
+      border-radius: 8px;
+      padding: 12px 13px;
+      color: var(--cream);
+      background: rgba(15, 31, 31, .22);
+      outline: none;
+    }
+
+    .mini-form textarea {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    .mini-form input::placeholder,
+    .mini-form textarea::placeholder {
+      color: rgba(255, 252, 244, .46);
+    }
+
+    .footer {
+      padding: 42px 0;
+      color: rgba(15, 31, 31, .68);
+      border-top: 1px solid rgba(15, 31, 31, .1);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .reveal,
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .split,
+      .optimization,
+      .proof,
+      .intake-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 560px;
+      }
+
+      .thesis,
+      .pathway,
+      .continuity,
+      .science-grid,
+      .programs,
+      .diagnostic-matrix,
+      .resource-grid,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .program {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 26px, 1180px);
+      }
+
+      .hero {
+        padding-top: 46px;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .trust-row,
+      .signal-grid,
+      .micro-map,
+      .modality-board {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 610px;
+      }
+
+      .scan-wall {
+        width: 190px;
+        right: 18px;
+      }
+
+      .floating-note {
+        left: 18px;
+        width: 190px;
+      }
+
+      .protocol-card {
+        right: 18px;
+        top: 282px;
+        width: min(220px, calc(100% - 36px));
+      }
+
+      .console {
+        left: 14px;
+        right: 14px;
+        padding: 16px;
+      }
+
+      .domain {
+        grid-template-columns: 88px 1fr 34px;
+        font-size: .82rem;
+      }
+
+      .section {
+        padding: 68px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="BetterHealth home">
+        <span class="mark" aria-hidden="true"></span>
+        <span>BetterHealth</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#method" data-i18n="nav_method">Method</a>
+        <a href="#programs" data-i18n="nav_programs">Programs</a>
+        <a href="#science" data-i18n="nav_science">Science</a>
+        <a href="#location" data-i18n="nav_location">Aarau</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav_cta">Book a call</a>
+      </nav>
+      <div class="nav-tools" aria-label="Language selection">
+        <div class="lang-toggle">
+          <button type="button" class="active" data-lang="en">EN</button>
+          <button type="button" data-lang="de">DE</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <div class="eyebrow" data-i18n="hero_eyebrow">Self-pay medical care in Aarau</div>
+          <h1 data-i18n="hero_title">Understand what is driving your mental health, brain function and recovery.</h1>
+          <p class="lead" data-i18n="hero_copy">BetterHealth is a medical practice for people who want a deeper explanation than symptoms alone can provide. We connect psychiatric assessment, psychotherapy, physiology, biomarkers, sleep, stress, metabolism, inflammation, mitochondrial energy and behavior into one understandable clinical picture.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="book_call">Book a call</a>
+            <a class="btn btn-secondary" href="#programs" data-i18n="see_programs">See programs and prices</a>
+          </div>
+          <div class="trust-row" aria-label="Core promises">
+            <div class="trust-item">
+              <strong>CHF 6k</strong>
+              <span data-i18n="trust_one">for the diagnostic and biomarker assessment.</span>
+            </div>
+            <div class="trust-item">
+              <strong>4</strong>
+              <span data-i18n="trust_two">months for the integrated treatment program.</span>
+            </div>
+            <div class="trust-item">
+              <strong>1</strong>
+              <span data-i18n="trust_three">medical pathway from symptom pattern to system hypothesis.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Clinical dashboard and consultation room illustration">
+          <div class="clinic-window"></div>
+          <div class="room-line"></div>
+          <div class="scan-wall" aria-hidden="true">
+            <div class="scan"></div>
+            <div class="scan"></div>
+            <div class="scan"></div>
+            <div class="scan"></div>
+          </div>
+          <div class="floating-note">
+            <strong data-i18n="visual_title">The Clinical Map</strong>
+            <span data-i18n="visual_copy">Symptoms show where a person suffers. Biology helps explain why recovery became difficult.</span>
+          </div>
+          <div class="protocol-card">
+            <strong data-i18n="synthesis">Case synthesis</strong>
+            <div class="protocol-row"><b>01</b><span data-i18n="synthesis_one">Symptoms and diagnosis</span></div>
+            <div class="protocol-row"><b>02</b><span data-i18n="synthesis_two">System hypotheses</span></div>
+            <div class="protocol-row"><b>03</b><span data-i18n="synthesis_three">Biomarker testing</span></div>
+            <div class="protocol-row"><b>04</b><span data-i18n="synthesis_four">Personal plan</span></div>
+          </div>
+          <div class="console">
+            <div class="console-head">
+              <span><i class="status-dot"></i>Baseline synthesis in review</span>
+              <span>Private case board</span>
+            </div>
+            <div class="domain-list">
+              <div class="domain"><span>Mood</span><div class="bar"><span style="--w: 62%"></span></div><b>62</b></div>
+              <div class="domain"><span>Energy</span><div class="bar"><span style="--w: 43%"></span></div><b>43</b></div>
+              <div class="domain"><span>Metabolic</span><div class="bar"><span style="--w: 58%"></span></div><b>58</b></div>
+              <div class="domain"><span>Stress load</span><div class="bar"><span style="--w: 76%"></span></div><b>76</b></div>
+              <div class="domain"><span>Recovery</span><div class="bar"><span style="--w: 39%"></span></div><b>39</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="method">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="method_kicker">The BetterHealth method</div>
+        <h2 class="section-title reveal" data-i18n="method_title">The diagnosis matters. By itself, it leaves too much unexplained.</h2>
+        <p class="section-copy reveal" data-i18n="method_copy">A person comes in with anxiety, depression, burnout, cognitive fatigue, panic, insomnia, loss of drive or the strange sense that their system no longer recovers. We keep the diagnosis, because safety and medicine need structure. Then we go further. We ask which biological and psychological systems are keeping the person stuck.</p>
+
+        <div class="thesis">
+          <article class="thesis-card reveal">
+            <small>01</small>
+            <h3 data-i18n="thesis_one_title">From symptom to pattern</h3>
+            <p data-i18n="thesis_one_copy">We map chronology, function, exposures, sleep, medication history, trauma, cognition and the exact way the symptom behaves over time.</p>
+          </article>
+          <article class="thesis-card reveal">
+            <small>02</small>
+            <h3 data-i18n="thesis_two_title">From pattern to system</h3>
+            <p data-i18n="thesis_two_copy">We test ranked hypotheses: metabolic strain, autonomic threat, sleep disruption, inflammatory burden, endocrine transition, post-concussive change, or bioenergetic fragility.</p>
+          </article>
+          <article class="thesis-card reveal">
+            <small>03</small>
+            <h3 data-i18n="thesis_three_title">From system to plan</h3>
+            <p data-i18n="thesis_three_copy">Each intervention gets a target, dose, owner and measurement. The plan changes when the data and the lived experience fail to move together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell split">
+        <div>
+          <div class="section-kicker" data-i18n="case_kicker">Interactive case logic</div>
+          <h2 class="section-title reveal" data-i18n="case_title">A symptom opens the investigation.</h2>
+          <p class="section-copy reveal" data-i18n="case_copy">Select a presenting problem and see how BetterHealth turns it into a testable clinical hypothesis. This is where the work becomes precise.</p>
+          <div class="micro-map reveal">
+            <div class="micro-card">
+              <strong data-i18n="micro_one_title">What changed?</strong>
+              <span data-i18n="micro_one_copy">Onset, sequence, triggers, previous treatments and the exact point where recovery stopped.</span>
+            </div>
+            <div class="micro-card">
+              <strong data-i18n="micro_two_title">What keeps it active?</strong>
+              <span data-i18n="micro_two_copy">Sleep, prediction, avoidance, inflammation, metabolism, autonomic tone and occupational load.</span>
+            </div>
+            <div class="micro-card">
+              <strong data-i18n="micro_three_title">What can be measured?</strong>
+              <span data-i18n="micro_three_copy">The signals that can clarify the case or change the next treatment decision.</span>
+            </div>
+            <div class="micro-card">
+              <strong data-i18n="micro_four_title">What moves first?</strong>
+              <span data-i18n="micro_four_copy">The plan starts with the mechanisms most likely to shift function in real life.</span>
+            </div>
+          </div>
+        </div>
+        <div class="system-lab reveal">
+          <div class="section-kicker" data-i18n="choose_signal">Choose a signal</div>
+          <div class="symptom-buttons" role="tablist" aria-label="Presenting symptoms">
+            <button class="chip active" data-case="fatigue" data-i18n="chip_fatigue" role="tab" aria-selected="true">Brain fog</button>
+            <button class="chip" data-case="panic" data-i18n="chip_panic" role="tab">Panic</button>
+            <button class="chip" data-case="anhedonia" data-i18n="chip_anhedonia" role="tab">Anhedonia</button>
+            <button class="chip" data-case="memory" data-i18n="chip_memory" role="tab">Memory concern</button>
+          </div>
+          <div class="hypothesis">
+            <h3 id="caseTitle">Cognitive fatigue with poor recovery</h3>
+            <p id="caseCopy">Possible sleep-circadian disruption, insulin resistance, autonomic overactivation and mitochondrial strain. The real question is why the brain is spending more energy to produce less clarity.</p>
+            <div class="signal-grid" id="caseSignals">
+              <div class="signal">Sleep diary and apnea screen</div>
+              <div class="signal">VO2 max or fitness proxy</div>
+              <div class="signal">Glucose, insulin, ApoB, hs-CRP</div>
+              <div class="signal">Brief cognitive baseline</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="path_kicker">The patient pathway</div>
+        <h2 class="section-title reveal" data-i18n="path_title">A private, structured route from confusion to a working plan.</h2>
+        <p class="section-copy reveal" data-i18n="path_copy">The value is time, interpretation, continuity and the ability to make complex information usable without losing the person inside the data.</p>
+        <div class="pathway">
+          <article class="step reveal">
+            <span data-i18n="step_one">Step 01</span>
+            <h3 data-i18n="precheck_title">Book a call</h3>
+            <p data-i18n="precheck_copy">A short conversation clarifies fit, urgency, goals and whether BetterHealth is the responsible next step.</p>
+          </article>
+          <article class="step reveal">
+            <span data-i18n="step_two">Step 02</span>
+            <h3 data-i18n="baseline_title">Assessment</h3>
+            <p data-i18n="baseline_copy">Clinical intake, symptom clusters, diagnosis, relevant data and targeted biomarker testing.</p>
+          </article>
+          <article class="step reveal">
+            <span data-i18n="step_three">Step 03</span>
+            <h3 data-i18n="formulation_title">Formulation</h3>
+            <p data-i18n="formulation_copy">You receive a ranked explanation of the systems likely involved and the practical next steps.</p>
+          </article>
+          <article class="step reveal">
+            <span data-i18n="step_four">Step 04</span>
+            <h3 data-i18n="implementation_title">Implementation</h3>
+            <p data-i18n="implementation_copy">When you choose the full program, we coordinate the treatment plan over four months.</p>
+          </article>
+        </div>
+        <div class="continuity">
+          <div class="continuity-item reveal">
+            <b data-i18n="cont_one_title">One medical owner</b>
+            <span data-i18n="cont_one_copy">The patient gets one clinical interpretation instead of separate reports competing for attention.</span>
+          </div>
+          <div class="continuity-item reveal">
+            <b data-i18n="cont_two_title">One visible scorecard</b>
+            <span data-i18n="cont_two_copy">Symptoms, function, recovery, biology and behavior are followed together.</span>
+          </div>
+          <div class="continuity-item reveal">
+            <b data-i18n="cont_three_title">One adaptive plan</b>
+            <span data-i18n="cont_three_copy">Incomplete response creates a clinical decision with a clear next move.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="science">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="science_kicker">Scientific architecture</div>
+        <h2 class="section-title reveal" data-i18n="science_title">Mental health is produced inside a living system.</h2>
+        <p class="section-copy reveal" data-i18n="science_copy">The brain is predictive. It interprets the body, the world and the future through models of threat, safety, effort and relevance. When the body is sleep deprived, inflamed, metabolically fragile or energetically strained, perception changes. The world feels different because the system is different.</p>
+        <div class="science-grid">
+          <article class="science-card reveal">
+            <div class="science-icon">P</div>
+            <div>
+              <h3 data-i18n="pred_title">Perception and prediction</h3>
+              <p data-i18n="pred_copy">Following the logic of predictive processing and active inference, symptoms are understood as perception, body state and learned prediction interacting in real time.</p>
+            </div>
+          </article>
+          <article class="science-card reveal">
+            <div class="science-icon">M</div>
+            <div>
+              <h3 data-i18n="mito_title">Mitochondrial energy</h3>
+              <p data-i18n="mito_copy">Mitochondria are energy producers, but also signaling hubs. They help determine whether a cell can adapt, repair, communicate and recover after demand.</p>
+            </div>
+          </article>
+          <article class="science-card reveal">
+            <div class="science-icon">A</div>
+            <div>
+              <h3 data-i18n="allo_title">Allostatic load</h3>
+              <p data-i18n="allo_copy">Stress is measured across exposure, appraisal, autonomic state, endocrine rhythm, inflammation, behavior and recovery. A single biomarker can show one signal. The whole story needs the pattern.</p>
+            </div>
+          </article>
+          <article class="science-card reveal">
+            <div class="science-icon">E</div>
+            <div>
+              <h3 data-i18n="mismatch_title">Evolutionary mismatch</h3>
+              <p data-i18n="mismatch_copy">Modern work, light, food, isolation, digital urgency and sleep compression can push ancient regulatory systems into patterns they were never built to carry chronically.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="programs">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="programs_kicker">Programs and prices</div>
+        <h2 class="section-title reveal" data-i18n="programs_title">Start with the depth your case actually needs.</h2>
+        <p class="section-copy reveal" data-i18n="programs_copy">The first offer gives you the assessment, the biological hypothesis and the biomarker-based orientation. The second offer takes the same understanding and turns it into a four-month integrated treatment system. The third remains available when the case is more complex or prevention-focused.</p>
+        <div class="diagnostic-matrix reveal">
+          <div class="matrix-panel">
+            <h3 data-i18n="look_for">What we look for</h3>
+            <div class="matrix-row"><b data-i18n="sleep">Sleep</b><span data-i18n="sleep_copy">Insomnia, apnea, circadian drift, recovery debt.</span></div>
+            <div class="matrix-row"><b data-i18n="metabolism">Metabolism</b><span data-i18n="metabolism_copy">Glucose regulation, ApoB, inflammation, body composition.</span></div>
+            <div class="matrix-row"><b data-i18n="autonomic">Autonomic load</b><span data-i18n="autonomic_copy">Threat physiology, HRV pattern, avoidance and recovery capacity.</span></div>
+          </div>
+          <div class="matrix-panel">
+            <h3 data-i18n="plan_targets">What the plan targets</h3>
+            <div class="matrix-row"><b data-i18n="perception">Perception</b><span data-i18n="perception_copy">How the body changes the brain's prediction of effort, safety and control.</span></div>
+            <div class="matrix-row"><b data-i18n="energy">Energy</b><span data-i18n="energy_copy">Mitochondrial and cardiorespiratory reserve as the substrate of adaptation.</span></div>
+            <div class="matrix-row"><b data-i18n="behavior">Behavior</b><span data-i18n="behavior_copy">Psychotherapy, rhythm, training and adherence built into daily life.</span></div>
+          </div>
+        </div>
+        <div class="programs">
+          <article class="program reveal">
+            <div class="program-label" data-i18n="assessment_label">Assessment</div>
+            <h3 data-i18n="assessment_title">Biomarker Deep Dive</h3>
+            <div class="price">CHF 6,000<small data-i18n="assessment_price">one-time self-pay assessment</small></div>
+            <p data-i18n="assessment_copy">For people who want to understand what may be driving their symptoms before deciding on a longer treatment pathway.</p>
+            <ul>
+              <li data-i18n="assessment_li1">Clinical intake, symptom analysis and diagnostic orientation</li>
+              <li data-i18n="assessment_li2">Hypothesis of the biological systems involved</li>
+              <li data-i18n="assessment_li3">Targeted biomarker testing and interpretation</li>
+              <li data-i18n="assessment_li4">Written orientation with practical next steps</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact" data-i18n="book_assessment">Book a call</a>
+          </article>
+          <article class="program featured reveal">
+            <div class="program-label" data-i18n="integrated_label">Integrated care</div>
+            <h3 data-i18n="integrated_title">Four-Month Treatment Program</h3>
+            <div class="price">CHF 15,000<small data-i18n="integrated_price">four months of guided implementation</small></div>
+            <p data-i18n="integrated_copy">For people who want BetterHealth to turn the assessment into a coordinated treatment system, with the plan carried by the team rather than left to the patient.</p>
+            <ul>
+              <li data-i18n="integrated_li1">Everything included in the Biomarker Deep Dive</li>
+              <li data-i18n="integrated_li2">Personalized treatment plan based on findings</li>
+              <li data-i18n="integrated_li3">Psychotherapy plus physiology, sleep and behavior work</li>
+              <li data-i18n="integrated_li4">Access to selected modalities such as HBOT, neurofeedback, photobiomodulation, VO2 max training and diet coaching when indicated</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact" data-i18n="book_integrated">Book a call</a>
+          </article>
+          <article class="program reveal">
+            <div class="program-label" data-i18n="advanced_label">Advanced</div>
+            <h3 data-i18n="advanced_title">Brain & Prevention Program</h3>
+            <div class="price" data-i18n="advanced_price">By scope<small>for complex or prevention-focused cases</small></div>
+            <p data-i18n="advanced_copy">For people who need broader brain-health prevention, more complex case formulation, longitudinal support or coordination across several medical domains.</p>
+            <ul>
+              <li data-i18n="advanced_li1">Extended diagnostics when clinically useful</li>
+              <li data-i18n="advanced_li2">Cognitive health, longevity and prevention strategy</li>
+              <li data-i18n="advanced_li3">Specialist referral and coordination pathways</li>
+              <li data-i18n="advanced_li4">Longitudinal review, retesting and adaptation</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact" data-i18n="book_advanced">Book a call</a>
+          </article>
+        </div>
+        <div class="self-pay-note" data-i18n="self_pay_note">BetterHealth is a self-pay medical service. The work goes beyond what is usually covered by Swiss insurance tariffs because it focuses on prevention, depth, time, coordination and individualized implementation.</div>
+      </div>
+    </section>
+
+    <section class="section dark" id="optimization">
+      <div class="shell optimization">
+        <div>
+          <div class="section-kicker" data-i18n="opt_kicker">The physiology layer</div>
+          <h2 class="section-title reveal" data-i18n="opt_title">Therapy becomes stronger when the body is included.</h2>
+          <p class="section-copy reveal" data-i18n="opt_copy">The integrated program can include hyperbaric oxygen therapy, neurofeedback, photobiomodulation, VO2 max-based training, diet coaching, sleep work and recovery design when these tools match the clinical formulation.</p>
+          <div class="section-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="book_call">Book a call</a>
+          </div>
+        </div>
+        <div class="modality-board">
+          <div class="modality reveal"><strong>VO2 max</strong><span data-i18n="mod_vo2">Cardiorespiratory reserve as a practical window into longevity, vascular function and energetic capacity.</span></div>
+          <div class="modality reveal"><strong data-i18n="mod_hrv_title">HRV biofeedback</strong><span data-i18n="mod_hrv">Training the autonomic system back toward flexible regulation rather than chronic defensive activation.</span></div>
+          <div class="modality reveal"><strong data-i18n="mod_pbm_title">Photobiomodulation</strong><span data-i18n="mod_pbm">Light-based support for cellular signaling, recovery and selected brain-health protocols.</span></div>
+          <div class="modality reveal"><strong>HBOT / IHHT</strong><span data-i18n="mod_oxygen">Oxygen physiology used cautiously, with indication, protocol, monitoring and boundaries.</span></div>
+          <div class="modality reveal"><strong data-i18n="mod_nfb_title">Neurofeedback</strong><span data-i18n="mod_nfb">Training self-regulation where attention, arousal and threat prediction have become unstable.</span></div>
+          <div class="modality reveal"><strong data-i18n="mod_exposure_title">Exposure design</strong><span data-i18n="mod_exposure">Modern psychotherapy translated into real-world prediction updates that go beyond insight.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell proof">
+        <div>
+          <div class="section-kicker" data-i18n="different_kicker">Why it feels different</div>
+          <h2 class="section-title reveal" data-i18n="different_title">Your care should have an integrator.</h2>
+          <p class="section-copy reveal" data-i18n="different_copy">Many people with complex mental health or brain health problems carry fragments between specialists. They become the messenger, the historian, the analyst and the project manager of their own recovery. BetterHealth is built to reduce that burden.</p>
+        </div>
+        <div class="proof-stack">
+          <article class="proof-card reveal">
+            <h3 data-i18n="proof_one_title">Medical seriousness</h3>
+            <p data-i18n="proof_one_copy">Two medical professionals lead the clinical work. The service is self-pay because the depth, prevention focus and implementation time go beyond standard insurance pathways.</p>
+          </article>
+          <article class="proof-card reveal">
+            <h3 data-i18n="proof_two_title">Evidence with restraint</h3>
+            <p data-i18n="proof_two_copy">Advanced testing is used when it can change decisions. Scientific seriousness also means knowing where certainty ends.</p>
+          </article>
+          <article class="proof-card reveal">
+            <h3 data-i18n="proof_three_title">Progress that can be seen</h3>
+            <p data-i18n="proof_three_copy">Symptoms, function, sleep, cognition, physiology and selected biomarkers are followed together, because recovery should be visible in life as well as in a report.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="location">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="location_kicker">Central Switzerland</div>
+        <h2 class="section-title reveal" data-i18n="location_title">A quiet, central base in Aarau.</h2>
+        <p class="section-copy reveal" data-i18n="location_copy">Based at Laurenzen Vorstadt 11 in Aarau, BetterHealth is reachable from Zurich, Basel, Bern, Lucerne and Zug. The location is discreet, central and intentionally outside the noise of a high-street luxury clinic.</p>
+        <div class="location-grid">
+          <article class="location-card reveal">
+            <h3 data-i18n="loc_one_title">Zurich and Zug</h3>
+            <p data-i18n="loc_one_copy">For executives, founders and affluent clients who want depth without a public-facing clinic experience.</p>
+          </article>
+          <article class="location-card reveal">
+            <h3 data-i18n="loc_two_title">Basel and Bern</h3>
+            <p data-i18n="loc_two_copy">For scientifically minded clients who value rigorous medicine, clear boundaries and time for proper interpretation.</p>
+          </article>
+          <article class="location-card reveal">
+            <h3 data-i18n="loc_three_title">Aarau</h3>
+            <p data-i18n="loc_three_copy">A central Swiss practice setting for self-pay mental health, brain health and prevention work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="resources_kicker">Free material</div>
+        <h2 class="section-title reveal" data-i18n="resources_title">Start by understanding the system.</h2>
+        <p class="section-copy reveal" data-i18n="resources_copy">Some visitors will be ready to book a call. Others first need language for what they are experiencing. BetterHealth will offer concise guides that explain the biology without turning it into hype.</p>
+        <div class="resource-grid">
+          <article class="resource-card reveal">
+            <h3 data-i18n="res_one_title">Inflammation and the brain</h3>
+            <p data-i18n="res_one_copy">How immune signals can influence mood, energy, cognition and recovery.</p>
+          </article>
+          <article class="resource-card reveal">
+            <h3 data-i18n="res_two_title">Evolutionary mismatch</h3>
+            <p data-i18n="res_two_copy">Why modern light, food, work, sleep loss and social strain can overload older biological systems.</p>
+          </article>
+          <article class="resource-card reveal">
+            <h3 data-i18n="res_three_title">Stress physiology</h3>
+            <p data-i18n="res_three_copy">How threat prediction, autonomic load, sleep and mitochondrial energy interact.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="shell">
+        <div class="intake reveal">
+          <div class="intake-grid">
+            <div>
+              <div class="section-kicker" data-i18n="contact_kicker">Book a call</div>
+              <h2 data-i18n="contact_title">Start with the question your current care keeps leaving open.</h2>
+              <p data-i18n="contact_copy">Tell us what changed, what you have already tried, and what you need your brain and body to do again. The first call is about fit, urgency and the most responsible next step.</p>
+            </div>
+            <form class="mini-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request drafted';">
+              <label for="name" data-i18n="form_name">Name</label>
+              <input id="name" name="name" data-placeholder-en="Your name" data-placeholder-de="Ihr Name" placeholder="Your name">
+              <label for="email" data-i18n="form_email">Email</label>
+              <input id="email" name="email" type="email" placeholder="private@email.com">
+              <label for="concern" data-i18n="form_concern">What has changed?</label>
+              <textarea id="concern" name="concern" data-placeholder-en="Sleep, anxiety, cognition, mood, recovery, performance..." data-placeholder-de="Schlaf, Angst, Kognition, Stimmung, Erholung, Leistungsfähigkeit..." placeholder="Sleep, anxiety, cognition, mood, recovery, performance..."></textarea>
+              <button class="btn btn-primary" type="submit" data-i18n="form_button">Book a call</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div>BetterHealth | Precision Brain and Mental Health</div>
+      <div data-i18n="footer_location">Laurenzen Vorstadt 11, Aarau | Self-pay medical care</div>
+    </div>
+  </footer>
+
+  <script>
+    const defaultCopy = new Map();
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+      defaultCopy.set(element.dataset.i18n, element.innerHTML);
+    });
+
+    const translations = {
+      de: {
+        nav_method: "Methode",
+        nav_programs: "Programme",
+        nav_science: "Wissenschaft",
+        nav_location: "Aarau",
+        nav_cta: "Call buchen",
+        hero_eyebrow: "Selbstzahler-Medizin in Aarau",
+        hero_title: "Verstehen, was Ihre mentale Gesundheit, Gehirnfunktion und Erholung antreibt.",
+        hero_copy: "BetterHealth ist eine medizinische Praxis für Menschen, die eine tiefere Erklärung möchten als Symptome allein geben können. Wir verbinden psychiatrische Einschätzung, Psychotherapie, Physiologie, Biomarker, Schlaf, Stress, Stoffwechsel, Entzündung, mitochondriale Energie und Verhalten zu einem verständlichen klinischen Bild.",
+        book_call: "Call buchen",
+        see_programs: "Programme und Preise ansehen",
+        trust_one: "für die diagnostische Biomarker-Analyse.",
+        trust_two: "Monate für das integrierte Behandlungsprogramm.",
+        trust_three: "medizinischer Weg vom Symptommuster zur Systemhypothese.",
+        visual_title: "Die klinische Karte",
+        visual_copy: "Symptome zeigen, wo ein Mensch leidet. Biologie hilft zu verstehen, warum Erholung schwierig geworden ist.",
+        synthesis: "Fall-Synthese",
+        synthesis_one: "Symptome und Diagnose",
+        synthesis_two: "Systemhypothesen",
+        synthesis_three: "Biomarker-Testung",
+        synthesis_four: "Persönlicher Plan",
+        method_kicker: "Die BetterHealth-Methode",
+        method_title: "Die Diagnose ist wichtig. Allein erklärt sie zu wenig.",
+        method_copy: "Ein Mensch kommt mit Angst, Depression, Burnout, kognitiver Müdigkeit, Panik, Schlaflosigkeit, Antriebsverlust oder dem Gefühl, dass das eigene System nicht mehr richtig regeneriert. Wir behalten die Diagnose, weil Sicherheit und Medizin Struktur brauchen. Dann gehen wir tiefer und fragen, welche biologischen und psychologischen Systeme den Zustand aufrechterhalten.",
+        thesis_one_title: "Vom Symptom zum Muster",
+        thesis_one_copy: "Wir erfassen Chronologie, Funktion, Belastungen, Schlaf, Medikamente, Trauma, Kognition und die genaue Art, wie sich das Symptom über die Zeit verhält.",
+        thesis_two_title: "Vom Muster zum System",
+        thesis_two_copy: "Wir prüfen geordnete Hypothesen: metabolische Belastung, autonomes Bedrohungssystem, Schlafstörung, Entzündung, hormoneller Übergang, postkonkussive Veränderung oder bioenergetische Fragilität.",
+        thesis_three_title: "Vom System zum Plan",
+        thesis_three_copy: "Jede Intervention erhält ein Ziel, eine Dosis, eine Zuständigkeit und eine Messung. Der Plan verändert sich, wenn Daten und gelebte Erfahrung nicht zusammenpassen.",
+        case_kicker: "Interaktive Falllogik",
+        case_title: "Ein Symptom öffnet die Untersuchung.",
+        case_copy: "Wählen Sie ein Leitsymptom und sehen Sie, wie BetterHealth daraus eine prüfbare klinische Hypothese macht. Hier wird die Arbeit präzise.",
+        micro_one_title: "Was hat sich verändert?",
+        micro_one_copy: "Beginn, Reihenfolge, Auslöser, bisherige Behandlungen und der Punkt, an dem Erholung aufgehört hat.",
+        micro_two_title: "Was hält es aktiv?",
+        micro_two_copy: "Schlaf, Vorhersage, Vermeidung, Entzündung, Stoffwechsel, autonomer Tonus und Arbeitsbelastung.",
+        micro_three_title: "Was lässt sich messen?",
+        micro_three_copy: "Signale, die den Fall klären oder die nächste Behandlungsentscheidung verändern können.",
+        micro_four_title: "Was bewegt sich zuerst?",
+        micro_four_copy: "Der Plan beginnt mit den Mechanismen, die Funktion im echten Leben am wahrscheinlichsten verändern.",
+        choose_signal: "Signal wählen",
+        chip_fatigue: "Brain Fog",
+        chip_panic: "Panik",
+        chip_anhedonia: "Anhedonie",
+        chip_memory: "Gedächtnis",
+        path_kicker: "Der Patientenweg",
+        path_title: "Ein privater, strukturierter Weg von Unklarheit zu einem Arbeitsplan.",
+        path_copy: "Der Wert liegt in Zeit, Interpretation, Kontinuität und der Fähigkeit, komplexe Information nutzbar zu machen, ohne den Menschen in den Daten zu verlieren.",
+        step_one: "Schritt 01",
+        step_two: "Schritt 02",
+        step_three: "Schritt 03",
+        step_four: "Schritt 04",
+        precheck_title: "Call buchen",
+        precheck_copy: "Ein kurzes Gespräch klärt Passung, Dringlichkeit, Ziele und ob BetterHealth der verantwortungsvolle nächste Schritt ist.",
+        baseline_title: "Assessment",
+        baseline_copy: "Klinische Aufnahme, Symptomcluster, Diagnose, relevante Daten und gezielte Biomarker-Testung.",
+        formulation_title: "Formulierung",
+        formulation_copy: "Sie erhalten eine geordnete Erklärung der wahrscheinlich beteiligten Systeme und der praktischen nächsten Schritte.",
+        implementation_title: "Umsetzung",
+        implementation_copy: "Wenn Sie das volle Programm wählen, koordinieren wir den Behandlungsplan über vier Monate.",
+        cont_one_title: "Eine medizinische Zuständigkeit",
+        cont_one_copy: "Der Patient erhält eine klinische Interpretation statt einzelner Berichte, die miteinander konkurrieren.",
+        cont_two_title: "Ein sichtbares Scoreboard",
+        cont_two_copy: "Symptome, Funktion, Erholung, Biologie und Verhalten werden gemeinsam verfolgt.",
+        cont_three_title: "Ein adaptiver Plan",
+        cont_three_copy: "Unvollständige Besserung führt zu einer klinischen Entscheidung mit einem klaren nächsten Schritt.",
+        science_kicker: "Wissenschaftliche Architektur",
+        science_title: "Mentale Gesundheit entsteht in einem lebenden System.",
+        science_copy: "Das Gehirn arbeitet vorhersagend. Es interpretiert Körper, Welt und Zukunft über Modelle von Bedrohung, Sicherheit, Aufwand und Bedeutung. Wenn der Körper schlafdepriviert, entzündet, metabolisch fragil oder energetisch belastet ist, verändert sich Wahrnehmung.",
+        pred_title: "Wahrnehmung und Vorhersage",
+        pred_copy: "Im Sinne von Predictive Processing und Active Inference verstehen wir Symptome als Zusammenspiel von Wahrnehmung, Körperzustand und gelernter Vorhersage.",
+        mito_title: "Mitochondriale Energie",
+        mito_copy: "Mitochondrien produzieren Energie und dienen zugleich als Signalzentren. Sie beeinflussen, ob Zellen sich anpassen, reparieren, kommunizieren und erholen können.",
+        allo_title: "Allostatische Last",
+        allo_copy: "Stress wird über Exposition, Bewertung, autonomes System, endokrinen Rhythmus, Entzündung, Verhalten und Erholung gemessen. Ein Biomarker zeigt ein Signal. Das Muster erzählt mehr.",
+        mismatch_title: "Evolutionärer Mismatch",
+        mismatch_copy: "Moderne Arbeit, Licht, Nahrung, Isolation, digitale Dringlichkeit und Schlafverkürzung können ältere Regulationssysteme chronisch überlasten.",
+        programs_kicker: "Programme und Preise",
+        programs_title: "Beginnen Sie mit der Tiefe, die Ihr Fall wirklich braucht.",
+        programs_copy: "Das erste Angebot liefert Assessment, biologische Hypothese und biomarkerbasierte Orientierung. Das zweite übersetzt dieses Verständnis in ein viermonatiges integriertes Behandlungssystem. Das dritte bleibt für komplexere oder präventive Fälle offen.",
+        look_for: "Wonach wir suchen",
+        sleep: "Schlaf",
+        sleep_copy: "Insomnie, Apnoe, zirkadiane Verschiebung, Erholungsschuld.",
+        metabolism: "Stoffwechsel",
+        metabolism_copy: "Glukoseregulation, ApoB, Entzündung, Körperzusammensetzung.",
+        autonomic: "Autonome Last",
+        autonomic_copy: "Bedrohungsphysiologie, HRV-Muster, Vermeidung und Erholungsfähigkeit.",
+        plan_targets: "Was der Plan adressiert",
+        perception: "Wahrnehmung",
+        perception_copy: "Wie der Körper die Vorhersage des Gehirns zu Aufwand, Sicherheit und Kontrolle verändert.",
+        energy: "Energie",
+        energy_copy: "Mitochondriale und kardiorespiratorische Reserve als Grundlage von Anpassung.",
+        behavior: "Verhalten",
+        behavior_copy: "Psychotherapie, Rhythmus, Training und Adhärenz im Alltag.",
+        assessment_label: "Assessment",
+        assessment_title: "Biomarker Deep Dive",
+        assessment_price: "einmaliges Selbstzahler-Assessment",
+        assessment_copy: "Für Menschen, die verstehen wollen, was ihre Symptome antreiben könnte, bevor sie sich für einen längeren Behandlungsweg entscheiden.",
+        assessment_li1: "Klinische Aufnahme, Symptomanalyse und diagnostische Orientierung",
+        assessment_li2: "Hypothese der beteiligten biologischen Systeme",
+        assessment_li3: "Gezielte Biomarker-Testung und Interpretation",
+        assessment_li4: "Schriftliche Orientierung mit praktischen nächsten Schritten",
+        integrated_label: "Integrierte Betreuung",
+        integrated_title: "Viermonatiges Behandlungsprogramm",
+        integrated_price: "vier Monate geführte Umsetzung",
+        integrated_copy: "Für Menschen, die möchten, dass BetterHealth das Assessment in ein koordiniertes Behandlungssystem übersetzt, getragen vom Team statt vom Patienten allein.",
+        integrated_li1: "Alles aus dem Biomarker Deep Dive",
+        integrated_li2: "Personalisierter Behandlungsplan basierend auf den Befunden",
+        integrated_li3: "Psychotherapie plus Physiologie, Schlaf und Verhaltensarbeit",
+        integrated_li4: "Zugang zu ausgewählten Modalitäten wie HBOT, Neurofeedback, Photobiomodulation, VO2max-Training und Ernährungscoaching, wenn indiziert",
+        advanced_label: "Advanced",
+        advanced_title: "Brain & Prevention Program",
+        advanced_price: "Nach Umfang<small>für komplexe oder präventive Fälle</small>",
+        advanced_copy: "Für Menschen, die breitere Brain-Health-Prävention, komplexere Fallformulierung, längere Begleitung oder Koordination über mehrere medizinische Bereiche benötigen.",
+        advanced_li1: "Erweiterte Diagnostik, wenn klinisch sinnvoll",
+        advanced_li2: "Kognitive Gesundheit, Longevity und Präventionsstrategie",
+        advanced_li3: "Fachärztliche Zuweisungen und Koordination",
+        advanced_li4: "Längsschnitt-Review, Retesting und Anpassung",
+        book_assessment: "Call buchen",
+        book_integrated: "Call buchen",
+        book_advanced: "Call buchen",
+        self_pay_note: "BetterHealth ist ein medizinisches Selbstzahler-Angebot. Die Arbeit geht über das hinaus, was üblicherweise durch Schweizer Versicherungstarife abgedeckt ist, weil sie Prävention, Tiefe, Zeit, Koordination und individualisierte Umsetzung verbindet.",
+        opt_kicker: "Die physiologische Ebene",
+        opt_title: "Therapie wird stärker, wenn der Körper einbezogen wird.",
+        opt_copy: "Das integrierte Programm kann hyperbare Sauerstofftherapie, Neurofeedback, Photobiomodulation, VO2max-basiertes Training, Ernährungscoaching, Schlafarbeit und Erholungsdesign beinhalten, wenn diese Werkzeuge zur klinischen Formulierung passen.",
+        mod_vo2: "Kardiorespiratorische Reserve als praktisches Fenster in Langlebigkeit, Gefäßfunktion und energetische Kapazität.",
+        mod_hrv_title: "HRV-Biofeedback",
+        mod_hrv: "Training des autonomen Systems zurück in flexible Regulation.",
+        mod_pbm_title: "Photobiomodulation",
+        mod_pbm: "Lichtbasierte Unterstützung von zellulärer Signalgebung, Erholung und ausgewählten Brain-Health-Protokollen.",
+        mod_oxygen: "Sauerstoffphysiologie mit Indikation, Protokoll, Monitoring und klaren Grenzen.",
+        mod_nfb_title: "Neurofeedback",
+        mod_nfb: "Training von Selbstregulation, wenn Aufmerksamkeit, Erregung und Bedrohungsvorhersage instabil geworden sind.",
+        mod_exposure_title: "Expositionsdesign",
+        mod_exposure: "Moderne Psychotherapie übersetzt in reale Vorhersage-Updates, die über Einsicht hinausgehen.",
+        different_kicker: "Warum es sich anders anfühlt",
+        different_title: "Ihre Behandlung sollte einen Integrator haben.",
+        different_copy: "Viele Menschen mit komplexen mentalen oder Brain-Health-Problemen tragen Fragmente zwischen Spezialisten hin und her. Sie werden zum Boten, Historiker, Analysten und Projektmanager ihrer eigenen Erholung. BetterHealth soll diese Last reduzieren.",
+        proof_one_title: "Medizinische Seriosität",
+        proof_one_copy: "Zwei medizinische Fachpersonen führen die klinische Arbeit. Das Angebot ist selbstzahlend, weil Tiefe, Präventionsfokus und Umsetzungszeit über Standardpfade hinausgehen.",
+        proof_two_title: "Evidenz mit Zurückhaltung",
+        proof_two_copy: "Erweiterte Testung wird eingesetzt, wenn sie Entscheidungen verändern kann. Wissenschaftliche Seriosität bedeutet auch zu wissen, wo Gewissheit endet.",
+        proof_three_title: "Fortschritt, der sichtbar wird",
+        proof_three_copy: "Symptome, Funktion, Schlaf, Kognition, Physiologie und ausgewählte Biomarker werden gemeinsam verfolgt, weil Erholung im Leben und im Bericht sichtbar sein sollte.",
+        location_kicker: "Zentrale Schweiz",
+        location_title: "Eine ruhige, zentrale Basis in Aarau.",
+        location_copy: "BetterHealth befindet sich an der Laurenzen Vorstadt 11 in Aarau und ist aus Zürich, Basel, Bern, Luzern und Zug gut erreichbar. Der Ort ist diskret, zentral und bewusst außerhalb des Lärms einer High-Street-Luxusklinik.",
+        loc_one_title: "Zürich und Zug",
+        loc_one_copy: "Für Executives, Unternehmer und vermögende Klienten, die Tiefe ohne öffentliche Klinikinszenierung möchten.",
+        loc_two_title: "Basel und Bern",
+        loc_two_copy: "Für wissenschaftlich denkende Klienten, die strenge Medizin, klare Grenzen und Zeit für Interpretation schätzen.",
+        loc_three_title: "Aarau",
+        loc_three_copy: "Eine zentrale Schweizer Praxis für selbstzahlende mentale Gesundheit, Brain Health und Prävention.",
+        resources_kicker: "Kostenloses Material",
+        resources_title: "Beginnen Sie damit, das System zu verstehen.",
+        resources_copy: "Manche Besucher sind bereit, einen Call zu buchen. Andere brauchen zuerst Sprache für das, was sie erleben. BetterHealth wird kurze Guides anbieten, die die Biologie erklären, ohne daraus Hype zu machen.",
+        res_one_title: "Entzündung und Gehirn",
+        res_one_copy: "Wie Immunsignale Stimmung, Energie, Kognition und Erholung beeinflussen können.",
+        res_two_title: "Evolutionärer Mismatch",
+        res_two_copy: "Warum modernes Licht, Nahrung, Arbeit, Schlafmangel und soziale Belastung ältere biologische Systeme überlasten können.",
+        res_three_title: "Stressphysiologie",
+        res_three_copy: "Wie Bedrohungsvorhersage, autonome Last, Schlaf und mitochondriale Energie zusammenspielen.",
+        contact_kicker: "Call buchen",
+        contact_title: "Beginnen Sie mit der Frage, die Ihre bisherige Behandlung offen lässt.",
+        contact_copy: "Sagen Sie uns, was sich verändert hat, was Sie bereits versucht haben und was Gehirn und Körper wieder leisten sollen. Der erste Call klärt Passung, Dringlichkeit und den verantwortungsvollen nächsten Schritt.",
+        form_name: "Name",
+        form_email: "E-Mail",
+        form_concern: "Was hat sich verändert?",
+        form_button: "Call buchen",
+        footer_location: "Laurenzen Vorstadt 11, Aarau | Medizinisches Selbstzahler-Angebot"
+      }
+    };
+
+    const caseContent = {
+      en: {
+        fatigue: {
+          title: "Cognitive fatigue with poor recovery",
+          copy: "Possible sleep-circadian disruption, insulin resistance, autonomic overactivation and mitochondrial strain. The real question is why the brain is spending more energy to produce less clarity.",
+          signals: ["Sleep diary and apnea screen", "VO2 max or fitness proxy", "Glucose, insulin, ApoB, hs-CRP", "Brief cognitive baseline"]
+        },
+        panic: {
+          title: "Panic with interoceptive threat",
+          copy: "Possible autonomic hyperarousal, conditioned prediction, avoidance loops, stimulant load, sleep debt or post-viral dysautonomia. The work is to separate danger from sensation, then train the body and brain to update together.",
+          signals: ["Panic and avoidance map", "Resting HRV protocol", "Orthostatic vitals", "Exposure hierarchy"]
+        },
+        anhedonia: {
+          title: "Loss of drive and reward",
+          copy: "Possible depressive reward-circuit dysfunction, inflammatory-metabolic phenotype, endocrine transition, medication effect or chronic overcontrol. The goal is to find where motivation became biologically expensive.",
+          signals: ["MADRS or PHQ-9 with anhedonia focus", "hs-CRP and metabolic panel", "Medication and hormone review", "Behavioral activation targets"]
+        },
+        memory: {
+          title: "Memory concern with brain-health risk",
+          copy: "Possible sleep disruption, anxiety load, vascular risk, hearing or vision loss, medication effect, menopausal transition, post-concussive change or early neurodegenerative risk. The next step is responsible stratification, with enough precision to lower uncertainty.",
+          signals: ["Cognitive baseline", "Blood pressure and ApoB", "MRI or volumetrics when indicated", "Sleep, hearing and vision screen"]
+        }
+      },
+      de: {
+        fatigue: {
+          title: "Kognitive Müdigkeit mit schlechter Erholung",
+          copy: "Möglich sind Schlaf- und zirkadiane Störung, Insulinresistenz, autonome Überaktivierung und mitochondriale Belastung. Die eigentliche Frage ist, warum das Gehirn mehr Energie verbraucht und trotzdem weniger Klarheit erzeugt.",
+          signals: ["Schlaftagebuch und Apnoe-Screening", "VO2max oder Fitness-Proxy", "Glukose, Insulin, ApoB, hs-CRP", "Kurze kognitive Baseline"]
+        },
+        panic: {
+          title: "Panik mit interozeptiver Bedrohung",
+          copy: "Möglich sind autonome Hyperarousal-Muster, gelernte Vorhersage, Vermeidung, Stimulanzienbelastung, Schlafschuld oder postvirale Dysautonomie. Die Arbeit trennt Gefahr von Körperempfindung und trainiert Körper und Gehirn gemeinsam.",
+          signals: ["Panik- und Vermeidungskarte", "Ruhe-HRV-Protokoll", "Orthostatische Vitalwerte", "Expositionshierarchie"]
+        },
+        anhedonia: {
+          title: "Antriebs- und Belohnungsverlust",
+          copy: "Möglich sind depressive Reward-Circuit-Dysfunktion, inflammatorisch-metabolischer Phänotyp, hormoneller Übergang, Medikamenteneffekt oder chronische Überkontrolle. Ziel ist zu verstehen, wo Motivation biologisch teuer geworden ist.",
+          signals: ["MADRS oder PHQ-9 mit Anhedonie-Fokus", "hs-CRP und Stoffwechselpanel", "Medikamenten- und Hormonreview", "Behavioral-Activation-Ziele"]
+        },
+        memory: {
+          title: "Gedächtnissorge mit Brain-Health-Risiko",
+          copy: "Möglich sind Schlafstörung, Angstlast, vaskuläres Risiko, Hör- oder Sehprobleme, Medikamente, Menopause, postkonkussive Veränderung oder frühes neurodegeneratives Risiko. Der nächste Schritt ist verantwortungsvolle Stratifizierung.",
+          signals: ["Kognitive Baseline", "Blutdruck und ApoB", "MRI oder Volumetrie bei Indikation", "Schlaf-, Hör- und Sehscreening"]
+        }
+      }
+    };
+
+    let activeLanguage = "en";
+
+    function activeCaseKey() {
+      return document.querySelector(".chip.active")?.dataset.case || "fatigue";
+    }
+
+    function renderCase(caseKey) {
+      const item = caseContent[activeLanguage][caseKey];
+      document.getElementById("caseTitle").textContent = item.title;
+      document.getElementById("caseCopy").textContent = item.copy;
+      document.getElementById("caseSignals").innerHTML = item.signals
+        .map((signal) => `<div class="signal">${signal}</div>`)
+        .join("");
+    }
+
+    function applyLanguage(language) {
+      activeLanguage = language;
+      document.documentElement.lang = language;
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        element.innerHTML = language === "de" && translations.de[key]
+          ? translations.de[key]
+          : defaultCopy.get(key);
+      });
+      document.querySelectorAll("[data-placeholder-en]").forEach((element) => {
+        element.placeholder = language === "de"
+          ? element.dataset.placeholderDe
+          : element.dataset.placeholderEn;
+      });
+      document.querySelectorAll(".lang-toggle button").forEach((button) => {
+        button.classList.toggle("active", button.dataset.lang === language);
+      });
+      renderCase(activeCaseKey());
+    }
+
+    document.querySelectorAll(".lang-toggle button").forEach((button) => {
+      button.addEventListener("click", () => applyLanguage(button.dataset.lang));
+    });
+
+    document.querySelectorAll(".chip").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".chip").forEach((chip) => {
+          chip.classList.remove("active");
+          chip.setAttribute("aria-selected", "false");
+        });
+        button.classList.add("active");
+        button.setAttribute("aria-selected", "true");
+        renderCase(button.dataset.case);
+      });
+    });
+
+    document.querySelector(".mini-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      event.currentTarget.querySelector("button").textContent = activeLanguage === "de"
+        ? "Anfrage vorbereitet"
+        : "Request drafted";
+    });
+
+    renderCase("fatigue");
+  </script>
+</body>
+</html>
