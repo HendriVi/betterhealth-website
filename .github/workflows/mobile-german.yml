@@ -1,0 +1,28 @@
+name: Mobile German Patch
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add German mobile translations
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = 'main';
+            const path = 'index.html';
+            const file = await github.rest.repos.getContent({ owner, repo, path, ref: branch });
+            let text = Buffer.from(file.data.content, 'base64').toString('utf8');
+            if (text.includes('journey_kicker:')) { core.info('Translations already present.'); return; }
+            const german = Buffer.from('ICAgICAgICBzY2llbmNlX21vYmlsZV9oaW50OiAiVGlwcGVuIFNpZSBhdWYgZWluZSBLYXJ0ZSwgdW0gZGllIEVya2zDpHJ1bmcgenUgw7ZmZm5lbi4iLAogICAgICAgIG1vYmlsZV9wcm9ncmFtczogIlByb2dyYW1tZSIsCiAgICAgICAgbW9iaWxlX3NjaWVuY2U6ICJXaXNzZW5zY2hhZnQiLAogICAgICAgIG1vYmlsZV9jYWxsOiAiQ2FsbCIsCiAgICAgICAgam91cm5leV9raWNrZXI6ICJTZWNocy1Nb25hdHMtV2VnIiwKICAgICAgICBqb3VybmV5X3RpdGxlOiAiV2FzIGRhcyBzZWNoc21vbmF0aWdlIEJlaGFuZGx1bmdzcHJvZ3JhbW0gdGF0c8OkY2hsaWNoIGxlaXN0ZXQuIiwKICAgICAgICBqb3VybmV5X2NvcHk6ICJEYXMgUHJvZ3JhbW0gaXN0IGFscyBTZXF1ZW56IGF1ZmdlYmF1dDogenVlcnN0IGRlbiBGYWxsIHZlcnN0ZWhlbiwgZGFubiBkaWUgd2ljaHRpZ3N0ZW4gU3lzdGVtZSBwcsO8ZmVuLCBkYW5uIGRlbiBQbGFuIHVtc2V0emVuIHVuZCBuZXUga2FsaWJyaWVyZW4sIHdlbm4gS8O2cnBlciwgU3ltcHRvbWUgdW5kIEZ1bmt0aW9uIG5pY2h0IGdlbWVpbnNhbSB2b3JhbmtvbW1lbi4iLAogICAgICAgIGpvdXJuZXlfbTA6ICJNb25hdCAwIiwKICAgICAgICBqb3VybmV5X20wX3RpdGxlOiAiS2xpbmlzY2hlIEF1Zm5haG1lIiwKICAgICAgICBqb3VybmV5X20wX2NvcHk6ICJTeW1wdG9tZSwgRGlhZ25vc2UsIENocm9ub2xvZ2llLCBSaXNpa28sIGJpc2hlcmlnZSBCZWhhbmRsdW5nZW4gdW5kIGRlciBQdW5rdCwgYW4gZGVtIEVyaG9sdW5nIGF1ZmdlaMO2cnQgaGF0LiIsCiAgICAgICAgam91cm5leV9tMTogIk1vbmF0IDEiLAogICAgICAgIGpvdXJuZXlfbTFfdGl0bGU6ICJTeXN0ZW1rYXJ0ZSIsCiAgICAgICAgam91cm5leV9tMV9jb3B5OiAiU2NobGFmLCBTdG9mZndlY2hzZWwsIEVudHrDvG5kdW5nLCBIb3Jtb25lLCBhdXRvbm9tZSBMYXN0LCBLb2duaXRpb24gdW5kIEVyaG9sdW5nIHdlcmRlbiBuYWNoIGtsaW5pc2NoZXIgUmVsZXZhbnogZ2VvcmRuZXQuIiwKICAgICAgICBqb3VybmV5X20yOiAiTW9uYXQgMiIsCiAgICAgICAgam91cm5leV9tMl90aXRsZTogIlRoZXJhcGllZGVzaWduIiwKICAgICAgICBqb3VybmV5X20yX2NvcHk6ICJQc3ljaG90aGVyYXBpZSwgUGh5c2lvbG9naWUsIFNjaGxhZiwgRXJuw6RocnVuZywgVHJhaW5pbmcgdW5kIGF1c2dld8OkaGx0ZSBNb2RhbGl0w6R0ZW4gd2VyZGVuIGF1ZiBkaWUgZG9taW5hbnRlbiBTeXN0ZW1lIGFiZ2VzdGltbXQuIiwKICAgICAgICBqb3VybmV5X20zNDogIk1vbmF0ZSAz4oCTNCIsCiAgICAgICAgam91cm5leV9tMzRfdGl0bGU6ICJVbXNldHp1bmciLAogICAgICAgIGpvdXJuZXlfbTM0X2NvcHk6ICJEZXIgUGxhbiB3aXJkIGluIGRlbiBBbGx0YWcgZ2VicmFjaHQgdW5kIGFuaGFuZCB2b24gQWRow6RyZW56LCBTeW1wdG9tZW4sIEVyaG9sdW5nIHVuZCBGdW5rdGlvbiBhbmdlcGFzc3QuIiwKICAgICAgICBqb3VybmV5X201OiAiTW9uYXQgNSIsCiAgICAgICAgam91cm5leV9tNV90aXRsZTogIlJla2FsaWJyaWVydW5nIiwKICAgICAgICBqb3VybmV5X201X2NvcHk6ICJXYXMgc2ljaCBiZXdlZ3QgaGF0LCB3YXMgc2ljaCBuaWNodCBiZXdlZ3QgaGF0IHVuZCB3ZWxjaGUgendlaXRlIEh5cG90aGVzZSBqZXR6dCBBdWZtZXJrc2Fta2VpdCB2ZXJkaWVudC4iLAogICAgICAgIGpvdXJuZXlfbTY6ICJNb25hdCA2IiwKICAgICAgICBqb3VybmV5X202X3RpdGxlOiAiTGFuZ2ZyaXN0aWdlciBQbGFuIiwKICAgICAgICBqb3VybmV5X202X2NvcHk6ICJHZW1lc3NlbmVyIEZvcnRzY2hyaXR0IHdpcmQgenUgZWluZXIgbmFjaGhhbHRpZ2VuIFN0cmF0ZWdpZSBmw7xyIG1lbnRhbGUgR2VzdW5kaGVpdCwgR2VoaXJuZnVua3Rpb24gdW5kIFByw6R2ZW50aW9uLiIsCg==', 'base64').toString('utf8');
+            const next = text.replace(/(self_pay_note: "[^"]+",\n)/, '$1' + german);
+            if (next === text) { core.setFailed('Could not find translation marker.'); return; }
+            await github.rest.repos.createOrUpdateFileContents({ owner, repo, path, branch, message: 'Add German mobile journey translations', content: Buffer.from(next, 'utf8').toString('base64'), sha: file.data.sha });
