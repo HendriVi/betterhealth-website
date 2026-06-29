@@ -1,0 +1,345 @@
+name: Patch Mobile Upgrade
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Patch mobile UX through GitHub API
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = 'main';
+            const path = 'index.html';
+            const file = await github.rest.repos.getContent({ owner, repo, path, ref: branch });
+            let text = Buffer.from(file.data.content, 'base64').toString('utf8');
+            let changed = false;
+
+            const css = `
+
+    .six-month-journey {
+      margin-top: 30px;
+      padding: 24px;
+      border: 1px solid rgba(15, 31, 31, .1);
+      border-radius: 14px;
+      background: rgba(255, 252, 244, .72);
+    }
+
+    .journey-track {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scroll-snap-type: x proximity;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .journey-step {
+      min-width: 190px;
+      padding: 18px;
+      border-radius: 12px;
+      background: rgba(21, 53, 51, .055);
+      border: 1px solid rgba(15, 31, 31, .08);
+      scroll-snap-align: start;
+    }
+
+    .journey-step span {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--sage);
+      font-size: .76rem;
+      font-weight: 760;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .journey-step h3 {
+      margin-bottom: 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.28rem;
+      line-height: 1.08;
+      font-weight: 500;
+    }
+
+    .journey-step p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .mobile-accordion-hint {
+      display: none;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .mobile-action-bar {
+      display: none;
+    }
+`;
+
+            if (!text.includes('.six-month-journey')) {
+              const marker = '    .programs {\n';
+              if (!text.includes(marker)) {
+                core.setFailed('Could not find CSS insertion marker.');
+                return;
+              }
+              text = text.replace(marker, css + '\n' + marker);
+              changed = true;
+            }
+
+            const mobileCss = `
+
+      body {
+        padding-bottom: 86px;
+      }
+
+      .mobile-action-bar {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        z-index: 40;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        padding: 7px;
+        border: 1px solid rgba(15, 31, 31, .14);
+        border-radius: 999px;
+        background: rgba(255, 252, 244, .92);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 18px 50px rgba(15, 31, 31, .18);
+      }
+
+      .mobile-action-bar a {
+        min-height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 999px;
+        color: var(--deep);
+        font-size: .86rem;
+        font-weight: 740;
+      }
+
+      .mobile-action-bar a:last-child {
+        color: var(--cream);
+        background: var(--deep);
+      }
+
+      .journey-track {
+        display: flex;
+        gap: 12px;
+        margin-inline: -13px;
+        padding: 0 13px 10px;
+      }
+
+      .journey-step {
+        flex: 0 0 78%;
+        min-width: 260px;
+      }
+
+      .mobile-accordion-hint {
+        display: block;
+      }
+
+      .science-card {
+        cursor: pointer;
+      }
+
+      .science-card p {
+        max-height: 0;
+        margin-bottom: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height .25s ease, opacity .2s ease, margin .2s ease;
+      }
+
+      .science-card.open p {
+        max-height: 260px;
+        margin-top: 8px;
+        opacity: 1;
+      }
+
+      .science-card h3::after {
+        content: "+";
+        float: right;
+        color: var(--sage);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        font-size: 1rem;
+      }
+
+      .science-card.open h3::after {
+        content: "–";
+      }
+`;
+
+            if (!text.includes('.mobile-action-bar a:last-child')) {
+              const marker = '      .nav-links {\n        display: none;\n      }\n';
+              if (!text.includes(marker)) {
+                core.setFailed('Could not find mobile media insertion marker.');
+                return;
+              }
+              text = text.replace(marker, marker + mobileCss);
+              changed = true;
+            }
+
+            const scienceHint = '        <p class="mobile-accordion-hint" data-i18n="science_mobile_hint">Tap a card to open the explanation.</p>\n';
+            if (!text.includes('science_mobile_hint')) {
+              const marker = '        <p class="section-copy reveal" data-i18n="science_copy">The brain is predictive. It interprets the body, the world and the future through models of threat, safety, effort and relevance. When the body is sleep deprived, inflamed, metabolically fragile or energetically strained, perception changes. The world feels different because the system is different.</p>\n        <div class="science-grid">';
+              const insert = '        <p class="section-copy reveal" data-i18n="science_copy">The brain is predictive. It interprets the body, the world and the future through models of threat, safety, effort and relevance. When the body is sleep deprived, inflamed, metabolically fragile or energetically strained, perception changes. The world feels different because the system is different.</p>\n' + scienceHint + '        <div class="science-grid">';
+              if (!text.includes(marker)) {
+                core.info('Science hint marker not found; skipping hint.');
+              } else {
+                text = text.replace(marker, insert);
+                changed = true;
+              }
+            }
+
+            const journey = `
+        <div class="six-month-journey reveal" aria-label="Six-month treatment journey">
+          <div class="section-kicker" data-i18n="journey_kicker">Six-month journey</div>
+          <h3 data-i18n="journey_title">What the six-month treatment program actually does.</h3>
+          <p data-i18n="journey_copy">The program is built as a sequence: first understand the case, then test the most relevant systems, then implement the plan and recalibrate when the body, symptoms and function do not move together.</p>
+          <div class="journey-track">
+            <article class="journey-step"><span data-i18n="journey_m0">Month 0</span><h3 data-i18n="journey_m0_title">Clinical intake</h3><p data-i18n="journey_m0_copy">Symptoms, diagnosis, chronology, risk, previous treatments and the point where recovery stopped.</p></article>
+            <article class="journey-step"><span data-i18n="journey_m1">Month 1</span><h3 data-i18n="journey_m1_title">System map</h3><p data-i18n="journey_m1_copy">Sleep, metabolism, inflammation, hormones, autonomic load, cognition and recovery are ranked by clinical relevance.</p></article>
+            <article class="journey-step"><span data-i18n="journey_m2">Month 2</span><h3 data-i18n="journey_m2_title">Treatment design</h3><p data-i18n="journey_m2_copy">Psychotherapy, physiology, sleep, nutrition, training and selected modalities are matched to the dominant systems.</p></article>
+            <article class="journey-step"><span data-i18n="journey_m34">Months 3–4</span><h3 data-i18n="journey_m34_title">Implementation</h3><p data-i18n="journey_m34_copy">The plan is carried into daily life and adjusted around adherence, symptom response, recovery and function.</p></article>
+            <article class="journey-step"><span data-i18n="journey_m5">Month 5</span><h3 data-i18n="journey_m5_title">Recalibration</h3><p data-i18n="journey_m5_copy">What moved, what did not move and which second hypothesis now deserves attention.</p></article>
+            <article class="journey-step"><span data-i18n="journey_m6">Month 6</span><h3 data-i18n="journey_m6_title">Long-term plan</h3><p data-i18n="journey_m6_copy">Measured progress becomes a sustainable strategy for mental health, brain function and prevention.</p></article>
+          </div>
+        </div>
+`;
+
+            if (!text.includes('six-month-journey')) {
+              const marker = '        <div class="self-pay-note" data-i18n="self_pay_note">BetterHealth is a self-pay medical service. The work goes beyond what is usually covered by Swiss insurance tariffs because it focuses on prevention, depth, time, coordination and individualized implementation.</div>\n      </div>\n    </section>';
+              const insert = '        <div class="self-pay-note" data-i18n="self_pay_note">BetterHealth is a self-pay medical service. The work goes beyond what is usually covered by Swiss insurance tariffs because it focuses on prevention, depth, time, coordination and individualized implementation.</div>' + journey + '      </div>\n    </section>';
+              if (!text.includes(marker)) {
+                core.setFailed('Could not find journey insertion marker.');
+                return;
+              }
+              text = text.replace(marker, insert);
+              changed = true;
+            }
+
+            const mobileBar = `
+  <div class="mobile-action-bar" aria-label="Mobile quick actions">
+    <a href="#programs" data-i18n="mobile_programs">Programs</a>
+    <a href="#science" data-i18n="mobile_science">Science</a>
+    <a href="#contact" data-i18n="mobile_call">Call</a>
+  </div>
+`;
+            if (!text.includes('mobile-action-bar" aria-label')) {
+              const marker = '  <footer class="footer">';
+              if (!text.includes(marker)) {
+                core.setFailed('Could not find mobile bar insertion marker.');
+                return;
+              }
+              text = text.replace(marker, mobileBar + '\n' + marker);
+              changed = true;
+            }
+
+            const germanTranslations = `
+        science_mobile_hint: "Tippen Sie auf eine Karte, um die Erklärung zu öffnen.",
+        mobile_programs: "Programme",
+        mobile_science: "Wissenschaft",
+        mobile_call: "Call",
+        journey_kicker: "Sechs-Monats-Weg",
+        journey_title: "Was das sechsmonatige Behandlungsprogramm tatsächlich leistet.",
+        journey_copy: "Das Programm ist als Sequenz aufgebaut: zuerst den Fall verstehen, dann die wichtigsten Systeme prüfen, dann den Plan umsetzen und neu kalibrieren, wenn Körper, Symptome und Funktion nicht gemeinsam vorankommen.",
+        journey_m0: "Monat 0",
+        journey_m0_title: "Klinische Aufnahme",
+        journey_m0_copy: "Symptome, Diagnose, Chronologie, Risiko, bisherige Behandlungen und der Punkt, an dem Erholung aufgehört hat.",
+        journey_m1: "Monat 1",
+        journey_m1_title: "Systemkarte",
+        journey_m1_copy: "Schlaf, Stoffwechsel, Entzündung, Hormone, autonome Last, Kognition und Erholung werden nach klinischer Relevanz geordnet.",
+        journey_m2: "Monat 2",
+        journey_m2_title: "Therapiedesign",
+        journey_m2_copy: "Psychotherapie, Physiologie, Schlaf, Ernährung, Training und ausgewählte Modalitäten werden auf die dominanten Systeme abgestimmt.",
+        journey_m34: "Monate 3–4",
+        journey_m34_title: "Umsetzung",
+        journey_m34_copy: "Der Plan wird in den Alltag gebracht und anhand von Adhärenz, Symptomen, Erholung und Funktion angepasst.",
+        journey_m5: "Monat 5",
+        journey_m5_title: "Rekalibrierung",
+        journey_m5_copy: "Was sich bewegt hat, was sich nicht bewegt hat und welche zweite Hypothese jetzt Aufmerksamkeit verdient.",
+        journey_m6: "Monat 6",
+        journey_m6_title: "Langfristiger Plan",
+        journey_m6_copy: "Gemessener Fortschritt wird zu einer nachhaltigen Strategie für mentale Gesundheit, Gehirnfunktion und Prävention.",
+`;
+            if (!text.includes('journey_kicker:')) {
+              const marker = '        self_pay_note: "BetterHealth ist ein medizinisches Selbstzahler-Angebot. Die Arbeit geht über das hinaus, was üblicherweise durch Schweizer Versicherungstarife abgedeckt ist, weil sie Prävention, Tiefe, Zeit, Koordination und individualisierte Umsetzung verbindet.",\n';
+              if (text.includes(marker)) {
+                text = text.replace(marker, marker + germanTranslations);
+                changed = true;
+              } else {
+                core.info('German translation marker not found; German fallback will use English for new mobile labels.');
+              }
+            }
+
+            const js = `
+
+    function setupMobileScienceAccordions() {
+      const cards = document.querySelectorAll(".science-card");
+      cards.forEach((card, index) => {
+        if (!card.dataset.mobileAccordionReady) {
+          card.dataset.mobileAccordionReady = "true";
+          card.setAttribute("role", "button");
+          card.setAttribute("tabindex", "0");
+          card.addEventListener("click", () => {
+            if (window.matchMedia("(max-width: 980px)").matches) {
+              card.classList.toggle("open");
+            }
+          });
+          card.addEventListener("keydown", (event) => {
+            if ((event.key === "Enter" || event.key === " ") && window.matchMedia("(max-width: 980px)").matches) {
+              event.preventDefault();
+              card.classList.toggle("open");
+            }
+          });
+        }
+        if (index === 0 && window.matchMedia("(max-width: 980px)").matches && !document.querySelector(".science-card.open")) {
+          card.classList.add("open");
+        }
+      });
+    }
+
+    setupMobileScienceAccordions();
+    window.addEventListener("resize", setupMobileScienceAccordions);
+`;
+            if (!text.includes('setupMobileScienceAccordions')) {
+              const marker = '    renderCase("fatigue");\n  </script>';
+              if (!text.includes(marker)) {
+                core.setFailed('Could not find JS insertion marker.');
+                return;
+              }
+              text = text.replace(marker, '    renderCase("fatigue");' + js + '  </script>');
+              changed = true;
+            }
+
+            if (!changed) {
+              core.info('No mobile upgrade changes needed.');
+              return;
+            }
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner,
+              repo,
+              path,
+              branch,
+              message: 'Add mobile interactions and six-month journey',
+              content: Buffer.from(text, 'utf8').toString('base64'),
+              sha: file.data.sha
+            });
+
+            core.info('Mobile upgrade added to index.html.');
