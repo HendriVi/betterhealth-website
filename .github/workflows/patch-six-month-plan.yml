@@ -1,0 +1,78 @@
+name: Patch Six Month Plan
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Patch website copy through GitHub API
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = 'main';
+            const paths = ['index.html', 'science.html'];
+
+            const replacements = [
+              ['Four-Month Treatment Program', 'Six-Month Treatment Program'],
+              ['Four-month Treatment Program', 'Six-month Treatment Program'],
+              ['Four-Month', 'Six-Month'],
+              ['Four-month', 'Six-month'],
+              ['four-month', 'six-month'],
+              ['four months of guided implementation', 'six months of guided implementation'],
+              ['four months for the integrated treatment program', 'six months for the integrated treatment program'],
+              ['four months for the integrated treatment programme', 'six months for the integrated treatment programme'],
+              ['four months', 'six months'],
+              ['Four months', 'Six months'],
+              ['over four months', 'over six months'],
+              ['over 4 months', 'over 6 months'],
+              ['>4</strong>\n              <span data-i18n="trust_two">months for the integrated treatment program.</span>', '>6</strong>\n              <span data-i18n="trust_two">months for the integrated treatment program.</span>'],
+              ['Viermonatiges Behandlungsprogramm', 'Sechsmonatiges Behandlungsprogramm'],
+              ['viermonatiges Behandlungsprogramm', 'sechsmonatiges Behandlungsprogramm'],
+              ['viermonatiges integriertes Behandlungssystem', 'sechsmonatiges integriertes Behandlungssystem'],
+              ['vier Monate geführte Umsetzung', 'sechs Monate geführte Umsetzung'],
+              ['vier Monate', 'sechs Monate'],
+              ['über vier Monate', 'über sechs Monate'],
+              ['>4</strong>\n              <span data-i18n="trust_two">Monate für das integrierte Behandlungsprogramm.</span>', '>6</strong>\n              <span data-i18n="trust_two">Monate für das integrierte Behandlungsprogramm.</span>']
+            ];
+
+            for (const path of paths) {
+              let file;
+              try {
+                file = await github.rest.repos.getContent({ owner, repo, path, ref: branch });
+              } catch (error) {
+                core.info(`${path} not found, skipping.`);
+                continue;
+              }
+
+              let text = Buffer.from(file.data.content, 'base64').toString('utf8');
+              let next = text;
+
+              for (const [from, to] of replacements) {
+                next = next.split(from).join(to);
+              }
+
+              if (next === text) {
+                core.info(`${path}: no changes needed.`);
+                continue;
+              }
+
+              await github.rest.repos.createOrUpdateFileContents({
+                owner,
+                repo,
+                path,
+                branch,
+                message: 'Change treatment program to six months',
+                content: Buffer.from(next, 'utf8').toString('base64'),
+                sha: file.data.sha
+              });
+
+              core.info(`${path}: updated.`);
+            }
