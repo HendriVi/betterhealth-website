@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Science | BetterHealth</title>
+  <meta name="description" content="The scientific architecture behind BetterHealth: precision psychiatry, predictive processing, mitochondrial biology, allostatic load, evolutionary mismatch, biomarkers and measurement-based care.">
+  <style>
+    :root {
+      --ink:#0f1f1f;
+      --muted:#536260;
+      --line:rgba(15,31,31,.13);
+      --paper:#f6f3ec;
+      --cream:#fffcf4;
+      --sage:#738b7f;
+      --deep:#153533;
+      --gold:#b99d69;
+      --aqua:#7bbeb2;
+      --shadow:0 24px 80px rgba(15,31,31,.13);
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:radial-gradient(circle at 10% -10%, rgba(123,190,178,.28), transparent 34rem),linear-gradient(180deg,#fbf7ee 0%,#f3efe6 45%,#fbf8f0 100%);font-size:16px;line-height:1.6}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(21,53,51,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(21,53,51,.06) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(180deg,black,transparent 72%);z-index:-1}
+    a{color:inherit;text-decoration:none}
+    .shell{width:min(1120px,calc(100% - 40px));margin:0 auto}
+    .nav{position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(15,31,31,.08);background:rgba(251,248,240,.84);backdrop-filter:blur(18px)}
+    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:760;letter-spacing:.01em}
+    .mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:var(--cream);background:conic-gradient(from 210deg,var(--deep),#2c6862,var(--gold),var(--deep));box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
+    .mark::before{content:"";width:13px;height:13px;border:2px solid currentColor;border-left-color:transparent;border-radius:50%}
+    .nav-links{display:flex;align-items:center;gap:22px;color:rgba(15,31,31,.72);font-size:.93rem}
+    .nav-links a:hover{color:var(--ink)}
+    .nav-tools{display:flex;align-items:center;gap:12px}
+    .lang-toggle{display:inline-flex;gap:3px;padding:3px;border:1px solid rgba(15,31,31,.14);border-radius:999px;background:rgba(255,252,244,.74)}
+    .lang-toggle button{border:0;border-radius:999px;padding:7px 10px;color:rgba(15,31,31,.66);background:transparent;cursor:pointer;font-size:.78rem;font-weight:740;letter-spacing:.04em}
+    .lang-toggle button.active{color:var(--cream);background:var(--deep)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border:1px solid rgba(15,31,31,.16);border-radius:999px;padding:13px 20px;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{color:var(--cream);background:var(--deep);box-shadow:0 16px 40px rgba(21,53,51,.22)}
+    .btn-secondary{color:var(--deep);background:rgba(255,252,244,.58)}
+    .hero{padding:86px 0 54px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;color:var(--deep);font-size:.78rem;font-weight:720;letter-spacing:.12em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+    h1,h2,h3,p{margin-top:0}
+    h1{max-width:980px;margin-bottom:24px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(3rem,7vw,6.2rem);line-height:.95;letter-spacing:-.035em;font-weight:520}
+    .lead{max-width:820px;margin-bottom:28px;color:#31403e;font-size:clamp(1.08rem,1.6vw,1.34rem);line-height:1.58}
+    .hero-actions,.section-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:42px}
+    .summary-card{padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,252,244,.72);box-shadow:0 14px 44px rgba(15,31,31,.07)}
+    .summary-card strong{display:block;margin-bottom:8px;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;font-weight:500}
+    .summary-card span{color:var(--muted);font-size:.95rem}
+    .section{padding:76px 0;border-top:1px solid rgba(15,31,31,.08)}
+    .section.soft{background:rgba(255,252,244,.34)}
+    .section-kicker{margin-bottom:12px;color:var(--deep);font-size:.78rem;font-weight:740;letter-spacing:.12em;text-transform:uppercase}
+    .section-title{max-width:860px;margin-bottom:18px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.15rem,4vw,4.1rem);line-height:1.02;letter-spacing:-.03em;font-weight:500}
+    .section-copy{max-width:860px;color:#394a47;font-size:1.07rem;line-height:1.7}
+    .two-col{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:42px;align-items:start}
+    .panel{padding:28px;border:1px solid var(--line);border-radius:20px;background:rgba(255,252,244,.72);box-shadow:0 20px 60px rgba(15,31,31,.08)}
+    .panel h3{font-family:Georgia,"Times New Roman",serif;font-size:1.65rem;font-weight:500;margin-bottom:12px}
+    .panel p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:26px}
+    .card{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,252,244,.7)}
+    .icon{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:var(--cream);background:var(--deep);font-family:Georgia,"Times New Roman",serif}
+    .card h3{margin-bottom:7px;font-size:1.08rem}
+    .card p{margin-bottom:0;color:var(--muted);font-size:.96rem}
+    .flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:30px}
+    .flow-step{padding:20px;border:1px solid rgba(15,31,31,.12);border-radius:18px;background:rgba(255,252,244,.68)}
+    .flow-step span{display:block;margin-bottom:12px;color:var(--gold);font-weight:760;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+    .flow-step h3{margin-bottom:8px;font-size:1.05rem}
+    .flow-step p{margin-bottom:0;color:var(--muted);font-size:.94rem}
+    .system-table{margin-top:28px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:rgba(255,252,244,.7)}
+    .row{display:grid;grid-template-columns:230px 1fr 1fr;border-bottom:1px solid var(--line)}
+    .row:last-child{border-bottom:0}
+    .row>div{padding:16px;border-right:1px solid var(--line)}
+    .row>div:last-child{border-right:0}
+    .row.header{font-size:.78rem;font-weight:760;letter-spacing:.1em;text-transform:uppercase;color:var(--deep);background:rgba(21,53,51,.05)}
+    .row strong{display:block;margin-bottom:4px}
+    .row span{color:var(--muted);font-size:.94rem}
+    .references{display:grid;gap:10px;margin-top:22px;color:var(--muted);font-size:.94rem}
+    footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+    @media(max-width:860px){.nav-links{display:none}.summary-grid,.two-col,.grid,.flow{grid-template-columns:1fr}.row{grid-template-columns:1fr}.row>div{border-right:0;border-bottom:1px solid var(--line)}.row>div:last-child{border-bottom:0}.hero{padding-top:58px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="index.html"><span class="mark"></span><span>BetterHealth</span></a>
+      <div class="nav-links">
+        <a href="index.html#method" data-i18n="nav_method">Method</a>
+        <a href="index.html#programs" data-i18n="nav_programs">Programs</a>
+        <a href="science.html" data-i18n="nav_science">Science</a>
+        <a href="index.html#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="nav-tools">
+        <div class="lang-toggle" aria-label="Language selector">
+          <button type="button" class="active" data-lang="en">EN</button>
+          <button type="button" data-lang="de">DE</button>
+        </div>
+        <a class="btn btn-primary" href="index.html#contact" data-i18n="book_call">Book a call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="shell">
+        <div class="eyebrow" data-i18n="hero_kicker">The science behind BetterHealth</div>
+        <h1 data-i18n="hero_title">Mental health is the state of a living system.</h1>
+        <p class="lead" data-i18n="hero_copy">BetterHealth starts from a simple clinical idea: symptoms are real experiences, and they emerge from the interaction between brain, body, environment, behavior and time. The work is to understand which systems are involved, which signals are clinically useful, and which interventions have the best chance of changing the person’s actual life.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html#contact" data-i18n="book_call_2">Book a call</a>
+          <a class="btn btn-secondary" href="index.html#science" data-i18n="back_home">Back to overview</a>
+        </div>
+        <div class="summary-grid">
+          <div class="summary-card"><strong data-i18n="summary_one_title">From symptoms</strong><span data-i18n="summary_one_copy">Mood, anxiety, sleep, cognition, energy, recovery and function are mapped as a pattern.</span></div>
+          <div class="summary-card"><strong data-i18n="summary_two_title">To systems</strong><span data-i18n="summary_two_copy">Sleep, autonomic load, metabolism, inflammation, hormones, mitochondria and prediction are ranked by clinical relevance.</span></div>
+          <div class="summary-card"><strong data-i18n="summary_three_title">To strategy</strong><span data-i18n="summary_three_copy">Testing and treatment are chosen when they can change interpretation, safety, urgency or implementation.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="shell two-col">
+        <div>
+          <div class="section-kicker" data-i18n="premise_kicker">The central premise</div>
+          <h2 class="section-title" data-i18n="premise_title">A diagnosis gives structure. A formulation explains the pattern.</h2>
+        </div>
+        <div class="panel">
+          <p data-i18n="premise_copy_1">Conventional diagnosis remains important. It creates a shared clinical language, supports safety decisions and protects against vague wellness thinking. But a diagnosis often describes a symptom cluster rather than the full biological and psychological architecture of the case.</p>
+          <p data-i18n="premise_copy_2">Two people can both meet criteria for depression and yet live inside very different systems. One may be sleep deprived, inflamed and metabolically unstable. Another may live in a long-standing threat prediction shaped by trauma and avoidance. A third may have low recovery capacity after chronic overload, endocrine transition or repeated concussion. The treatment should follow the pattern, not only the label.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="architecture_kicker">Scientific architecture</div>
+        <h2 class="section-title" data-i18n="architecture_title">The model connects six scientific layers.</h2>
+        <p class="section-copy" data-i18n="architecture_copy">The goal is practical clinical reasoning. These frameworks help the clinician ask better questions, choose better measurements and avoid treating complex mental health states as if they had one isolated cause.</p>
+        <div class="grid">
+          <article class="card"><div class="icon">P</div><div><h3 data-i18n="pred_title">Predictive processing</h3><p data-i18n="pred_copy">The brain does not passively record the world. It continuously predicts what matters, what is safe, what is costly and what the body can handle. Body state changes perception.</p></div></article>
+          <article class="card"><div class="icon">M</div><div><h3 data-i18n="mito_title">Mitochondrial biology</h3><p data-i18n="mito_copy">Mitochondria produce energy and coordinate stress signaling, immune communication, repair and adaptation. Recovery depends on bioenergetic capacity.</p></div></article>
+          <article class="card"><div class="icon">A</div><div><h3 data-i18n="allo_title">Allostatic load</h3><p data-i18n="allo_copy">Stress becomes clinically relevant when adaptation carries a cost across autonomic, endocrine, immune, metabolic, sleep and behavioral systems.</p></div></article>
+          <article class="card"><div class="icon">E</div><div><h3 data-i18n="evo_title">Evolutionary mismatch</h3><p data-i18n="evo_copy">Modern light exposure, food, sedentary work, social isolation, digital urgency and sleep compression can chronically overload systems built for different environments.</p></div></article>
+          <article class="card"><div class="icon">B</div><div><h3 data-i18n="bio_title">Biomarker-informed psychiatry</h3><p data-i18n="bio_copy">Biomarkers are used as signals within a clinical context. They support hypothesis testing, risk estimation, monitoring and treatment selection.</p></div></article>
+          <article class="card"><div class="icon">R</div><div><h3 data-i18n="mbc_title">Measurement-based care</h3><p data-i18n="mbc_copy">Treatment is followed with repeated measures of symptoms, function, sleep, physiology and selected laboratory signals, so progress becomes visible and the plan can adapt.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="algorithm_kicker">The clinical algorithm</div>
+        <h2 class="section-title" data-i18n="algorithm_title">Symptom → System → Signal → Strategy.</h2>
+        <p class="section-copy" data-i18n="algorithm_copy">The algorithm is a structured clinical reasoning tool. It does not replace diagnosis, psychotherapy or medical judgment. It helps rank what may be maintaining the current state and what should be measured first.</p>
+        <div class="flow">
+          <div class="flow-step"><span data-i18n="step_1">Step 01</span><h3 data-i18n="step_1_title">Clinical phenotype</h3><p data-i18n="step_1_copy">Symptoms, diagnosis, severity, chronology, function and risk are defined before biological interpretation begins.</p></div>
+          <div class="flow-step"><span data-i18n="step_2">Step 02</span><h3 data-i18n="step_2_title">System hypothesis</h3><p data-i18n="step_2_copy">The case is mapped across sleep, autonomic, metabolic, inflammatory, endocrine, bioenergetic, neurocognitive and psychological systems.</p></div>
+          <div class="flow-step"><span data-i18n="step_3">Step 03</span><h3 data-i18n="step_3_title">Useful signals</h3><p data-i18n="step_3_copy">Testing is chosen when it can change clinical interpretation, treatment choice, safety, urgency or monitoring.</p></div>
+          <div class="flow-step"><span data-i18n="step_4">Step 04</span><h3 data-i18n="step_4_title">Measured strategy</h3><p data-i18n="step_4_copy">Psychotherapy, physiology, training, sleep, nutrition and selected modalities are matched to the dominant systems and retested over time.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="systems_kicker">System map</div>
+        <h2 class="section-title" data-i18n="systems_title">What the formulation looks for.</h2>
+        <p class="section-copy" data-i18n="systems_copy">A person is stratified by the systems most likely to explain the pattern, the systems that carry medical risk and the systems that can be changed through treatment.</p>
+        <div class="system-table">
+          <div class="row header"><div data-i18n="table_system">System</div><div data-i18n="table_when">When it becomes relevant</div><div data-i18n="table_measure">Typical signals</div></div>
+          <div class="row"><div><strong data-i18n="sleep_system">Sleep-circadian</strong></div><div><span data-i18n="sleep_when">Insomnia, early waking, apnea risk, non-restorative sleep, rhythm collapse.</span></div><div><span data-i18n="sleep_measure">Sleep diary, actigraphy, screening tools, home sleep testing or polysomnography when indicated.</span></div></div>
+          <div class="row"><div><strong data-i18n="autonomic_system">Autonomic-threat</strong></div><div><span data-i18n="autonomic_when">Panic, hypervigilance, bodily alarm, avoidance, poor recovery after stress.</span></div><div><span data-i18n="autonomic_measure">HRV patterns, resting heart rate, orthostatic response, blood pressure, clinical exposure map.</span></div></div>
+          <div class="row"><div><strong data-i18n="metabolic_system">Metabolic-vascular</strong></div><div><span data-i18n="metabolic_when">Brain fog, fatigue, weight gain, low fitness, family risk, vascular risk.</span></div><div><span data-i18n="metabolic_measure">HbA1c, fasting glucose and insulin, ApoB, Lp(a), blood pressure, body composition, VO2 max.</span></div></div>
+          <div class="row"><div><strong data-i18n="inflammation_system">Inflammatory-immune</strong></div><div><span data-i18n="inflammation_when">Fatigue, anhedonia, pain, sickness behavior, autoimmune or post-infectious context.</span></div><div><span data-i18n="inflammation_measure">hs-CRP, ESR, CBC, ferritin and targeted medical workup when history supports it.</span></div></div>
+          <div class="row"><div><strong data-i18n="energy_system">Bioenergetic</strong></div><div><span data-i18n="energy_when">Low recovery, exercise intolerance, repeated crashes after demand, chronic overload.</span></div><div><span data-i18n="energy_measure">VO2 max, recovery metrics, sleep, metabolic markers and selected mitochondrial signals where clinically meaningful.</span></div></div>
+          <div class="row"><div><strong data-i18n="prediction_system">Prediction and behavior</strong></div><div><span data-i18n="prediction_when">Avoidance, trauma, rumination, interoceptive fear, loss of agency, threat-biased perception.</span></div><div><span data-i18n="prediction_measure">Clinical interview, avoidance map, psychotherapy formulation, repeated symptom and function scores.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="shell two-col">
+        <div>
+          <div class="section-kicker" data-i18n="therapy_kicker">Why psychotherapy remains central</div>
+          <h2 class="section-title" data-i18n="therapy_title">The biology matters because experience is embodied. Therapy matters because prediction changes through experience.</h2>
+        </div>
+        <div class="panel">
+          <p data-i18n="therapy_copy_1">BetterHealth is not built around testing alone. The patient still needs meaning, relationship, behavior change and emotional learning. Psychotherapy is where prediction, avoidance, threat learning, identity, grief, trauma and agency are worked with directly.</p>
+          <p data-i18n="therapy_copy_2">The difference is that therapy is supported by a wider map. Sleep debt, metabolic instability, autonomic hyperarousal or inflammatory load can make the psychological work harder. When those layers are identified and treated, psychotherapy can become more precise, more tolerable and more useful in the person’s real life.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="refs_kicker">Selected scientific lineages</div>
+        <h2 class="section-title" data-i18n="refs_title">The model is an integration, not a single-paper claim.</h2>
+        <p class="section-copy" data-i18n="refs_copy">The BetterHealth framework is shaped by precision psychiatry, RDoC and dimensional models of psychopathology, predictive processing and active inference, allostatic load, mitochondrial psychobiology, evolutionary medicine, metabolic psychiatry and measurement-based care.</p>
+        <div class="references">
+          <span data-i18n="ref_1">Precision psychiatry and biomarker-informed stratification: Martien Kas and colleagues; RDoC and HiTOP frameworks.</span>
+          <span data-i18n="ref_2">Predictive processing and active inference: Karl Friston and colleagues.</span>
+          <span data-i18n="ref_3">Allostatic load and stress biology: Bruce McEwen and later cellular allostatic load models.</span>
+          <span data-i18n="ref_4">Mitochondrial biology and mind-body medicine: Martin Picard and colleagues.</span>
+          <span data-i18n="ref_5">Evolutionary medicine and mismatch: Randolph Nesse and evolutionary psychiatry.</span>
+          <span data-i18n="ref_6">Metabolic psychiatry and brain-energy framing: Chris Palmer and related metabolic mental health research.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="shell">
+        <div class="section-kicker" data-i18n="boundary_kicker">Clinical boundaries</div>
+        <h2 class="section-title" data-i18n="boundary_title">Scientific seriousness also means restraint.</h2>
+        <p class="section-copy" data-i18n="boundary_copy">Biomarkers support clinical formulation. They do not replace diagnosis, risk assessment, psychotherapy, medical examination or specialist referral. The purpose is to improve the quality of questions and the fit of the plan, while staying honest about what is established, what is promising and what remains uncertain.</p>
+        <div class="section-actions">
+          <a class="btn btn-primary" href="index.html#contact" data-i18n="final_cta">Book a call</a>
+          <a class="btn btn-secondary" href="index.html" data-i18n="home_cta">Return to homepage</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">BetterHealth · Laurenzen Vorstadt 11, Aarau · Self-pay medical care</div>
+  </footer>
+
+  <script>
+    const defaultCopy = new Map();
+    document.querySelectorAll('[data-i18n]').forEach((el) => defaultCopy.set(el.dataset.i18n, el.innerHTML));
+    const translations = { de: {
+      nav_method:'Methode', nav_programs:'Programme', nav_science:'Wissenschaft', nav_contact:'Kontakt', book_call:'Call buchen', book_call_2:'Call buchen', back_home:'Zurück zur Übersicht',
+      hero_kicker:'Die Wissenschaft hinter BetterHealth', hero_title:'Mentale Gesundheit ist der Zustand eines lebenden Systems.', hero_copy:'BetterHealth beginnt mit einer einfachen klinischen Idee: Symptome sind reale Erfahrungen, und sie entstehen aus dem Zusammenspiel von Gehirn, Körper, Umwelt, Verhalten und Zeit. Die Arbeit besteht darin zu verstehen, welche Systeme beteiligt sind, welche Signale klinisch nützlich sind und welche Interventionen die beste Chance haben, das tatsächliche Leben einer Person zu verändern.',
+      summary_one_title:'Von Symptomen', summary_one_copy:'Stimmung, Angst, Schlaf, Kognition, Energie, Erholung und Funktion werden als Muster erfasst.', summary_two_title:'Zu Systemen', summary_two_copy:'Schlaf, autonome Last, Stoffwechsel, Entzündung, Hormone, Mitochondrien und Vorhersage werden nach klinischer Relevanz geordnet.', summary_three_title:'Zur Strategie', summary_three_copy:'Tests und Behandlung werden gewählt, wenn sie Interpretation, Sicherheit, Dringlichkeit oder Umsetzung verändern können.',
+      premise_kicker:'Die zentrale Prämisse', premise_title:'Eine Diagnose gibt Struktur. Eine Formulierung erklärt das Muster.', premise_copy_1:'Konventionelle Diagnostik bleibt wichtig. Sie schafft eine gemeinsame klinische Sprache, unterstützt Sicherheitsentscheidungen und schützt vor vagem Wellness-Denken. Eine Diagnose beschreibt jedoch häufig ein Symptomcluster und nicht die gesamte biologische und psychologische Architektur des Falls.', premise_copy_2:'Zwei Menschen können beide die Kriterien einer Depression erfüllen und trotzdem in sehr unterschiedlichen Systemen leben. Eine Person kann schlafdepriviert, entzündet und metabolisch instabil sein. Eine andere lebt vielleicht in einer langjährigen Bedrohungsvorhersage, geprägt durch Trauma und Vermeidung. Eine dritte hat nach chronischer Überlastung, hormonellem Übergang oder wiederholter Gehirnerschütterung eine niedrige Erholungsfähigkeit. Die Behandlung sollte dem Muster folgen, nicht nur dem Etikett.',
+      architecture_kicker:'Wissenschaftliche Architektur', architecture_title:'Das Modell verbindet sechs wissenschaftliche Ebenen.', architecture_copy:'Das Ziel ist praktische klinische Entscheidungslogik. Diese Modelle helfen dem Behandler, bessere Fragen zu stellen, sinnvollere Messungen zu wählen und komplexe mentale Zustände nicht so zu behandeln, als hätten sie eine einzige isolierte Ursache.', pred_title:'Predictive Processing', pred_copy:'Das Gehirn zeichnet die Welt nicht passiv auf. Es sagt fortlaufend voraus, was relevant, sicher, kostspielig und vom Körper bewältigbar ist. Der Körperzustand verändert Wahrnehmung.', mito_title:'Mitochondriale Biologie', mito_copy:'Mitochondrien produzieren Energie und koordinieren Stresssignale, Immun-Kommunikation, Reparatur und Anpassung. Erholung hängt von bioenergetischer Kapazität ab.', allo_title:'Allostatische Last', allo_copy:'Stress wird klinisch relevant, wenn Anpassung Kosten über autonome, endokrine, immune, metabolische, schlafbezogene und verhaltensbezogene Systeme trägt.', evo_title:'Evolutionäres Mismatch', evo_copy:'Modernes Licht, Nahrung, sitzende Arbeit, soziale Isolation, digitale Dringlichkeit und Schlafkompression können Systeme chronisch überlasten, die für andere Umwelten gebaut wurden.', bio_title:'Biomarker-informierte Psychiatrie', bio_copy:'Biomarker werden als Signale in einem klinischen Kontext verwendet. Sie unterstützen Hypothesentestung, Risikoeinschätzung, Monitoring und Therapieauswahl.', mbc_title:'Measurement-based Care', mbc_copy:'Behandlung wird mit wiederholten Messungen von Symptomen, Funktion, Schlaf, Physiologie und ausgewählten Laborwerten begleitet, sodass Fortschritt sichtbar wird und der Plan sich anpassen kann.',
+      algorithm_kicker:'Der klinische Algorithmus', algorithm_title:'Symptom → System → Signal → Strategie.', algorithm_copy:'Der Algorithmus ist ein strukturiertes Werkzeug klinischer Entscheidungsfindung. Er ersetzt weder Diagnose, Psychotherapie noch medizinisches Urteil. Er hilft zu ordnen, was den aktuellen Zustand aufrechterhalten könnte und was zuerst gemessen werden sollte.', step_1:'Schritt 01', step_1_title:'Klinischer Phänotyp', step_1_copy:'Symptome, Diagnose, Schweregrad, Verlauf, Funktion und Risiko werden geklärt, bevor biologische Interpretation beginnt.', step_2:'Schritt 02', step_2_title:'Systemhypothese', step_2_copy:'Der Fall wird über Schlaf, autonome, metabolische, entzündliche, endokrine, bioenergetische, neurokognitive und psychologische Systeme kartiert.', step_3:'Schritt 03', step_3_title:'Nützliche Signale', step_3_copy:'Tests werden gewählt, wenn sie klinische Interpretation, Therapieauswahl, Sicherheit, Dringlichkeit oder Monitoring verändern können.', step_4:'Schritt 04', step_4_title:'Messbare Strategie', step_4_copy:'Psychotherapie, Physiologie, Training, Schlaf, Ernährung und ausgewählte Modalitäten werden auf die dominanten Systeme abgestimmt und über die Zeit überprüft.',
+      systems_kicker:'Systemkarte', systems_title:'Wonach die Formulierung sucht.', systems_copy:'Eine Person wird nach den Systemen stratifiziert, die das Muster am besten erklären, medizinisches Risiko tragen und durch Behandlung veränderbar sind.', table_system:'System', table_when:'Wann es relevant wird', table_measure:'Typische Signale', sleep_system:'Schlaf und Zirkadianik', sleep_when:'Insomnie, frühes Erwachen, Apnoe-Risiko, nicht erholsamer Schlaf, Rhythmusverlust.', sleep_measure:'Schlaftagebuch, Aktigraphie, Screening-Tools, Heim-Schlaftest oder Polysomnographie bei Indikation.', autonomic_system:'Autonome Bedrohung', autonomic_when:'Panik, Hypervigilanz, körperlicher Alarm, Vermeidung, schlechte Erholung nach Stress.', autonomic_measure:'HRV-Muster, Ruhepuls, orthostatische Reaktion, Blutdruck, klinische Expositionskarte.', metabolic_system:'Metabolisch-vaskulär', metabolic_when:'Brain Fog, Müdigkeit, Gewichtszunahme, niedrige Fitness, familiäres Risiko, vaskuläres Risiko.', metabolic_measure:'HbA1c, Nüchternglukose und Insulin, ApoB, Lp(a), Blutdruck, Körperzusammensetzung, VO2max.', inflammation_system:'Entzündung und Immunsystem', inflammation_when:'Müdigkeit, Anhedonie, Schmerzen, Krankheitsverhalten, autoimmuner oder postinfektiöser Kontext.', inflammation_measure:'hs-CRP, BSG, Blutbild, Ferritin und gezielte medizinische Abklärung, wenn die Anamnese dafür spricht.', energy_system:'Bioenergetisch', energy_when:'Niedrige Erholung, Belastungsintoleranz, wiederholte Einbrüche nach Anforderung, chronische Überlastung.', energy_measure:'VO2max, Erholungsmetriken, Schlaf, metabolische Marker und ausgewählte mitochondriale Signale, wenn klinisch sinnvoll.', prediction_system:'Vorhersage und Verhalten', prediction_when:'Vermeidung, Trauma, Grübeln, interozeptive Angst, Verlust von Handlungsmacht, bedrohungsgefärbte Wahrnehmung.', prediction_measure:'Klinisches Gespräch, Vermeidungskarte, psychotherapeutische Formulierung, wiederholte Symptom- und Funktionsscores.',
+      therapy_kicker:'Warum Psychotherapie zentral bleibt', therapy_title:'Die Biologie zählt, weil Erfahrung verkörpert ist. Therapie zählt, weil Vorhersage sich durch Erfahrung verändert.', therapy_copy_1:'BetterHealth ist nicht um Tests allein gebaut. Der Patient braucht weiterhin Bedeutung, Beziehung, Verhaltensänderung und emotionales Lernen. Psychotherapie ist der Ort, an dem Vorhersage, Vermeidung, Bedrohungslernen, Identität, Trauer, Trauma und Handlungsmacht direkt bearbeitet werden.', therapy_copy_2:'Der Unterschied ist, dass Therapie durch eine breitere Karte unterstützt wird. Schlafschuld, metabolische Instabilität, autonome Hypererregung oder entzündliche Last können psychologische Arbeit erschweren. Wenn diese Ebenen erkannt und behandelt werden, kann Psychotherapie präziser, tolerierbarer und im Leben der Person nützlicher werden.',
+      refs_kicker:'Ausgewählte wissenschaftliche Linien', refs_title:'Das Modell ist eine Integration, keine Ein-Paper-Behauptung.', refs_copy:'Der BetterHealth-Rahmen ist geprägt durch Präzisionspsychiatrie, RDoC und dimensionale Modelle psychischer Störungen, Predictive Processing und Active Inference, allostatische Last, mitochondriale Psychobiologie, evolutionäre Medizin, metabolische Psychiatrie und Measurement-based Care.', ref_1:'Präzisionspsychiatrie und biomarker-informierte Stratifizierung: Martien Kas und Kolleginnen und Kollegen; RDoC- und HiTOP-Modelle.', ref_2:'Predictive Processing und Active Inference: Karl Friston und Kolleginnen und Kollegen.', ref_3:'Allostatische Last und Stressbiologie: Bruce McEwen und spätere Modelle der zellulären allostatischen Last.', ref_4:'Mitochondriale Biologie und Mind-Body-Medizin: Martin Picard und Kolleginnen und Kollegen.', ref_5:'Evolutionäre Medizin und Mismatch: Randolph Nesse und evolutionäre Psychiatrie.', ref_6:'Metabolische Psychiatrie und Brain-Energy-Ansätze: Chris Palmer und verwandte Forschung zur metabolischen psychischen Gesundheit.',
+      boundary_kicker:'Klinische Grenzen', boundary_title:'Wissenschaftliche Ernsthaftigkeit bedeutet auch Zurückhaltung.', boundary_copy:'Biomarker unterstützen die klinische Formulierung. Sie ersetzen keine Diagnose, Risikoeinschätzung, Psychotherapie, medizinische Untersuchung oder fachärztliche Zuweisung. Der Zweck ist, die Qualität der Fragen und die Passung des Plans zu verbessern und dabei ehrlich zu bleiben, was etabliert, vielversprechend und weiterhin unsicher ist.', final_cta:'Call buchen', home_cta:'Zur Startseite'
+    }};
+    let activeLanguage = 'en';
+    function applyLanguage(language){
+      activeLanguage = language;
+      document.documentElement.lang = language;
+      document.querySelectorAll('[data-i18n]').forEach((element)=>{
+        const key = element.dataset.i18n;
+        element.innerHTML = language === 'de' && translations.de[key] ? translations.de[key] : defaultCopy.get(key);
+      });
+      document.querySelectorAll('.lang-toggle button').forEach((button)=>button.classList.toggle('active', button.dataset.lang === language));
+      try { localStorage.setItem('betterhealth-language', language); } catch(e) {}
+    }
+    document.querySelectorAll('.lang-toggle button').forEach((button)=>button.addEventListener('click',()=>applyLanguage(button.dataset.lang)));
+    try {
+      const saved = localStorage.getItem('betterhealth-language');
+      if(saved === 'de') applyLanguage('de');
+    } catch(e) {}
+  </script>
+</body>
+</html>
