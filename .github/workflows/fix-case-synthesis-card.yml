@@ -1,0 +1,63 @@
+name: Fix Case Synthesis Card
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make case synthesis card visible
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = 'main';
+            const path = 'index.html';
+            const file = await github.rest.repos.getContent({ owner, repo, path, ref: branch });
+            let text = Buffer.from(file.data.content, 'base64').toString('utf8');
+            const marker = '/* Case synthesis visibility fix */';
+            if (text.includes(marker)) {
+              core.info('Case synthesis visibility fix already exists.');
+              return;
+            }
+            const css = `
+
+    /* Case synthesis visibility fix */
+    .hero-visual { min-height: 720px; }
+    .scan-wall { z-index: 1; }
+    .floating-note { z-index: 3; }
+    .protocol-card {
+      top: 300px;
+      z-index: 10;
+      background: rgba(255, 252, 244, .97);
+      box-shadow: 0 22px 58px rgba(15,31,31,.18);
+    }
+    .console { z-index: 5; }
+    @media (max-width: 980px) {
+      .hero-visual { min-height: 760px; }
+      .protocol-card { top: 300px; right: 22px; width: min(250px, calc(100% - 44px)); }
+      .console { bottom: 24px; }
+    }
+    @media (max-width: 640px) {
+      .hero-visual { min-height: 790px; }
+      .protocol-card { top: 315px; left: 18px; right: 18px; width: auto; }
+      .console { bottom: 20px; }
+      .scan-wall { top: 52px; }
+    }
+`;
+            text = text.replace('</style>', css + '\n  </style>');
+            await github.rest.repos.createOrUpdateFileContents({
+              owner,
+              repo,
+              path,
+              branch,
+              message: 'Fix case synthesis card visibility',
+              content: Buffer.from(text, 'utf8').toString('base64'),
+              sha: file.data.sha
+            });
