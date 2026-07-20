@@ -1,0 +1,69 @@
+name: Update approved hero copy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/update-approved-hero-copy.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace homepage hero copy
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("index.html")
+          text = path.read_text(encoding="utf-8")
+
+          replacements = [
+              (
+                  "In-depth personalized medical care in Aarau",
+                  "Precision psychiatry and brain health in Aarau",
+              ),
+              (
+                  "Understand your mental health, brain function and recovery.",
+                  "A clearer explanation for persistent symptoms.",
+              ),
+              (
+                  "BetterHealth is a medical practice for people who want a deeper explanation than a symptoms-based diagnosis alone can provide. We connect psychiatric assessment, psychotherapy, physiology, biomarkers, sleep, stress, metabolism, inflammation, mitochondrial energy and behavior into one understandable clinical picture that we can actually work with.",
+                  "BetterHealth is a physician-led medical practice for adults living with depression, anxiety, burnout, disrupted sleep, cognitive fatigue, or poor recovery. We combine psychiatric assessment, psychotherapy, physiology, and clinically relevant biomarkers to build a clear understanding of what is driving your symptoms, then use that understanding to decide what should be addressed first and create a personalized treatment plan.",
+              ),
+              (
+                  "hero_eyebrow:'Selbstzahler-Medizin in Aarau'",
+                  "hero_eyebrow:'Präzisionspsychiatrie und Gehirngesundheit in Aarau'",
+              ),
+              (
+                  "hero_title:'Verstehen, was Ihre mentale Gesundheit, Gehirnfunktion und Erholung antreibt.'",
+                  "hero_title:'Eine klarere Erklärung für anhaltende Beschwerden.'",
+              ),
+              (
+                  "hero_copy:'BetterHealth ist eine medizinische Praxis für Menschen, die eine tiefere Erklärung möchten als Symptome allein geben können. Wir verbinden psychiatrische Einschätzung, Psychotherapie, Physiologie, Biomarker, Schlaf, Stress, Stoffwechsel, Entzündung, mitochondriale Energie und Verhalten zu einem verständlichen klinischen Bild.'",
+                  "hero_copy:'BetterHealth ist eine ärztlich geleitete medizinische Praxis für Erwachsene mit Depression, Angst, Burnout, gestörtem Schlaf, kognitiver Erschöpfung oder unzureichender Erholung. Wir verbinden psychiatrische Abklärung, Psychotherapie, Physiologie und klinisch relevante Biomarker, um ein klares Verständnis dafür zu entwickeln, was Ihre Beschwerden antreibt. Dieses Verständnis nutzen wir, um zu entscheiden, was zuerst behandelt werden sollte, und einen personalisierten Behandlungsplan zu erstellen.'",
+              ),
+          ]
+
+          for old, new in replacements:
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f"Expected one match, found {count}: {old[:80]}")
+              text = text.replace(old, new)
+
+          path.write_text(text, encoding="utf-8")
+          PY
+      - name: Commit homepage update
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Update BetterHealth homepage hero copy"
+          git push
