@@ -1,0 +1,64 @@
+{
+  "site": {
+    "id": "11-acquisition",
+    "group": "C",
+    "url": "https://www.acquisition.com"
+  },
+  "startedAt": "2026-10-30T18:34:38.213Z",
+  "captures": [
+    {
+      "url": "https://www.acquisition.com",
+      "finalUrl": "https://www.acquisition.com/",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:34:48.836Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.acquisition.com/books",
+      "finalUrl": "https://www.acquisition.com/books",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:34:56.544Z",
+      "screens": [
+        "books_desktop_viewport.png",
+        "books_desktop_full.jpg"
+      ],
+      "data": "books_desktop.json"
+    },
+    {
+      "url": "https://www.acquisition.com",
+      "finalUrl": "https://www.acquisition.com/",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:35:07.404Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    },
+    {
+      "url": "https://www.acquisition.com/books",
+      "finalUrl": "https://www.acquisition.com/books",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:35:15.754Z",
+      "screens": [
+        "books_mobile_viewport.png",
+        "books_mobile_full.jpg"
+      ],
+      "data": "books_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:35:15.780Z"
+}

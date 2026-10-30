@@ -1,0 +1,116 @@
+{
+  "site": {
+    "id": "02-biograph",
+    "group": "A",
+    "url": "https://www.biograph.com"
+  },
+  "startedAt": "2026-10-30T18:31:34.645Z",
+  "captures": [
+    {
+      "url": "https://www.biograph.com",
+      "finalUrl": "https://www.biograph.com/",
+      "status": 200,
+      "consentClicked": "Okay",
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:32:04.336Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.biograph.com/how-biograph-works",
+      "finalUrl": "https://www.biograph.com/how-biograph-works",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:32:33.013Z",
+      "screens": [
+        "how-biograph-works_desktop_viewport.png",
+        "how-biograph-works_desktop_full.jpg"
+      ],
+      "data": "how-biograph-works_desktop.json"
+    },
+    {
+      "url": "https://www.biograph.com/memberships",
+      "finalUrl": "https://www.biograph.com/memberships",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:32:55.754Z",
+      "screens": [
+        "memberships_desktop_viewport.png",
+        "memberships_desktop_full.jpg"
+      ],
+      "data": "memberships_desktop.json"
+    },
+    {
+      "url": "https://www.biograph.com/contact",
+      "finalUrl": "https://www.biograph.com/contact",
+      "status": 502,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:33:27.526Z",
+      "screens": [
+        "contact_desktop_viewport.png",
+        "contact_desktop_full.jpg"
+      ],
+      "data": "contact_desktop.json"
+    },
+    {
+      "url": "https://www.biograph.com",
+      "finalUrl": "https://www.biograph.com/",
+      "status": 200,
+      "consentClicked": "Okay",
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:33:54.267Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    },
+    {
+      "url": "https://www.biograph.com/how-biograph-works",
+      "finalUrl": "https://www.biograph.com/how-biograph-works",
+      "status": 502,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:34:06.396Z",
+      "screens": [
+        "how-biograph-works_mobile_viewport.png",
+        "how-biograph-works_mobile_full.jpg"
+      ],
+      "data": "how-biograph-works_mobile.json"
+    },
+    {
+      "url": "https://www.biograph.com/memberships",
+      "finalUrl": "https://www.biograph.com/memberships",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:34:32.558Z",
+      "screens": [
+        "memberships_mobile_viewport.png",
+        "memberships_mobile_full.jpg"
+      ],
+      "data": "memberships_mobile.json"
+    },
+    {
+      "url": "https://www.biograph.com/contact",
+      "finalUrl": "https://www.biograph.com/contact",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:34:37.476Z",
+      "screens": [
+        "contact_mobile_viewport.png",
+        "contact_mobile_full.jpg"
+      ],
+      "data": "contact_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:34:37.490Z"
+}

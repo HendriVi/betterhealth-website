@@ -1,0 +1,142 @@
+{
+  "site": {
+    "id": "12-gymlaunch",
+    "group": "C",
+    "url": "https://www.gymlaunch.com"
+  },
+  "startedAt": "2026-10-30T18:34:44.616Z",
+  "captures": [
+    {
+      "url": "https://www.gymlaunch.com",
+      "finalUrl": "https://www.gymlaunch.com/",
+      "status": 200,
+      "consentClicked": "Reject all",
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:34:59.380Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com/about-us",
+      "finalUrl": "https://www.gymlaunch.com/about-us",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:05.515Z",
+      "screens": [
+        "about-us_desktop_viewport.png",
+        "about-us_desktop_full.jpg"
+      ],
+      "data": "about-us_desktop.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com/contact",
+      "finalUrl": "https://www.gymlaunch.com/contact",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:12.216Z",
+      "screens": [
+        "contact_desktop_viewport.png",
+        "contact_desktop_full.jpg"
+      ],
+      "data": "contact_desktop.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com/gym-types/case-studies",
+      "finalUrl": "https://www.gymlaunch.com/gym-types/case-studies",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:21.510Z",
+      "screens": [
+        "gym-types-case-studies_desktop_viewport.png",
+        "gym-types-case-studies_desktop_full.jpg"
+      ],
+      "data": "gym-types-case-studies_desktop.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com/secrets",
+      "finalUrl": "https://www.gymlaunch.com/secrets",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:31.306Z",
+      "screens": [
+        "secrets_desktop_viewport.png",
+        "secrets_desktop_full.jpg"
+      ],
+      "data": "secrets_desktop.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com",
+      "finalUrl": "https://www.gymlaunch.com/",
+      "status": 200,
+      "consentClicked": "Reject all",
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:35:48.390Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com/about-us",
+      "finalUrl": "https://www.gymlaunch.com/about-us",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:35:59.183Z",
+      "screens": [
+        "about-us_mobile_viewport.png",
+        "about-us_mobile_full.jpg"
+      ],
+      "data": "about-us_mobile.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com/contact",
+      "finalUrl": "https://www.gymlaunch.com/contact",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:36:05.236Z",
+      "screens": [
+        "contact_mobile_viewport.png",
+        "contact_mobile_full.jpg"
+      ],
+      "data": "contact_mobile.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com/gym-types/case-studies",
+      "finalUrl": "https://www.gymlaunch.com/gym-types/case-studies",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:36:16.052Z",
+      "screens": [
+        "gym-types-case-studies_mobile_viewport.png",
+        "gym-types-case-studies_mobile_full.jpg"
+      ],
+      "data": "gym-types-case-studies_mobile.json"
+    },
+    {
+      "url": "https://www.gymlaunch.com/secrets",
+      "finalUrl": "https://www.gymlaunch.com/secrets",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:36:27.670Z",
+      "screens": [
+        "secrets_mobile_viewport.png",
+        "secrets_mobile_full.jpg"
+      ],
+      "data": "secrets_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:36:27.752Z"
+}

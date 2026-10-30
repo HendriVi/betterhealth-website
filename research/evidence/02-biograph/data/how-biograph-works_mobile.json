@@ -1,0 +1,37 @@
+{
+  "title": "",
+  "metaDescription": null,
+  "generator": null,
+  "docHeight": 2121,
+  "fontsLoaded": [],
+  "body": {
+    "text": "upstream request failed",
+    "fontFamily": "\"Times New Roman\"",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(0, 0, 0)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "x": 8,
+    "y": 13,
+    "w": 964,
+    "h": 15
+  },
+  "headings": [],
+  "paragraphs": [],
+  "ctas": [],
+  "nav": [],
+  "forms": [],
+  "images": [],
+  "colors": [
+    [
+      "rgb(0, 0, 0)",
+      2
+    ]
+  ],
+  "maxWidths": [],
+  "sections": [],
+  "fullText": "upstream request failed"
+}

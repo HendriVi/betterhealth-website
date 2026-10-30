@@ -1,0 +1,367 @@
+{
+  "title": "Join Parsley Health",
+  "metaDescription": "Join Parsley Health",
+  "generator": null,
+  "docHeight": 907,
+  "fontsLoaded": [
+    "EuclidCircularB 400 normal",
+    "EuclidCircularB 500 normal"
+  ],
+  "body": {
+    "text": "Parsley Health Get personalized care Location Insurance Let’s get your care plan started. We’ll match you with a functional medicine clinician licensed in your state. EMAIL* ZIP CODE* We use your loca",
+    "fontFamily": "EuclidCircularB, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(40, 72, 73)",
+    "backgroundColor": "rgb(248, 246, 242)",
+    "x": 0,
+    "y": 0,
+    "w": 1425,
+    "h": 907
+  },
+  "headings": [
+    {
+      "level": "H1",
+      "text": "Parsley Health",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "500",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "oklch(0.373 0.034 259.733)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 651,
+      "y": 20,
+      "w": 123,
+      "h": 28
+    },
+    {
+      "level": "H1",
+      "text": "Let’s get your care plan started.",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "28px",
+      "fontWeight": "500",
+      "lineHeight": "33.6px",
+      "letterSpacing": "-0.56px",
+      "textTransform": "none",
+      "color": "rgb(40, 72, 73)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 512,
+      "y": 218,
+      "w": 401,
+      "h": 34
+    },
+    {
+      "level": "H2",
+      "text": "Your Cart",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "17px",
+      "fontWeight": "500",
+      "lineHeight": "25.5px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1449,
+      "y": 19,
+      "w": 76,
+      "h": 26
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "Get personalized care",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "15px",
+      "fontWeight": "500",
+      "lineHeight": "22.5px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(51, 51, 51)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 441,
+      "y": 84,
+      "w": 544,
+      "h": 23
+    },
+    {
+      "text": "We’ll match you with a functional medicine clinician licensed in your state.",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.32px",
+      "textTransform": "none",
+      "color": "rgb(51, 51, 51)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 447,
+      "y": 267,
+      "w": 531,
+      "h": 24
+    },
+    {
+      "text": "We use your location to match you with licensed clinicians in your state, and you’ll need to be there during visits.",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "oklch(0.551 0.027 264.364)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 441,
+      "y": 519,
+      "w": 544,
+      "h": 32
+    },
+    {
+      "text": "Join Parsley Health",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(40, 72, 73)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": -1,
+      "y": -1,
+      "w": 1,
+      "h": 1
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Parsley Health Terms",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(74, 120, 106)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 668,
+      "y": 635,
+      "w": 137,
+      "h": 20,
+      "href": "https://www.parsleyhealth.com/terms-of-use",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "Privacy Policy",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(74, 120, 106)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 812,
+      "y": 635,
+      "w": 91,
+      "h": 20,
+      "href": "https://www.parsleyhealth.com/privacy",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "HIPAA Notice of Privacy Practices",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(74, 120, 106)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 441,
+      "y": 655,
+      "w": 222,
+      "h": 20,
+      "href": "https://www.parsleyhealth.com/notice-of-privacy-practices",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "Continue",
+      "fontFamily": "EuclidCircularB, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.16px",
+      "textTransform": "none",
+      "color": "rgb(249, 249, 249)",
+      "backgroundColor": "rgb(196, 196, 200)",
+      "x": 630,
+      "y": 731,
+      "w": 164,
+      "h": 56,
+      "href": null,
+      "borderRadius": "3.35544e+07px",
+      "padding": "16px 48px"
+    }
+  ],
+  "nav": [],
+  "forms": [
+    {
+      "action": "https://www.parsleyhealth.com/join/care/location?utm_source=www&utm_medium=announcement-banner&utm_campaign=evergreen&utm_content=verify-insurance",
+      "fields": [
+        {
+          "type": "email",
+          "name": "email",
+          "label": "EMAIL*",
+          "required": false
+        },
+        {
+          "type": "text",
+          "name": "addressPostalCode",
+          "label": "ZIP CODE*",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "colors": [
+    [
+      "rgb(40, 72, 73)",
+      104
+    ],
+    [
+      "rgb(255, 255, 255)",
+      13
+    ],
+    [
+      "rgb(71, 117, 104)",
+      8
+    ],
+    [
+      "rgb(51, 51, 51)",
+      6
+    ],
+    [
+      "rgb(115, 115, 115)",
+      6
+    ],
+    [
+      "rgb(74, 120, 106)",
+      6
+    ],
+    [
+      "rgb(249, 249, 249)",
+      6
+    ],
+    [
+      "rgb(248, 246, 242)",
+      2
+    ],
+    [
+      "oklch(0.373 0.034 259.733)",
+      2
+    ],
+    [
+      "oklab(0.535054 -0.0550329 0.00693381 / 0.3)",
+      2
+    ],
+    [
+      "rgb(232, 232, 232)",
+      2
+    ],
+    [
+      "oklch(0.551 0.027 264.364)",
+      2
+    ],
+    [
+      "rgb(196, 196, 200)",
+      1
+    ],
+    [
+      "oklab(0 0 0 / 0.4)",
+      1
+    ],
+    [
+      "rgb(19, 45, 46)",
+      1
+    ],
+    [
+      "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+      1
+    ]
+  ],
+  "maxWidths": [
+    [
+      "576px",
+      2
+    ],
+    [
+      "594px",
+      1
+    ],
+    [
+      "448px",
+      1
+    ]
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "tag": "div",
+      "cls": "",
+      "top": 0,
+      "height": 907,
+      "width": 1425,
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": false,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "heading": "Parsley Health"
+    },
+    {
+      "index": 1,
+      "tag": "iframe",
+      "cls": "",
+      "top": 907,
+      "height": 1,
+      "width": 1425,
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": false,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "heading": null
+    },
+    {
+      "index": 2,
+      "tag": "iframe",
+      "cls": "",
+      "top": 907,
+      "height": 1,
+      "width": 1425,
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": false,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "heading": null
+    },
+    {
+      "index": 3,
+      "tag": "iframe",
+      "cls": "",
+      "top": 907,
+      "height": 1,
+      "width": 1425,
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": false,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "heading": null
+    }
+  ],
+  "fullText": "Parsley Health\n\nGet personalized care\n\nLocation\nInsurance\nLet’s get your care plan started.\n\nWe’ll match you with a functional medicine clinician licensed in your state.\n\nEMAIL*\nZIP CODE*\n\nWe use your location to match you with licensed clinicians in your state, and you’ll need to be there during visits.\n\nBy continuing you agree that you must physically be in your state when you have any telehealth visits with your Parsley provider.\nBy clicking 'Continue', I accept the Parsley Health Terms, Privacy Policy, and HIPAA Notice of Privacy Practices, and agree to receive messages related to appointments and other Parsley Health activity.\nContinue\nwas added to cart.\nYour Cart\n\nJoin Parsley Health"
+}

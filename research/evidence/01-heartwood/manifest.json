@@ -1,0 +1,90 @@
+{
+  "site": {
+    "id": "01-heartwood",
+    "group": "A",
+    "url": "https://www.thehwc.com"
+  },
+  "startedAt": "2026-10-30T18:31:34.918Z",
+  "captures": [
+    {
+      "url": "https://www.thehwc.com",
+      "finalUrl": "https://www.thehwc.com/",
+      "status": 200,
+      "consentClicked": "Decline all",
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:31:55.395Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.thehwc.com/team",
+      "finalUrl": "https://www.thehwc.com/team",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:32:00.580Z",
+      "screens": [
+        "team_desktop_viewport.png",
+        "team_desktop_full.jpg"
+      ],
+      "data": "team_desktop.json"
+    },
+    {
+      "url": "https://www.thehwc.com/tuning-offsites",
+      "finalUrl": "https://www.thehwc.com/tuning-offsites",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:32:07.873Z",
+      "screens": [
+        "tuning-offsites_desktop_viewport.png",
+        "tuning-offsites_desktop_full.jpg"
+      ],
+      "data": "tuning-offsites_desktop.json"
+    },
+    {
+      "url": "https://www.thehwc.com",
+      "finalUrl": "https://www.thehwc.com/",
+      "status": 200,
+      "consentClicked": "Decline all",
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:32:33.108Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    },
+    {
+      "url": "https://www.thehwc.com/team",
+      "finalUrl": "https://www.thehwc.com/team",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:32:47.046Z",
+      "screens": [
+        "team_mobile_viewport.png",
+        "team_mobile_full.jpg"
+      ],
+      "data": "team_mobile.json"
+    },
+    {
+      "url": "https://www.thehwc.com/tuning-offsites",
+      "finalUrl": "https://www.thehwc.com/tuning-offsites",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:32:56.039Z",
+      "screens": [
+        "tuning-offsites_mobile_viewport.png",
+        "tuning-offsites_mobile_full.jpg"
+      ],
+      "data": "tuning-offsites_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:32:56.049Z"
+}

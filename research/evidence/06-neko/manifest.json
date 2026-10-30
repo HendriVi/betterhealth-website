@@ -1,0 +1,38 @@
+{
+  "site": {
+    "id": "06-neko",
+    "group": "B",
+    "url": "https://www.nekohealth.com"
+  },
+  "startedAt": "2026-10-30T18:39:59.731Z",
+  "captures": [
+    {
+      "url": "https://www.nekohealth.com",
+      "finalUrl": "https://www.nekohealth.com/",
+      "status": 429,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:40:02.437Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.nekohealth.com",
+      "finalUrl": "https://www.nekohealth.com/",
+      "status": 429,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:40:05.447Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:40:05.451Z"
+}

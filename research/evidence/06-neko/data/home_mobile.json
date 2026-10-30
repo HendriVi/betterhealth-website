@@ -1,0 +1,134 @@
+{
+  "title": "Vercel Security Checkpoint",
+  "metaDescription": null,
+  "generator": null,
+  "docHeight": 844,
+  "fontsLoaded": [],
+  "body": {
+    "text": "Failed to verify your browser Code 21 Vercel Security Checkpoint iad1::1793385602-c2NPlRFnwNzFXO4IK5nimgEp1LjvEKbe",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+    "fontSize": "22.4px",
+    "fontWeight": "400",
+    "lineHeight": "34.72px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "x": 0,
+    "y": 0,
+    "w": 390,
+    "h": 844
+  },
+  "headings": [],
+  "paragraphs": [
+    {
+      "text": "Failed to verify your browser",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "19.2px",
+      "fontWeight": "500",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgba(0, 0, 0, 0.91)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 64,
+      "y": 339,
+      "w": 262,
+      "h": 32
+    },
+    {
+      "text": "Code 21",
+      "fontFamily": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace",
+      "fontSize": "12px",
+      "fontWeight": "200",
+      "lineHeight": "18.6px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(102, 102, 102)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 64,
+      "y": 390,
+      "w": 262,
+      "h": 19
+    },
+    {
+      "text": "Vercel Security Checkpoint",
+      "fontFamily": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace",
+      "fontSize": "12px",
+      "fontWeight": "200",
+      "lineHeight": "16px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(102, 102, 102)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 101,
+      "y": 770,
+      "w": 187,
+      "h": 16
+    },
+    {
+      "text": "iad1::1793385602-c2NPlRFnwNzFXO4IK5nimgEp1LjvEKbe",
+      "fontFamily": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace",
+      "fontSize": "12px",
+      "fontWeight": "200",
+      "lineHeight": "16px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(102, 102, 102)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 19,
+      "y": 798,
+      "w": 353,
+      "h": 16
+    }
+  ],
+  "ctas": [],
+  "nav": [],
+  "forms": [],
+  "images": [],
+  "colors": [
+    [
+      "rgb(102, 102, 102)",
+      14
+    ],
+    [
+      "rgba(0, 0, 0, 0.91)",
+      2
+    ]
+  ],
+  "maxWidths": [
+    [
+      "1280px",
+      1
+    ]
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "tag": "p",
+      "cls": "",
+      "top": 339,
+      "height": 32,
+      "width": 262,
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": false,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "heading": null
+    },
+    {
+      "index": 1,
+      "tag": "p",
+      "cls": "metadata-text",
+      "top": 390,
+      "height": 19,
+      "width": 262,
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": false,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "heading": null
+    }
+  ],
+  "fullText": "Failed to verify your browser\n\nCode 21\n\nVercel Security Checkpoint\n\niad1::1793385602-c2NPlRFnwNzFXO4IK5nimgEp1LjvEKbe"
+}

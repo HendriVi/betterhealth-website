@@ -1,0 +1,168 @@
+{
+  "site": {
+    "id": "13-springhealth",
+    "group": "C",
+    "url": "https://www.springhealth.com"
+  },
+  "startedAt": "2026-10-30T18:35:16.423Z",
+  "captures": [
+    {
+      "url": "https://www.springhealth.com",
+      "finalUrl": "https://www.springhealth.com/",
+      "status": 200,
+      "consentClicked": "Reject",
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:38.307Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.springhealth.com/what-we-do/organizational-support",
+      "finalUrl": "https://www.springhealth.com/what-we-do/organizational-support",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:58.899Z",
+      "screens": [
+        "what-we-do-organizational-support_desktop_viewport.png",
+        "what-we-do-organizational-support_desktop_full.jpg"
+      ],
+      "data": "what-we-do-organizational-support_desktop.json"
+    },
+    {
+      "url": "https://www.springhealth.com/solutions/for-health-plans",
+      "finalUrl": "https://www.springhealth.com/solutions/for-health-plans",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:36:18.479Z",
+      "screens": [
+        "solutions-for-health-plans_desktop_viewport.png",
+        "solutions-for-health-plans_desktop_full.jpg"
+      ],
+      "data": "solutions-for-health-plans_desktop.json"
+    },
+    {
+      "url": "https://www.springhealth.com/individuals/how-it-works",
+      "finalUrl": "https://www.springhealth.com/individuals/how-it-works",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:36:37.070Z",
+      "screens": [
+        "individuals-how-it-works_desktop_viewport.png",
+        "individuals-how-it-works_desktop_full.jpg"
+      ],
+      "data": "individuals-how-it-works_desktop.json"
+    },
+    {
+      "url": "https://www.springhealth.com/case-studies",
+      "finalUrl": "https://www.springhealth.com/case-studies",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:36:56.042Z",
+      "screens": [
+        "case-studies_desktop_viewport.png",
+        "case-studies_desktop_full.jpg"
+      ],
+      "data": "case-studies_desktop.json"
+    },
+    {
+      "url": "https://www.springhealth.com/solutions/for-brokers-consultants",
+      "finalUrl": "https://www.springhealth.com/solutions/for-brokers-consultants",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:37:16.346Z",
+      "screens": [
+        "solutions-for-brokers-consultants_desktop_viewport.png",
+        "solutions-for-brokers-consultants_desktop_full.jpg"
+      ],
+      "data": "solutions-for-brokers-consultants_desktop.json"
+    },
+    {
+      "url": "https://www.springhealth.com",
+      "finalUrl": "https://www.springhealth.com/",
+      "status": 200,
+      "consentClicked": "Reject",
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:37:37.119Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    },
+    {
+      "url": "https://www.springhealth.com/what-we-do/organizational-support",
+      "finalUrl": "https://www.springhealth.com/what-we-do/organizational-support",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:37:58.080Z",
+      "screens": [
+        "what-we-do-organizational-support_mobile_viewport.png",
+        "what-we-do-organizational-support_mobile_full.jpg"
+      ],
+      "data": "what-we-do-organizational-support_mobile.json"
+    },
+    {
+      "url": "https://www.springhealth.com/solutions/for-health-plans",
+      "finalUrl": "https://www.springhealth.com/solutions/for-health-plans",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:38:18.103Z",
+      "screens": [
+        "solutions-for-health-plans_mobile_viewport.png",
+        "solutions-for-health-plans_mobile_full.jpg"
+      ],
+      "data": "solutions-for-health-plans_mobile.json"
+    },
+    {
+      "url": "https://www.springhealth.com/individuals/how-it-works",
+      "finalUrl": "https://www.springhealth.com/individuals/how-it-works",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:38:36.926Z",
+      "screens": [
+        "individuals-how-it-works_mobile_viewport.png",
+        "individuals-how-it-works_mobile_full.jpg"
+      ],
+      "data": "individuals-how-it-works_mobile.json"
+    },
+    {
+      "url": "https://www.springhealth.com/case-studies",
+      "finalUrl": "https://www.springhealth.com/case-studies",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:38:59.709Z",
+      "screens": [
+        "case-studies_mobile_viewport.png",
+        "case-studies_mobile_full.jpg"
+      ],
+      "data": "case-studies_mobile.json"
+    },
+    {
+      "url": "https://www.springhealth.com/solutions/for-brokers-consultants",
+      "finalUrl": "https://www.springhealth.com/solutions/for-brokers-consultants",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:39:21.531Z",
+      "screens": [
+        "solutions-for-brokers-consultants_mobile_viewport.png",
+        "solutions-for-brokers-consultants_mobile_full.jpg"
+      ],
+      "data": "solutions-for-brokers-consultants_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:39:21.539Z"
+}

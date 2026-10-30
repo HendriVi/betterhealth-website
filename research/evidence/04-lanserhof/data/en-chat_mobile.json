@@ -1,0 +1,494 @@
+{
+  "title": "AI Assistant",
+  "metaDescription": null,
+  "generator": null,
+  "docHeight": 844,
+  "fontsLoaded": [
+    "Neue Frutiger World 300 normal",
+    "Neue Frutiger World 400 normal",
+    "Neue Frutiger World 800 normal"
+  ],
+  "body": {
+    "text": "Return to homepage Contact us You are chatting with an AI You are chatting with an AI that answers your questions about Lanserhof and recommends suitable programmes. Using the chat is voluntary. If yo",
+    "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(27, 29, 33)",
+    "backgroundColor": "rgb(244, 244, 245)",
+    "x": 0,
+    "y": 0,
+    "w": 390,
+    "h": 844
+  },
+  "headings": [
+    {
+      "level": "H1",
+      "text": "You are chatting with an AI",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "800",
+      "lineHeight": "32px",
+      "letterSpacing": "0.48px",
+      "textTransform": "none",
+      "color": "rgb(27, 29, 33)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 37,
+      "y": 263,
+      "w": 316,
+      "h": 64
+    },
+    {
+      "level": "H1",
+      "text": "We protect your data",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "800",
+      "lineHeight": "32px",
+      "letterSpacing": "0.48px",
+      "textTransform": "none",
+      "color": "rgb(27, 29, 33)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 393,
+      "y": 263,
+      "w": 316,
+      "h": 32
+    },
+    {
+      "level": "H1",
+      "text": "Processing in Europe only",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "800",
+      "lineHeight": "32px",
+      "letterSpacing": "0.48px",
+      "textTransform": "none",
+      "color": "rgb(27, 29, 33)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 749,
+      "y": 263,
+      "w": 316,
+      "h": 64
+    },
+    {
+      "level": "H1",
+      "text": "Less is more",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "800",
+      "lineHeight": "32px",
+      "letterSpacing": "0.48px",
+      "textTransform": "none",
+      "color": "rgb(27, 29, 33)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1105,
+      "y": 263,
+      "w": 316,
+      "h": 32
+    },
+    {
+      "level": "H1",
+      "text": "Your consent",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "800",
+      "lineHeight": "32px",
+      "letterSpacing": "0.48px",
+      "textTransform": "none",
+      "color": "rgb(27, 29, 33)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1461,
+      "y": 263,
+      "w": 316,
+      "h": 32
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "You are chatting with an AI that answers your questions about Lanserhof and recommends suitable programmes.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 37,
+      "y": 339,
+      "w": 316,
+      "h": 68
+    },
+    {
+      "text": "Using the chat is voluntary. If you do not consent, there is no disadvantage for you; you can also send us your questions via our contact form.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 37,
+      "y": 420,
+      "w": 316,
+      "h": 91
+    },
+    {
+      "text": "Personal details such as names or email addresses are detected automatically and replaced with placeholders.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 393,
+      "y": 307,
+      "w": 316,
+      "h": 68
+    },
+    {
+      "text": "The AI model never sees your data.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 393,
+      "y": 388,
+      "w": 316,
+      "h": 23
+    },
+    {
+      "text": "Your messages are pseudonymized and processed exclusively in the EU.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 749,
+      "y": 339,
+      "w": 316,
+      "h": 46
+    },
+    {
+      "text": "We do not store them permanently. When the chat ends, the history is deleted.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 749,
+      "y": 397,
+      "w": 316,
+      "h": 46
+    },
+    {
+      "text": "We do not need your name or contact details to make a suitable recommendation.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1105,
+      "y": 307,
+      "w": 316,
+      "h": 46
+    },
+    {
+      "text": "Share only what matters for your question, such as your goals or when you would like to visit. Information about your health is voluntary: you decide what you tell us.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1105,
+      "y": 365,
+      "w": 316,
+      "h": 91
+    },
+    {
+      "text": "You can withdraw your consent at any time with effect for the future: click “Withdraw consent” at the bottom of the chat or delete the cookie “ai_consent_version” in your browser. The lawfulness of pr",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "19.5px",
+      "letterSpacing": "0.1524px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1461,
+      "y": 463,
+      "w": 316,
+      "h": 137
+    },
+    {
+      "text": "You are chatting with an AI assistant, and every response is machine-generated. Our AI can make mistakes and is not a substitute for medical advice.",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "10px",
+      "fontWeight": "300",
+      "lineHeight": "14px",
+      "letterSpacing": "0.127px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 16,
+      "y": 772,
+      "w": 358,
+      "h": 42
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Return to homepage",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(38, 40, 43)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 6,
+      "y": 12,
+      "w": 184,
+      "h": 28,
+      "href": null,
+      "borderRadius": "3.35544e+07px",
+      "padding": "8px 14px"
+    },
+    {
+      "text": "Contact us",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(250, 250, 250)",
+      "backgroundColor": "rgb(38, 40, 43)",
+      "x": 267,
+      "y": 12,
+      "w": 117,
+      "h": 28,
+      "href": "https://lanserhof.com/en/contact",
+      "borderRadius": "3.35544e+07px",
+      "padding": "8px 14px"
+    },
+    {
+      "text": "contact form",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "letterSpacing": "0.1778px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 155,
+      "y": 486,
+      "w": 86,
+      "h": 25,
+      "href": "https://lanserhof.com/en/contact",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "privacy policy, section “AI assistant”",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "19.5px",
+      "letterSpacing": "0.1524px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1461,
+      "y": 560,
+      "w": 285,
+      "h": 41,
+      "href": "https://lanserhof.com/en/privacy-policy#:~:text=AI%20assistant",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "Next",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(250, 250, 250)",
+      "backgroundColor": "rgb(38, 40, 43)",
+      "x": 288,
+      "y": 637,
+      "w": 61,
+      "h": 32,
+      "href": null,
+      "borderRadius": "3.35544e+07px",
+      "padding": "8px 14px"
+    },
+    {
+      "text": "Legal Information",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "10px",
+      "fontWeight": "300",
+      "lineHeight": "14px",
+      "letterSpacing": "0.127px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 73,
+      "y": 816,
+      "w": 82,
+      "h": 18,
+      "href": "https://lanserhof.com/en/legal-information",
+      "borderRadius": "6px",
+      "padding": "0px"
+    },
+    {
+      "text": "Privacy policy",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "10px",
+      "fontWeight": "300",
+      "lineHeight": "14px",
+      "letterSpacing": "0.127px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 170,
+      "y": 816,
+      "w": 61,
+      "h": 18,
+      "href": "https://lanserhof.com/en/privacy-policy",
+      "borderRadius": "6px",
+      "padding": "0px"
+    },
+    {
+      "text": "Cookie settings",
+      "fontFamily": "\"Neue Frutiger World\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "10px",
+      "fontWeight": "300",
+      "lineHeight": "14px",
+      "letterSpacing": "0.127px",
+      "textTransform": "none",
+      "color": "rgb(110, 115, 125)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 247,
+      "y": 818,
+      "w": 70,
+      "h": 14,
+      "href": null,
+      "borderRadius": "6px",
+      "padding": "0px"
+    }
+  ],
+  "nav": [
+    {
+      "text": "Contact us",
+      "href": "https://lanserhof.com/en/contact"
+    }
+  ],
+  "forms": [],
+  "images": [],
+  "colors": [
+    [
+      "rgb(227, 229, 232)",
+      92
+    ],
+    [
+      "rgb(27, 29, 33)",
+      38
+    ],
+    [
+      "rgb(250, 250, 250)",
+      36
+    ],
+    [
+      "rgb(110, 115, 125)",
+      20
+    ],
+    [
+      "rgb(38, 40, 43)",
+      8
+    ],
+    [
+      "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      5
+    ],
+    [
+      "rgb(244, 244, 245)",
+      4
+    ],
+    [
+      "oklab(0.230341 -0.000798829 -0.00824712 / 0.25)",
+      4
+    ],
+    [
+      "rgb(255, 255, 255)",
+      2
+    ],
+    [
+      "oklab(0.230341 -0.000798829 -0.00824712 / 0.05)",
+      1
+    ],
+    [
+      "oklch(0.546 0.245 262.881)",
+      1
+    ],
+    [
+      "oklch(0.554 0.046 257.417)",
+      1
+    ],
+    [
+      "oklab(0.921222 -0.000888884 -0.0044862 / 0.6)",
+      1
+    ]
+  ],
+  "maxWidths": [
+    [
+      "448px",
+      1
+    ],
+    [
+      "558px",
+      1
+    ]
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "tag": "div",
+      "cls": "",
+      "top": 0,
+      "height": 844,
+      "width": 390,
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": false,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "heading": "You are chatting with an AI"
+    }
+  ],
+  "fullText": "Return to homepage\nContact us\nYou are chatting with an AI\n\nYou are chatting with an AI that answers your questions about Lanserhof and recommends suitable programmes.\n\nUsing the chat is voluntary. If you do not consent, there is no disadvantage for you; you can also send us your questions via our contact form.\n\nWe protect your data\n\nPersonal details such as names or email addresses are detected automatically and replaced with placeholders.\n\nThe AI model never sees your data.\n\nProcessing in Europe only\n\nYour messages are pseudonymized and processed exclusively in the EU.\n\nWe do not store them permanently. When the chat ends, the history is deleted.\n\nLess is more\n\nWe do not need your name or contact details to make a suitable recommendation.\n\nShare only what matters for your question, such as your goals or when you would like to visit. Information about your health is voluntary: you decide what you tell us.\n\nYour consent\nI expressly consent to the processing of my details as described. If I voluntarily share information about my health in the chat, my consent expressly also covers this health data (Art. 9(2)(a) GDPR).\n\nYou can withdraw your consent at any time with effect for the future: click “Withdraw consent” at the bottom of the chat or delete the cookie “ai_consent_version” in your browser. The lawfulness of processing carried out before withdrawal remains unaffected. You can find more information in our privacy policy, section “AI assistant”.\n\nNext\n\nYou are chatting with an AI assistant, and every response is machine-generated. Our AI can make mistakes and is not a substitute for medical advice.\n\nLegal Information\nPrivacy policy\nCookie settings"
+}

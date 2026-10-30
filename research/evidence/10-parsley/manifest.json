@@ -1,0 +1,168 @@
+{
+  "site": {
+    "id": "10-parsley",
+    "group": "B",
+    "url": "https://www.parsleyhealth.com"
+  },
+  "startedAt": "2026-10-30T18:34:33.720Z",
+  "captures": [
+    {
+      "url": "https://www.parsleyhealth.com",
+      "finalUrl": "https://www.parsleyhealth.com/",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:34:44.319Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/insurance",
+      "finalUrl": "https://www.parsleyhealth.com/insurance",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:34:53.170Z",
+      "screens": [
+        "insurance_desktop_viewport.png",
+        "insurance_desktop_full.jpg"
+      ],
+      "data": "insurance_desktop.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/join/care?utm_source=www&utm_medium=announcement-banner&utm_campaign=evergreen&utm_content=verify-insurance",
+      "finalUrl": "https://www.parsleyhealth.com/join/care/location?utm_source=www&utm_medium=announcement-banner&utm_campaign=evergreen&utm_content=verify-insurance",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:03.658Z",
+      "screens": [
+        "join-care_desktop_viewport.png",
+        "join-care_desktop_full.jpg"
+      ],
+      "data": "join-care_desktop.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/care",
+      "finalUrl": "https://www.parsleyhealth.com/care",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:15.538Z",
+      "screens": [
+        "care_desktop_viewport.png",
+        "care_desktop_full.jpg"
+      ],
+      "data": "care_desktop.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/labs",
+      "finalUrl": "https://www.parsleyhealth.com/labs",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:23.901Z",
+      "screens": [
+        "labs_desktop_viewport.png",
+        "labs_desktop_full.jpg"
+      ],
+      "data": "labs_desktop.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/contact",
+      "finalUrl": "https://www.parsleyhealth.com/contact",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:35:28.891Z",
+      "screens": [
+        "contact_desktop_viewport.png",
+        "contact_desktop_full.jpg"
+      ],
+      "data": "contact_desktop.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com",
+      "finalUrl": "https://www.parsleyhealth.com/",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:35:42.333Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/insurance",
+      "finalUrl": "https://www.parsleyhealth.com/insurance",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:35:52.457Z",
+      "screens": [
+        "insurance_mobile_viewport.png",
+        "insurance_mobile_full.jpg"
+      ],
+      "data": "insurance_mobile.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/join/care?utm_source=www&utm_medium=announcement-banner&utm_campaign=evergreen&utm_content=verify-insurance",
+      "finalUrl": "https://www.parsleyhealth.com/join/care/location?utm_source=www&utm_medium=announcement-banner&utm_campaign=evergreen&utm_content=verify-insurance",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:36:09.417Z",
+      "screens": [
+        "join-care_mobile_viewport.png",
+        "join-care_mobile_full.jpg"
+      ],
+      "data": "join-care_mobile.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/care",
+      "finalUrl": "https://www.parsleyhealth.com/care",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:36:22.355Z",
+      "screens": [
+        "care_mobile_viewport.png",
+        "care_mobile_full.jpg"
+      ],
+      "data": "care_mobile.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/labs",
+      "finalUrl": "https://www.parsleyhealth.com/labs",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:36:31.375Z",
+      "screens": [
+        "labs_mobile_viewport.png",
+        "labs_mobile_full.jpg"
+      ],
+      "data": "labs_mobile.json"
+    },
+    {
+      "url": "https://www.parsleyhealth.com/contact",
+      "finalUrl": "https://www.parsleyhealth.com/contact",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:36:37.166Z",
+      "screens": [
+        "contact_mobile_viewport.png",
+        "contact_mobile_full.jpg"
+      ],
+      "data": "contact_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:36:37.176Z"
+}

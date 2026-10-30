@@ -1,0 +1,926 @@
+{
+  "title": "Gym Launch Secrets - Contact",
+  "metaDescription": "Book your FREE 15-Minute Gym Growth Strategy Call",
+  "generator": null,
+  "docHeight": 1838,
+  "fontsLoaded": [
+    "Generalsans 500 normal",
+    "Generalsans 600 normal",
+    "Helveticanowdisplay 700 normal",
+    "Rohnrounded Bold 700 normal",
+    "Rohnrounded Regular 400 normal"
+  ],
+  "body": {
+    "text": "Resources BLOG ABOUT CASE STUDIESCAREERS 844-496-5673 GROW MY GYM ‍YOUR GYM SHOULD BE FULL. YOUR BANK ACCOUNT SHOULD BE TOO.‍ Qualify for a quick call to see how we help gym owners grow—without guessw",
+    "fontFamily": "Generalsans, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "500",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(16, 19, 80)",
+    "backgroundColor": "rgb(246, 247, 249)",
+    "x": 0,
+    "y": 0,
+    "w": 1440,
+    "h": 1838
+  },
+  "headings": [
+    {
+      "level": "H1",
+      "text": "‍YOUR GYM SHOULD BE FULL. YOUR BANK ACCOUNT SHOULD BE TOO.‍",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "70px",
+      "fontWeight": "600",
+      "lineHeight": "50px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(16, 19, 80)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 80,
+      "y": 176,
+      "w": 632,
+      "h": 156
+    },
+    {
+      "level": "H4",
+      "text": "Qualify for a quick call to see how we help gym owners grow—without guesswork, hype, or burn out.",
+      "fontFamily": "\"Rohnrounded Bold\", sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 80,
+      "y": 352,
+      "w": 632,
+      "h": 64
+    },
+    {
+      "level": "H3",
+      "text": "APPLY HERE",
+      "fontFamily": "\"Rohnrounded Bold\", sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "lineHeight": "40px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(167, 139, 33)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 781,
+      "y": 218,
+      "w": 558,
+      "h": 40
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "We'd love to hear from you! Please fill out the form and we'll get back to you as soon as possible.",
+      "fontFamily": "Helvetica",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 822,
+      "y": 309,
+      "w": 476,
+      "h": 64
+    }
+  ],
+  "ctas": [
+    {
+      "text": "BLOG",
+      "fontFamily": "\"Rohnrounded Regular\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "24px",
+      "letterSpacing": "1px",
+      "textTransform": "none",
+      "color": "rgb(177, 177, 177)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 412,
+      "y": 37,
+      "w": 54,
+      "h": 14,
+      "href": "https://www.gymlaunch.com/blog-home",
+      "borderRadius": "0px",
+      "padding": "0px 12px 0px 7px"
+    },
+    {
+      "text": "CASE STUDIES",
+      "fontFamily": "\"Rohnrounded Regular\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "24px",
+      "letterSpacing": "1px",
+      "textTransform": "none",
+      "color": "rgb(177, 177, 177)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 546,
+      "y": 37,
+      "w": 114,
+      "h": 14,
+      "href": "https://www.gymlaunch.com/gym-types/case-studies",
+      "borderRadius": "0px",
+      "padding": "0px 12px 0px 7px"
+    },
+    {
+      "text": "CAREERS",
+      "fontFamily": "\"Rohnrounded Regular\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "24px",
+      "letterSpacing": "1px",
+      "textTransform": "none",
+      "color": "rgb(177, 177, 177)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 660,
+      "y": 37,
+      "w": 80,
+      "h": 14,
+      "href": "https://ats.rippling.com/gains-intermediate/jobs",
+      "borderRadius": "0px",
+      "padding": "0px 12px 0px 7px"
+    },
+    {
+      "text": "844-496-5673",
+      "fontFamily": "\"Rohnrounded Regular\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "24px",
+      "letterSpacing": "1px",
+      "textTransform": "none",
+      "color": "rgb(177, 177, 177)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 884,
+      "y": 32,
+      "w": 118,
+      "h": 24,
+      "href": "tel:8444965673",
+      "borderRadius": "0px",
+      "padding": "0px 12px 0px 7px"
+    },
+    {
+      "text": "GROW MY GYM",
+      "fontFamily": "\"Rohnrounded Bold\", sans-serif",
+      "fontSize": "15.04px",
+      "fontWeight": "500",
+      "lineHeight": "18.048px",
+      "letterSpacing": "0.376px",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(46, 47, 49)",
+      "x": 1145,
+      "y": 25,
+      "w": 145,
+      "h": 39,
+      "href": "https://www.gymlaunch.com/contact",
+      "borderRadius": "752px",
+      "padding": "10.528px 21.056px"
+    },
+    {
+      "text": "(844) 496-5673",
+      "fontFamily": "Helveticanowdisplay, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 144,
+      "y": 448,
+      "w": 134,
+      "h": 37,
+      "href": "tel:8444965673",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "Privacy Policy",
+      "fontFamily": "Helvetica",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(167, 139, 33)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 882,
+      "y": 918,
+      "w": 100,
+      "h": 17,
+      "href": "https://www.iubenda.com/privacy-policy/52598668",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "Submit",
+      "fontFamily": "helvetica",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(177, 150, 48)",
+      "x": 1003,
+      "y": 1079,
+      "w": 114,
+      "h": 54,
+      "href": null,
+      "borderRadius": "4px",
+      "padding": "15px 30px"
+    },
+    {
+      "text": "Terms and Conditions",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 809,
+      "y": 1442,
+      "w": 163,
+      "h": 32,
+      "href": "https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/511829/Gym_Launch_Terms_Revised_3-3-2019.pdf",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "(844) 496-5673",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgb(46, 47, 49)",
+      "x": 1164,
+      "y": 1437,
+      "w": 178,
+      "h": 42,
+      "href": "tel:8444965673",
+      "borderRadius": "128px",
+      "padding": "11.2px 20.8px"
+    },
+    {
+      "text": "About Us",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 160,
+      "y": 1571,
+      "w": 69,
+      "h": 32,
+      "href": "https://www.gymlaunch.com/about-us",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Partner With Gym Launch",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 160,
+      "y": 1603,
+      "w": 190,
+      "h": 32,
+      "href": "https://q2a0k.share.hsforms.com/2aMoLqqo9S2O8tHu0tiGnXw",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Case Studies",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 160,
+      "y": 1635,
+      "w": 99,
+      "h": 32,
+      "href": "https://www.gymlaunch.com/case-studies",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Join Mission",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 160,
+      "y": 1667,
+      "w": 93,
+      "h": 32,
+      "href": "https://www.gymlaunch.com/contact",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Blog",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 160,
+      "y": 1699,
+      "w": 33,
+      "h": 32,
+      "href": "https://www.gymlaunch.com/blog-home",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Cookie Policy",
+      "fontFamily": "-apple-system, sans-serif",
+      "fontSize": "11px",
+      "fontWeight": "700",
+      "lineHeight": "13.75px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(244, 244, 244)",
+      "backgroundColor": "rgb(68, 68, 68)",
+      "x": 160,
+      "y": 1734,
+      "w": 89,
+      "h": 22,
+      "href": "https://www.iubenda.com/privacy-policy/52598668/cookie-policy",
+      "borderRadius": "3px",
+      "padding": "4px 8px"
+    },
+    {
+      "text": "Privacy Policy",
+      "fontFamily": "-apple-system, sans-serif",
+      "fontSize": "11px",
+      "fontWeight": "700",
+      "lineHeight": "13.75px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(244, 244, 244)",
+      "backgroundColor": "rgb(68, 68, 68)",
+      "x": 160,
+      "y": 1758,
+      "w": 92,
+      "h": 22,
+      "href": "https://www.iubenda.com/privacy-policy/52598668",
+      "borderRadius": "3px",
+      "padding": "4px 8px"
+    },
+    {
+      "text": "7 Money Models",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 769,
+      "y": 1571,
+      "w": 120,
+      "h": 32,
+      "href": "https://ww2.gymlaunch.com/7mm-2",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Start a Gym Series",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 769,
+      "y": 1603,
+      "w": 140,
+      "h": 32,
+      "href": "https://www.gymlaunch.com/start-a-gym-series",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Secrets Book",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 769,
+      "y": 1635,
+      "w": 99,
+      "h": 32,
+      "href": "https://www.gymlaunch.com/secrets",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Facebook",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1036,
+      "y": 1571,
+      "w": 72,
+      "h": 32,
+      "href": "https://www.facebook.com/GymLaunch",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Instagram",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1036,
+      "y": 1603,
+      "w": 76,
+      "h": 32,
+      "href": "https://www.instagram.com/gymlaunch/reels/",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Tik Tok",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1036,
+      "y": 1635,
+      "w": 53,
+      "h": 32,
+      "href": "https://www.tiktok.com/@gymlaunch",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Youtube",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1036,
+      "y": 1667,
+      "w": 62,
+      "h": 32,
+      "href": "https://www.youtube.com/@GymLaunch",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Twitter",
+      "fontFamily": "Generalsans, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(117, 117, 119)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 1036,
+      "y": 1699,
+      "w": 54,
+      "h": 32,
+      "href": "https://twitter.com/GymLaunch",
+      "borderRadius": "0px",
+      "padding": "4px 0px"
+    },
+    {
+      "text": "Notice at collection",
+      "fontFamily": "-apple-system, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "lineHeight": "16px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(167, 139, 33)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 503,
+      "y": 1795,
+      "w": 183,
+      "h": 34,
+      "href": "https://www.iubenda.com/privacy-policy/52598668/cookie-policy?an=no&s_ck=false&newmarkup=yes",
+      "borderRadius": "0px",
+      "padding": "8px 16px"
+    },
+    {
+      "text": "Your Privacy Choices",
+      "fontFamily": "-apple-system, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "lineHeight": "16px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(89, 89, 89)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "x": 685,
+      "y": 1795,
+      "w": 252,
+      "h": 34,
+      "href": null,
+      "borderRadius": "0px",
+      "padding": "8px 16px"
+    },
+    {
+      "text": "Your consent preferences for tracking technologies",
+      "fontFamily": "-apple-system, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "lineHeight": "38px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgba(0, 0, 0, 0.65)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "x": 16,
+      "y": 862,
+      "w": 38,
+      "h": 38,
+      "href": null,
+      "borderRadius": "6px 6px 0px 0px",
+      "padding": "0px"
+    }
+  ],
+  "nav": [
+    {
+      "text": "BLOG",
+      "href": "https://www.gymlaunch.com/blog-home"
+    },
+    {
+      "text": "CASE STUDIES",
+      "href": "https://www.gymlaunch.com/gym-types/case-studies"
+    },
+    {
+      "text": "CAREERS",
+      "href": "https://ats.rippling.com/gains-intermediate/jobs"
+    }
+  ],
+  "forms": [
+    {
+      "action": "https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/43776308/f2f7bcae-4787-4976-9fac-12e4bb4a6a4b",
+      "fields": [
+        {
+          "type": "text",
+          "name": "0-1/firstname",
+          "label": "First Name*",
+          "required": true
+        },
+        {
+          "type": "text",
+          "name": "0-1/lastname",
+          "label": "Last Name*",
+          "required": true
+        },
+        {
+          "type": "email",
+          "name": "0-1/email",
+          "label": "Email*",
+          "required": false
+        },
+        {
+          "type": "tel",
+          "name": "",
+          "label": "*",
+          "required": false
+        },
+        {
+          "type": "hidden",
+          "name": "0-1/mobilephone",
+          "label": null,
+          "required": false
+        },
+        {
+          "type": "text",
+          "name": "",
+          "label": "Search",
+          "required": false
+        },
+        {
+          "type": "text",
+          "name": "",
+          "label": "Tell us about yourself*",
+          "required": false
+        },
+        {
+          "type": "hidden",
+          "name": "0-1/describe_your_position",
+          "label": null,
+          "required": false
+        },
+        {
+          "type": "text",
+          "name": "",
+          "label": "Search",
+          "required": false
+        },
+        {
+          "type": "hidden",
+          "name": "0-1/marketing_funnel",
+          "label": null,
+          "required": false
+        },
+        {
+          "type": "textarea",
+          "name": "g-recaptcha-response",
+          "label": null,
+          "required": false
+        },
+        {
+          "type": "hidden",
+          "name": "g-recaptcha-response",
+          "label": null,
+          "required": false
+        },
+        {
+          "type": "hidden",
+          "name": "hs_context",
+          "label": null,
+          "required": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/64946fe2d67f626674957ef4_GL%20Logo.svg",
+      "alt": "",
+      "w": 135,
+      "h": 29,
+      "natural": "200x43",
+      "objectFit": "fill"
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/63e6c1e86653496ebc384a0e_Dropdown%20icon.svg",
+      "alt": "",
+      "w": 7,
+      "h": 4,
+      "natural": "7x4",
+      "objectFit": "fill"
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/63e6c1e86653496ebc384a0e_Dropdown%20icon.svg",
+      "alt": "",
+      "w": 7,
+      "h": 4,
+      "natural": "7x4",
+      "objectFit": "fill"
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/63e6c1e86653499f2c384a33_mail%20icon.svg",
+      "alt": "",
+      "w": 26,
+      "h": 22,
+      "natural": "26x22",
+      "objectFit": "fill"
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/64946fe2d67f626674957ef4_GL%20Logo.svg",
+      "alt": "",
+      "w": 175,
+      "h": 41,
+      "natural": "200x43",
+      "objectFit": "fill"
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/63e6c1e8665349edcc384a37_Phone%20icon.svg",
+      "alt": "",
+      "w": 20,
+      "h": 20,
+      "natural": "28x22",
+      "objectFit": "fill"
+    }
+  ],
+  "colors": [
+    [
+      "rgb(16, 19, 80)",
+      127
+    ],
+    [
+      "rgb(117, 117, 119)",
+      42
+    ],
+    [
+      "rgb(0, 0, 0)",
+      30
+    ],
+    [
+      "rgb(255, 255, 255)",
+      21
+    ],
+    [
+      "rgb(177, 177, 177)",
+      12
+    ],
+    [
+      "rgb(167, 139, 33)",
+      7
+    ],
+    [
+      "rgb(184, 161, 72)",
+      7
+    ],
+    [
+      "rgb(50, 53, 53)",
+      6
+    ],
+    [
+      "rgb(89, 89, 89)",
+      6
+    ],
+    [
+      "rgb(51, 51, 51)",
+      4
+    ],
+    [
+      "rgb(32, 32, 32)",
+      4
+    ],
+    [
+      "rgb(244, 244, 244)",
+      4
+    ],
+    [
+      "rgba(0, 0, 0, 0.65)",
+      4
+    ],
+    [
+      "rgb(46, 47, 49)",
+      2
+    ],
+    [
+      "rgba(255, 255, 255, 0.89)",
+      2
+    ],
+    [
+      "rgb(68, 68, 68)",
+      2
+    ],
+    [
+      "rgba(255, 255, 255, 0)",
+      1
+    ],
+    [
+      "rgba(25, 26, 29, 0.8)",
+      1
+    ],
+    [
+      "rgb(25, 26, 29)",
+      1
+    ],
+    [
+      "rgba(246, 247, 249, 0)",
+      1
+    ],
+    [
+      "rgb(177, 150, 48)",
+      1
+    ],
+    [
+      "rgb(18, 19, 21)",
+      1
+    ],
+    [
+      "rgb(204, 204, 204)",
+      1
+    ]
+  ],
+  "maxWidths": [
+    [
+      "1184px",
+      1
+    ],
+    [
+      "1360px",
+      1
+    ],
+    [
+      "600px",
+      1
+    ]
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "tag": "div",
+      "cls": "navbar w-nav",
+      "top": 0,
+      "height": 92,
+      "width": 1440,
+      "background": "rgba(255, 255, 255, 0)",
+      "backgroundImage": false,
+      "paddingTop": "11.2px",
+      "paddingBottom": "15px",
+      "heading": null
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "cls": "header contact",
+      "top": 0,
+      "height": 1354,
+      "width": 1440,
+      "background": "rgba(246, 247, 249, 0)",
+      "backgroundImage": false,
+      "paddingTop": "176px",
+      "paddingBottom": "128px",
+      "heading": "‍YOUR GYM SHOULD BE FULL. YOUR BANK ACCOUNT SHOULD BE TOO.‍"
+    },
+    {
+      "index": 2,
+      "tag": "div",
+      "cls": "section-footer",
+      "top": 1354,
+      "height": 432,
+      "width": 1440,
+      "background": "rgb(18, 19, 21)",
+      "backgroundImage": false,
+      "paddingTop": "35.2px",
+      "paddingBottom": "0px",
+      "heading": null
+    },
+    {
+      "index": 3,
+      "tag": "div",
+      "cls": "iub__us-widget",
+      "top": 1786,
+      "height": 52,
+      "width": 1440,
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": false,
+      "paddingTop": "8px",
+      "paddingBottom": "8px",
+      "heading": null
+    },
+    {
+      "index": 4,
+      "tag": "button",
+      "cls": "iubenda-tp-btn iubenda-cs-preferences-link",
+      "top": 862,
+      "height": 38,
+      "width": 38,
+      "background": "rgb(255, 255, 255)",
+      "backgroundImage": true,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "heading": null
+    }
+  ],
+  "fullText": "Resources\nBLOG\nABOUT\nCASE STUDIESCAREERS\n844-496-5673\nGROW MY GYM\n‍YOUR GYM SHOULD BE FULL. YOUR BANK ACCOUNT SHOULD BE TOO.‍\nQualify for a quick call to see how we help gym owners grow—without guesswork, hype, or burn out.\n(844) 496-5673\nAPPLY HERE\n\nWe'd love to hear from you! Please fill out the form and we'll get back to you as soon as possible.\n\n\n\nMobile Phone Number\n🇺🇸\nGym Launch will use your contact information to communicate about our products and services. You may unsubscribe at any time. See our Privacy Policy for details.\nSubmit\nTerms and Conditions\nAll rights reserved.\n(844) 496-5673\nQUICK LINKS\nAbout Us\nPartner With Gym Launch\nCase Studies\nJoin Mission\nBlog\nCookie Policy\nPrivacy Policy\nRESOURCES\n7 Money Models\nStart a Gym Series\nSecrets Book\nSOCIAL\nFacebook\nInstagram\nTik Tok\nYoutube\nTwitter\nNotice at collection\nYour Privacy Choices\nYour consent preferences for tracking technologies"
+}

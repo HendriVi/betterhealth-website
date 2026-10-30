@@ -1,0 +1,116 @@
+{
+  "site": {
+    "id": "14-prestigelabs",
+    "group": "C",
+    "url": "https://www.prestigelabs.com"
+  },
+  "startedAt": "2026-10-30T18:36:28.462Z",
+  "captures": [
+    {
+      "url": "https://www.prestigelabs.com",
+      "finalUrl": "https://www.prestigelabs.com/",
+      "status": 200,
+      "consentClicked": "Reject all",
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:36:39.807Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.prestigelabs.com/page/about-us",
+      "finalUrl": "https://www.prestigelabs.com/page/about-us",
+      "status": 404,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:36:45.831Z",
+      "screens": [
+        "page-about-us_desktop_viewport.png",
+        "page-about-us_desktop_full.jpg"
+      ],
+      "data": "page-about-us_desktop.json"
+    },
+    {
+      "url": "https://www.prestigelabs.com/product/collagen-powder",
+      "finalUrl": "https://www.prestigelabs.com/product/collagen-powder",
+      "status": 404,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:36:51.763Z",
+      "screens": [
+        "product-collagen-powder_desktop_viewport.png",
+        "product-collagen-powder_desktop_full.jpg"
+      ],
+      "data": "product-collagen-powder_desktop.json"
+    },
+    {
+      "url": "https://www.prestigelabs.com/contact",
+      "finalUrl": "https://www.prestigelabs.com/contact",
+      "status": 404,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:36:57.669Z",
+      "screens": [
+        "contact_desktop_viewport.png",
+        "contact_desktop_full.jpg"
+      ],
+      "data": "contact_desktop.json"
+    },
+    {
+      "url": "https://www.prestigelabs.com",
+      "finalUrl": "https://www.prestigelabs.com/",
+      "status": 200,
+      "consentClicked": "Reject all",
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:37:10.006Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    },
+    {
+      "url": "https://www.prestigelabs.com/page/about-us",
+      "finalUrl": "https://www.prestigelabs.com/page/about-us",
+      "status": 404,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:37:17.495Z",
+      "screens": [
+        "page-about-us_mobile_viewport.png",
+        "page-about-us_mobile_full.jpg"
+      ],
+      "data": "page-about-us_mobile.json"
+    },
+    {
+      "url": "https://www.prestigelabs.com/product/collagen-powder",
+      "finalUrl": "https://www.prestigelabs.com/product/collagen-powder",
+      "status": 404,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:37:23.831Z",
+      "screens": [
+        "product-collagen-powder_mobile_viewport.png",
+        "product-collagen-powder_mobile_full.jpg"
+      ],
+      "data": "product-collagen-powder_mobile.json"
+    },
+    {
+      "url": "https://www.prestigelabs.com/contact",
+      "finalUrl": "https://www.prestigelabs.com/contact",
+      "status": 404,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:37:30.405Z",
+      "screens": [
+        "contact_mobile_viewport.png",
+        "contact_mobile_full.jpg"
+      ],
+      "data": "contact_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:37:30.411Z"
+}

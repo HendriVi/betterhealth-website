@@ -41,7 +41,7 @@ const VIEWPORTS = [
 const PAGE_HINTS = [
   /about|team|who-we-are|our-story|clinicians|doctors/i,
   /pricing|membership|plans|cost|fees|join/i,
-  /how-it-works|approach|method|process|programme|program|services|treatment/i,
+  /how-it-works|approach|method|programme|program|services|treatment/i,
   /results|outcomes|evidence|science|research|case-stud|reviews|testimonials/i,
   /contact|book|enquir|inquir|get-started|apply|consult/i,
 ];
@@ -131,12 +131,30 @@ async function discoverPages(page, base) {
   const picked = [];
   for (const hint of PAGE_HINTS) {
     const hit = links.find(l => {
-      try { return new URL(l.href).host === host && (hint.test(l.href) || hint.test(l.text)) && !picked.includes(l.href.split('#')[0]); }
+      try { return new URL(l.href).host === host && !SKIP.test(l.href) && (hint.test(l.href) || hint.test(l.text)) && !picked.includes(l.href.split('#')[0]); }
       catch { return false; }
     });
     if (hit) picked.push(hit.href.split('#')[0]);
   }
   return picked.slice(0, maxPages - 1);
+}
+
+// Legal, account and utility pages are never useful design evidence.
+const SKIP = /privacy|terms|legal|cookie|agreement|data-processing|career|jobs|login|log-in|sign-?in|cart|account|press|blog\/|podcast|imprint|impressum|accessib|sitemap|\.pdf/i;
+
+async function dismissConsent(page) {
+  // Prefer declining; fall back to accepting so the banner does not cover the capture.
+  for (const re of [/^(decline|reject|deny|only (necessary|essential)|necessary only)/i, /^(accept|agree|allow|got it|ok)/i]) {
+    for (const el of await page.$$('button, a[role="button"], [role="button"]')) {
+      const t = ((await el.innerText().catch(() => '')) || '').trim();
+      if (t.length < 40 && re.test(t) && await el.isVisible().catch(() => false)) {
+        await el.click({ timeout: 2000 }).catch(() => {});
+        await page.waitForTimeout(600);
+        return t;
+      }
+    }
+  }
+  return null;
 }
 
 const slug = u => (new URL(u).pathname.replace(/\/+$/, '').replace(/[^a-z0-9]+/gi, '-').replace(/^-/, '') || 'home');
@@ -158,6 +176,7 @@ for (const site of sites) {
       try {
         const res = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
         await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+        const consent = await dismissConsent(page);
         await settle(page);
         // Extend in place so the running desktop loop also visits the discovered pages.
         if (vp.name === 'desktop' && url === site.url) {
@@ -167,7 +186,7 @@ for (const site of sites) {
         await page.screenshot({ path: path.join(dir, 'screens', `${name}_full.png`), fullPage: true }).catch(e => manifest.errors.push({ url, vp: vp.name, step: 'fullpage', error: String(e) }));
         const data = await extract(page);
         await fs.writeFile(path.join(dir, 'data', `${name}.json`), JSON.stringify(data, null, 2));
-        manifest.captures.push({ url, finalUrl: page.url(), status: res?.status() ?? null, viewport: `${vp.width}x${vp.height}`,
+        manifest.captures.push({ url, finalUrl: page.url(), status: res?.status() ?? null, consentClicked: consent, viewport: `${vp.width}x${vp.height}`,
           capturedAt: new Date().toISOString(), screens: [`${name}_viewport.png`, `${name}_full.png`], data: `${name}.json` });
         console.log(`ok  ${site.id} ${vp.name} ${url}`);
       } catch (e) {

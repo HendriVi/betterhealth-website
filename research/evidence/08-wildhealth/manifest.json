@@ -1,0 +1,84 @@
+{
+  "site": {
+    "id": "08-wildhealth",
+    "group": "B",
+    "url": "https://www.wildhealth.com"
+  },
+  "startedAt": "2026-10-30T18:39:26.393Z",
+  "captures": [
+    {
+      "url": "https://www.wildhealth.com",
+      "finalUrl": "https://www.wildhealth.com/",
+      "status": 200,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:39:34.925Z",
+      "screens": [
+        "home_desktop_viewport.png",
+        "home_desktop_full.jpg"
+      ],
+      "data": "home_desktop.json"
+    },
+    {
+      "url": "https://www.wildhealth.com/team",
+      "finalUrl": "https://www.wildhealth.com/team",
+      "status": 200,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:39:40.057Z",
+      "screens": [
+        "team_desktop_viewport.png",
+        "team_desktop_full.jpg"
+      ],
+      "data": "team_desktop.json"
+    },
+    {
+      "url": "https://www.wildhealth.com/membership",
+      "finalUrl": "https://www.wildhealth.com/membership",
+      "status": 200,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:39:51.655Z",
+      "screens": [
+        "membership_desktop_viewport.png",
+        "membership_desktop_full.jpg"
+      ],
+      "data": "membership_desktop.json"
+    },
+    {
+      "url": "https://www.wildhealth.com",
+      "finalUrl": "https://www.wildhealth.com/",
+      "status": 200,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:40:01.698Z",
+      "screens": [
+        "home_mobile_viewport.png",
+        "home_mobile_full.jpg"
+      ],
+      "data": "home_mobile.json"
+    },
+    {
+      "url": "https://www.wildhealth.com/team",
+      "finalUrl": "https://www.wildhealth.com/team",
+      "status": 200,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:40:10.476Z",
+      "screens": [
+        "team_mobile_viewport.png",
+        "team_mobile_full.jpg"
+      ],
+      "data": "team_mobile.json"
+    },
+    {
+      "url": "https://www.wildhealth.com/membership",
+      "finalUrl": "https://www.wildhealth.com/membership",
+      "status": 200,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:40:23.291Z",
+      "screens": [
+        "membership_mobile_viewport.png",
+        "membership_mobile_full.jpg"
+      ],
+      "data": "membership_mobile.json"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-30T18:40:23.303Z"
+}
