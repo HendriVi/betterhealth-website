@@ -194,7 +194,7 @@
       "textTransform": "uppercase",
       "color": "rgb(44, 40, 37)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 862,
+      "x": 863,
       "y": 1763,
       "w": 171,
       "h": 16
@@ -210,7 +210,7 @@
       "textTransform": "uppercase",
       "color": "rgb(44, 40, 37)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 855,
+      "x": 863,
       "y": 1875,
       "w": 171,
       "h": 16
@@ -275,7 +275,7 @@
       "color": "rgb(254, 254, 254)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
       "x": 32,
-      "y": 5208,
+      "y": 5178,
       "w": 459,
       "h": 32
     },
@@ -428,7 +428,7 @@
       "textTransform": "none",
       "color": "rgb(44, 40, 37)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 1049,
+      "x": 1050,
       "y": 1763,
       "w": 358,
       "h": 63
@@ -443,7 +443,7 @@
       "textTransform": "none",
       "color": "rgb(44, 40, 37)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 1042,
+      "x": 1050,
       "y": 1875,
       "w": 358,
       "h": 84
@@ -504,7 +504,7 @@
       "color": "rgb(254, 254, 254)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
       "x": 32,
-      "y": 5256,
+      "y": 5226,
       "w": 459,
       "h": 100
     },
@@ -519,7 +519,7 @@
       "color": "rgb(254, 254, 254)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
       "x": 32,
-      "y": 5372,
+      "y": 5342,
       "w": 459,
       "h": 140
     },

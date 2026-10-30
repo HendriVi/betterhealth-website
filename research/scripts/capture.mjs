@@ -32,6 +32,9 @@ const only = args.filter(a => !a.startsWith('--'));
 const extra = opt('extra', '').split(',').filter(Boolean);
 // --append keeps captures already in manifest.json (use with --extra to add pages without redoing the site).
 const append = args.includes('--append');
+// --stitch: for sites whose content only appears on scroll, also photograph the desktop page one screen at a
+// time into screens/<page>_desktop_frames/. scripts/stitch.py joins them into <page>_desktop_stitched.jpg.
+const stitch = args.includes('--stitch');
 
 const sites = JSON.parse(await fs.readFile(path.join(here, 'sites.json'), 'utf8'))
   .filter(s => only.length === 0 || only.includes(s.id));
@@ -187,6 +190,18 @@ for (const site of sites) {
         // Extend in place so the running desktop loop also visits the discovered pages.
         if (!append && vp.name === 'desktop' && url === site.url) {
           for (const p of await discoverPages(page, site.url)) if (!pages.includes(p) && p !== page.url().split('#')[0]) pages.push(p);
+        }
+        if (stitch && vp.name === 'desktop') {
+          const fdir = path.join(dir, 'screens', `${name}_frames`);
+          await fs.mkdir(fdir, { recursive: true });
+          const H = await page.evaluate(() => document.documentElement.scrollHeight);
+          let n = 0;
+          for (let y = 0; y < H; y += vp.height, n++) {
+            await page.evaluate(v => scrollTo(0, v), y); await page.waitForTimeout(800);
+            const actual = await page.evaluate(() => Math.round(scrollY));
+            await page.screenshot({ path: path.join(fdir, `${String(n).padStart(3, '0')}_${actual}.jpg`), type: 'jpeg', quality: 85 });
+          }
+          await page.evaluate(() => scrollTo(0, 0)); await page.waitForTimeout(500);
         }
         await page.screenshot({ path: path.join(dir, 'screens', `${name}_viewport.png`) });
         await page.screenshot({ path: path.join(dir, 'screens', `${name}_full.png`), fullPage: true }).catch(e => manifest.errors.push({ url, vp: vp.name, step: 'fullpage', error: String(e) }));

@@ -3,8 +3,7 @@
 Research workspace for the 14-site investigation defined in the master prompt.
 Nothing in this folder changes the BetterHealth website.
 
-**Status (2026-10-30): blocked. No site has been inspected yet.** See
-[`00-availability-report.md`](00-availability-report.md).
+**Status (2026-10-30):** network access opened mid-session; 12 of 14 sites captured; dossiers 01–05 (Group A) written. Neko Health (Vercel checkpoint) and One Medical (CloudFront 403) are blocked by bot protection and are not bypassed. REA has not been run. Original blocker history: [`00-availability-report.md`](00-availability-report.md).
 
 ## Layout
 
@@ -14,6 +13,7 @@ research/
   scripts/sites.json          the 14 mandatory subjects (ids, groups, entry URLs)
   scripts/capture.mjs         evidence capture harness (Playwright + CDP port for REA)
   evidence/<site-id>/         raw evidence, written only by the harness or REA
+  scripts/digest.py, preview.py, stitch.py, compress.py   helpers (digest data, shrink screenshots, join scroll frames, shrink files)
     manifest.json             every capture: URL, final URL, HTTP status, viewport, timestamp, errors
     screens/<page>_<viewport>_{viewport,full}.png
     data/<page>_<viewport>.json   computed styles, fonts, colours, sections, CTAs, forms, full text
@@ -49,17 +49,17 @@ research/
 
 | # | Site | Group | Captured | REA | Dossier |
 |---|------|-------|----------|-----|---------|
-| 01 | Heartwood Collective | A | blocked | – | – |
-| 02 | Biograph | A | blocked | – | – |
-| 03 | Kusnacht Practice | A | blocked | – | – |
-| 04 | Lanserhof | A | blocked | – | – |
-| 05 | Chenot | A | blocked | – | – |
-| 06 | Neko Health | B | blocked | – | – |
-| 07 | Function Health | B | blocked | – | – |
-| 08 | Wild Health | B | blocked | – | – |
-| 09 | One Medical | B | blocked | – | – |
-| 10 | Parsley Health | B | blocked | – | – |
-| 11 | Acquisition.com | C | blocked | – | – |
-| 12 | Gym Launch | C | blocked | – | – |
-| 13 | Spring Health | C | blocked | – | – |
-| 14 | Prestige Labs | C | blocked | – | – |
+| 01 | Heartwood Collective | A | captured | – | [dossier](dossiers/01-heartwood.md) |
+| 02 | Biograph | A | captured | – | [dossier](dossiers/02-biograph.md) |
+| 03 | Kusnacht Practice | A | captured | – | [dossier](dossiers/03-kusnacht.md) |
+| 04 | Lanserhof | A | captured | – | [dossier](dossiers/04-lanserhof.md) |
+| 05 | Chenot | A | captured | – | [dossier](dossiers/05-chenot.md) |
+| 06 | Neko Health | B | blocked by bot protection | – | – |
+| 07 | Function Health | B | captured | – | – |
+| 08 | Wild Health | B | captured | – | – |
+| 09 | One Medical | B | blocked by bot protection | – | – |
+| 10 | Parsley Health | B | captured | – | – |
+| 11 | Acquisition.com | C | captured | – | – |
+| 12 | Gym Launch | C | captured | – | – |
+| 13 | Spring Health | C | captured | – | – |
+| 14 | Prestige Labs | C | captured | – | – |

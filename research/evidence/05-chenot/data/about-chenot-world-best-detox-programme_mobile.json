@@ -1380,19 +1380,19 @@
       "objectFit": "cover"
     },
     {
-      "src": "https://www.chenot.com/wp-content/uploads/2024/07/240506_Chenot-Palace-Weggis_DSCF0062-1-scaled.jpeg.webp",
+      "src": "",
       "alt": "",
       "w": 335,
       "h": 251,
-      "natural": "2560x1920",
+      "natural": "0x0",
       "objectFit": "cover"
     },
     {
-      "src": "https://www.chenot.com/wp-content/uploads/2024/04/240501_Chenot-Palace-Weggis__Z3A9913-scaled.jpeg.webp",
+      "src": "",
       "alt": "man swimming underwater",
       "w": 335,
       "h": 251,
-      "natural": "2560x1707",
+      "natural": "0x0",
       "objectFit": "cover"
     },
     {
@@ -1507,7 +1507,7 @@
     {
       "index": 4,
       "tag": "div",
-      "cls": "elementor-element elementor-element-a226c24 e-flex e-con-boxed e-con e-parent e-",
+      "cls": "elementor-element elementor-element-a226c24 e-flex e-con-boxed e-con e-parent",
       "top": 3556,
       "height": 1622,
       "width": 390,

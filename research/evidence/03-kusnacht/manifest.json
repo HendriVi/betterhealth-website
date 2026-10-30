@@ -4,7 +4,7 @@
     "group": "A",
     "url": "https://kusnachtpractice.com"
   },
-  "startedAt": "2026-10-30T18:42:10.537Z",
+  "startedAt": "2026-10-30T18:53:30.641Z",
   "captures": [
     {
       "url": "https://kusnachtpractice.com",
@@ -12,7 +12,7 @@
       "status": 200,
       "consentClicked": "Deny",
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:42:18.658Z",
+      "capturedAt": "2026-10-30T18:53:46.501Z",
       "screens": [
         "home_desktop_viewport.png",
         "home_desktop_full.jpg"
@@ -25,7 +25,7 @@
       "status": 200,
       "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:42:22.404Z",
+      "capturedAt": "2026-10-30T18:53:54.216Z",
       "screens": [
         "pricing_desktop_viewport.png",
         "pricing_desktop_full.jpg"
@@ -38,7 +38,7 @@
       "status": 200,
       "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:42:28.111Z",
+      "capturedAt": "2026-10-30T18:54:07.645Z",
       "screens": [
         "our-approach_desktop_viewport.png",
         "our-approach_desktop_full.jpg"
@@ -51,7 +51,7 @@
       "status": 200,
       "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:42:31.525Z",
+      "capturedAt": "2026-10-30T18:54:14.019Z",
       "screens": [
         "contact_desktop_viewport.png",
         "contact_desktop_full.jpg"
@@ -64,7 +64,7 @@
       "status": 200,
       "consentClicked": "Deny",
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:42:41.406Z",
+      "capturedAt": "2026-10-30T18:54:23.740Z",
       "screens": [
         "home_mobile_viewport.png",
         "home_mobile_full.jpg"
@@ -77,7 +77,7 @@
       "status": 200,
       "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:42:45.909Z",
+      "capturedAt": "2026-10-30T18:54:28.242Z",
       "screens": [
         "pricing_mobile_viewport.png",
         "pricing_mobile_full.jpg"
@@ -90,7 +90,7 @@
       "status": 200,
       "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:42:52.856Z",
+      "capturedAt": "2026-10-30T18:54:34.972Z",
       "screens": [
         "our-approach_mobile_viewport.png",
         "our-approach_mobile_full.jpg"
@@ -103,7 +103,7 @@
       "status": 200,
       "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:42:57.447Z",
+      "capturedAt": "2026-10-30T18:54:38.671Z",
       "screens": [
         "contact_mobile_viewport.png",
         "contact_mobile_full.jpg"
@@ -112,5 +112,5 @@
     }
   ],
   "errors": [],
-  "finishedAt": "2026-10-30T18:42:57.456Z"
+  "finishedAt": "2026-10-30T18:54:38.680Z"
 }
