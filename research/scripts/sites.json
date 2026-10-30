@@ -1,0 +1,16 @@
+[
+  {"id":"01-heartwood","group":"A","url":"https://www.thehwc.com"},
+  {"id":"02-biograph","group":"A","url":"https://www.biograph.com"},
+  {"id":"03-kusnacht","group":"A","url":"https://kusnachtpractice.com"},
+  {"id":"04-lanserhof","group":"A","url":"https://lanserhof.com/en"},
+  {"id":"05-chenot","group":"A","url":"https://www.chenot.com"},
+  {"id":"06-neko","group":"B","url":"https://www.nekohealth.com"},
+  {"id":"07-function","group":"B","url":"https://www.functionhealth.com"},
+  {"id":"08-wildhealth","group":"B","url":"https://www.wildhealth.com"},
+  {"id":"09-onemedical","group":"B","url":"https://www.onemedical.com"},
+  {"id":"10-parsley","group":"B","url":"https://www.parsleyhealth.com"},
+  {"id":"11-acquisition","group":"C","url":"https://www.acquisition.com"},
+  {"id":"12-gymlaunch","group":"C","url":"https://www.gymlaunch.com"},
+  {"id":"13-springhealth","group":"C","url":"https://www.springhealth.com"},
+  {"id":"14-prestigelabs","group":"C","url":"https://www.prestigelabs.com"}
+]
