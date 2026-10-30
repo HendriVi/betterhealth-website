@@ -56,7 +56,7 @@ research/
 | 05 | Chenot | A | captured | – | [dossier](dossiers/05-chenot.md) |
 | 06 | Neko Health | B | blocked by bot protection | – | – |
 | 07 | Function Health | B | captured | – | [dossier](dossiers/07-function-health.md) |
-| 08 | Wild Health | B | captured | – | – |
+| 08 | Wild Health | B | captured | – | [dossier](dossiers/08-wild-health.md) |
 | 09 | One Medical | B | blocked by bot protection | – | – |
 | 10 | Parsley Health | B | captured | – | – |
 | 11 | Acquisition.com | C | captured | – | – |
