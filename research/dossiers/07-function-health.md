@@ -1,7 +1,7 @@
 # 07 · Function Health — https://www.functionhealth.com
 
 **Group B · Membership positioning, diagnostic value communication, pricing, acquisition**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/07-function/` (cookie banner "Your Privacy Choices" was not dismissed: it is visible at the lower left of the first viewport)
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -127,7 +127,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run; cookie banner left open in screenshots; `/what-we-test`, `/imaging`, `/faq` not captured; sign-up app not visited; videos not played; animations and the "PAUSE MOTION" behaviour not measured; no hover states.
+- **Limits:** REA homepage inspection only; cookie banner left open in screenshots; `/what-we-test`, `/imaging`, `/faq` not captured; sign-up app not visited; videos not played; animations and the "PAUSE MOTION" behaviour not measured; no hover states.
 - **Open questions:** What is behind "1000+ conditions" and "~26"? Why do 160+ tests and 100+ biomarkers both appear? Is the board advisory only? How does the stale promotion affect trust?
 - **Misapplication risks for BetterHealth:**
   - Function's model is standardised, high-volume testing with a low price; BetterHealth's value is individual clinical judgment. Counting tests (160+) as the benefit would invite the wrong comparison.

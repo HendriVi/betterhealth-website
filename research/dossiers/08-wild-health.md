@@ -1,7 +1,7 @@
 # 08 · Wild Health — https://www.wildhealth.com
 
 **Group B · Precision medicine, individualisation, high-value membership, clinical service packaging**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/08-wildhealth/`
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -123,7 +123,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run; external forms and the comparison document not opened; hero rotation, accordions, video and hover states not examined; `/what-to-expect` and the lower-price insurance offer not captured; dark-theme contrast not measured.
+- **Limits:** REA homepage inspection only; external forms and the comparison document not opened; hero rotation, accordions, video and hover states not examined; `/what-to-expect` and the lower-price insurance offer not captured; dark-theme contrast not measured.
 - **Open questions:** What do the results figures come from? What does the application ask? What does the insurance-accepting offer include? How are the three rings animated?
 - **Misapplication risks for BetterHealth:**
   - A $25,000 concierge model and "unlimited" access are not feasible for a small practice with limited physician time; copying them promises availability BetterHealth cannot deliver.

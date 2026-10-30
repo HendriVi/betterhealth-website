@@ -1,7 +1,7 @@
 # 11 · Acquisition.com — https://www.acquisition.com
 
 **Group C · Direct-response copywriting, value proposition, customer qualification, proof, authority**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/11-acquisition/`
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -123,7 +123,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** only two pages captured; the workshop, roadmap and course pages (where the conversion actually occurs) are missing; no price seen; no REA run; the HubSpot forms and any pop-ups not tested; accordion not opened in the capture; hover states not captured.
+- **Limits:** only two pages captured; the workshop, roadmap and course pages (where the conversion actually occurs) are missing; no price seen; REA homepage inspection only; the HubSpot forms and any pop-ups not tested; accordion not opened in the capture; hover states not captured.
 - **Open questions:** What does the workshop cost? What does the roadmap ask for? What is the conversion path from free course to call? How are "81 NPS" and "97.1 % retention" defined?
 - **Misapplication risks for BetterHealth:**
   - Direct-response tactics (urgency, "Brand new", all-caps, revenue boasts) are suited to business education sold to ambitious founders. In healthcare they could read as pressure on a vulnerable person and may breach advertising rules.

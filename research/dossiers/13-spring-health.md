@@ -1,7 +1,7 @@
 # 13 · Spring Health — https://www.springhealth.com
 
 **Group C · Evidence-driven mental-health communication, outcomes, corporate buyers, credibility, translating complex services into a clear offer**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/13-springhealth/`
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -127,7 +127,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run; registration and demo flows not visited; "Our impact"/methodology pages not captured; the accordion and the ring animation not examined; the full-page screenshot shows carousel quotes cut at the edges; no hover states; the numbers 92 % and 4.8 were read from the screenshot, not from the DOM text.
+- **Limits:** REA homepage inspection only; registration and demo flows not visited; "Our impact"/methodology pages not captured; the accordion and the ring animation not examined; the full-page screenshot shows carousel quotes cut at the edges; no hover states; the numbers 92 % and 4.8 were read from the screenshot, not from the DOM text.
 - **Open questions:** What defines "clinical improvement"? How many members, over what period? What is the difference between "covered" and "have access" for the 170 million figure? What does the digital assessment ask?
 - **Misapplication risks for BetterHealth:**
   - Spring Health's model is an insurance- and employer-funded platform at scale. Insurer logos, "$0 per session", "40k+ providers" and a network-matching flow have no equivalent in a self-pay, physician-led practice.

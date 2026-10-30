@@ -1,7 +1,7 @@
 # 02 · Biograph — https://www.biograph.com
 
 **Group A · Premium healthcare presentation, clinical authority, membership architecture**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/02-biograph/`
 
 Labels: **[V]** Verified (a file in `evidence/` shows it) · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified / not inspected.
@@ -139,7 +139,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run, no hover states, accordion not opened, sign-up flow not visited, `/contact` returned 502, Black tier price and compare page not read, case study not fetched, 5 FAQ answers read only partly.
+- **Limits:** REA homepage inspection only, no hover states, accordion not opened, sign-up flow not visited, `/contact` returned 502, Black tier price and compare page not read, case study not fetched, 5 FAQ answers read only partly.
 - **Open questions:** What does the sign-up ask for? What are the statistics based on? How does the page perform on conversion? Is the sun-set photography licensed or commissioned?
 - **Misapplication risks for BetterHealth:**
   - Biograph sells a standardised, equipment-heavy product to a mass-premium market with venture-scale marketing. BetterHealth is a small, physician-led practice; its differentiator is judgment, not an inventory of 22 tests.

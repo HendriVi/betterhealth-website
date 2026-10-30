@@ -1,7 +1,7 @@
 # 14 · Prestige Labs — https://www.prestigelabs.com
 
 **Group C · Health-adjacent direct-response communication, product presentation, trust, retention, commercialisation**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/14-prestigelabs/`
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -117,7 +117,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run; only four pages; three returned a 404 status although they rendered; no checkout, cart or subscription terms; filter pills and carousel not operated; no hover states; the badges' certifier unknown; mobile layout not examined beyond the capture.
+- **Limits:** REA homepage inspection only; only four pages; three returned a 404 status although they rendered; no checkout, cart or subscription terms; filter pills and carousel not operated; no hover states; the badges' certifier unknown; mobile layout not examined beyond the capture.
 - **Open questions:** Why do those routes return 404? Which body certifies the products? What are the subscription terms? Is the brand's current owner the same as the founders cited by Acquisition.com?
 - **Misapplication risks for BetterHealth:**
   - A supplement store sells a repeat consumer product at low prices; a clinical practice sells judgment and continuity. Almost none of the commercial mechanics (coupons, bundles, loyalty cash, subscription defaults) are appropriate.

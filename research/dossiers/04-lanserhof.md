@@ -1,7 +1,7 @@
 # 04 · Lanserhof — https://lanserhof.com/en
 
 **Group A · Luxury medical hospitality, visual restraint, institutional credibility, diagnostics**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/04-lanserhof/` (cookie banner declined with "Reject")
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -133,7 +133,7 @@ Analysis:
 
 - **Limits:**
   - On mobile (390 px) the page scrolls inside `<main>` (scrollHeight 7,195 px, clientHeight 730 px); the document height is only 844 px. The "full-page" mobile screenshot therefore shows a single viewport. Mobile layout below the hero has **not** been captured; it needs a scroll-container capture.
-  - The hero video was not examined; no hover, menu or focus-area interaction was captured; the booking flow and AI replies were not tested; no REA run.
+  - The hero video was not examined; no hover, menu or focus-area interaction was captured; the booking flow and AI replies were not tested; REA homepage inspection only.
   - The heading measurements come from an ad hoc script not yet saved into `evidence/`.
 - **Open questions:** What does `/booking` ask? Are prices shown on programme pages? How are the awards chosen? What does the AI recommend, and is it clinically reviewed?
 - **Misapplication risks for BetterHealth:**

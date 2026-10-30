@@ -1,7 +1,7 @@
 # 01 · Heartwood Collective — https://www.thehwc.com
 
 **Group A · Editorial design, premium positioning, psychological recognition**
-**Captured:** 2026-10-30 · Chromium (Playwright) at 1440×900 and 390×844 · REA not yet run (see `../00-availability-report.md`)
+**Captured:** 2026-10-30 · Chromium (Playwright) at 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`) (see `../00-availability-report.md`)
 **Evidence folder:** `../evidence/01-heartwood/` (manifest.json lists every capture with status and timestamp)
 
 Labels: **[V]** Verified (a file in `evidence/` shows it) · **[I]** Interpretation (my reading of what a verified fact does) · **[H]** Hypothesis (a testable guess, not demonstrated).
@@ -137,7 +137,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits of this dossier:** only six pages captured; nav items and the booking form not captured; no REA run; no performance, network or accessibility measurements; no hover or menu states; no hex values were verified against the stylesheet (colours are computed values converted from rgb).
+- **Limits of this dossier:** only six pages captured; nav items and the booking form not captured; REA homepage inspection only; no performance, network or accessibility measurements; no hover or menu states; no hex values were verified against the stylesheet (colours are computed values converted from rgb).
 - **Open questions:** What does the booking form ask? Does the hamburger menu list more than the four footer links? Is the "PORTAL" typeface a licensed commercial face or custom? How long does a visitor stay on each large empty field?
 - **Misapplication risks for BetterHealth:**
   - Heartwood sells a team-level, relational service with no clinical risk. A clinical practice must state scope, credentials, fees, confidentiality and what a first appointment involves; the page captured states none of these for its own service.

@@ -1,7 +1,7 @@
 # 12 · Gym Launch — https://www.gymlaunch.com
 
 **Group C · Offer construction, problem identification, outcome framing, testimonials, acquisition**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/12-gymlaunch/`
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -124,7 +124,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run; hero button destination, modals and the Skool and Money Models pages not tested; no price or coaching description on captured pages; individual case studies not read; overlapping images may be a layout defect or a design choice (not resolved); no hover states; footer legal text not read.
+- **Limits:** REA homepage inspection only; hero button destination, modals and the Skool and Money Models pages not tested; no price or coaching description on captured pages; individual case studies not read; overlapping images may be a layout defect or a design choice (not resolved); no hover states; footer legal text not read.
 - **Open questions:** What does the paid coaching cost and include? Why do 6,000+ and 5,000+ both appear? What are the selection criteria behind the case studies? Who owns the brand now?
 - **Misapplication risks for BetterHealth:**
   - Hype language ("CRUSHING it", "torrential downpour"), identity flattery ("Gym Lords") and revenue-style claims are not appropriate for a patient seeking help for a health condition, and would conflict with professional advertising rules.

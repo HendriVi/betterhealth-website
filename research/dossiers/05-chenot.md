@@ -1,7 +1,7 @@
 # 05 · Chenot — https://www.chenot.com
 
 **Group A · Branded medical methodology, programme packaging, price presentation, scientific authority**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/05-chenot/` (cookie banner declined with "DENY")
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -125,7 +125,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run; menu overlay not opened; programme and booking pages not captured; units of the prices unknown; mobile full-page capture likely shows the same blank reveal areas and was not redone; hover states not captured; study not read; award issuer not identified.
+- **Limits:** REA homepage inspection only; menu overlay not opened; programme and booking pages not captured; units of the prices unknown; mobile full-page capture likely shows the same blank reveal areas and was not redone; hover states not captured; study not read; award issuer not identified.
 - **Open questions:** What do the prices cover (nights, programme length)? What are the study's design and outcomes? Which body issues the award? How is the 24-hour response measured?
 - **Misapplication risks for BetterHealth:**
   - Chenot's claims ("reverse biological ageing", "address the root cause: ageing", "eliminate toxins", reaching 120) are the kind of unqualified promise the uploaded dossiers also flag. A physician-led practice cannot make them and should not borrow the vocabulary ("detox", "root cause").

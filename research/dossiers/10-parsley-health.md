@@ -1,7 +1,7 @@
 # 10 · Parsley Health — https://www.parsleyhealth.com
 
 **Group B · Framing of complex or poorly understood symptoms, comprehensive care, membership and insurance**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/10-parsley/`
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -131,7 +131,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run; condition pages and clinician pages not captured; sign-up steps after step 1 not completed; the carousel, accordion and comparison-table icons not inspected; mobile layout viewed only in the capture; no hover states.
+- **Limits:** REA homepage inspection only; condition pages and clinician pages not captured; sign-up steps after step 1 not completed; the carousel, accordion and comparison-table icons not inspected; mobile layout viewed only in the capture; no hover states.
 - **Open questions:** What is the basis of "89 %"? How is the Parsley Symptom Index validated? What does the insurance step ask? How are visit counts handled for patients who need more care?
 - **Misapplication risks for BetterHealth:**
   - Parsley's model depends on insurance billing in the US; BetterHealth is self-pay in Switzerland, so the insurer-logo block, "Verify insurance" button and in-network price do not transfer.

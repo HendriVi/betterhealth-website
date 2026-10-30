@@ -16,7 +16,7 @@
 
 **Consequence:** nothing in this report is commercially supported. Every finding is either an observed mechanism (E1) or a company claim (E2). The recommendations below are hypotheses for BetterHealth to test; none is a proven conversion principle. Searching for E3/E4 evidence (including the Metalab/Framer case study for Biograph) is the next research task.
 
-**Not measured anywhere in this study:** conversion rates, bounce, scroll depth, load time, accessibility audits, REA bundle/network analysis.
+**Not measured anywhere in this study:** conversion rates, bounce, scroll depth, load time, accessibility audits, network traces, third-party tool inventories. REA 6.8.0 was run on each homepage (DOM, accessibility tree and same-origin script inventory: `../evidence/rea-summary.md`); its network and console sections are empty because it attached after load, and third-party scripts were filtered by its default origin policy.
 
 ## 1. Cross-site facts that were measured
 
@@ -207,7 +207,7 @@ Qualification is explicit at Acquisition.com (revenue threshold, industry fit), 
 ## 6. Gaps that limit this report
 
 1. No E3/E4 evidence collected (experiments, revenue, traffic).
-2. REA not run: no bundle, network or accessibility data.
+2. REA ran on homepages only and passively: no network trace, no third-party tool inventory, no REA data for inner pages or interaction states.
 3. Key funnel pages not captured: Acquisition (workshop, roadmap), Gym Launch (modal, Skool), Spring (sign-up), Biograph (sign-up), Chenot (programme and booking pages), Parsley (conditions, later sign-up steps).
 4. Neko Health and One Medical missing.
 5. Mobile layouts were captured as screenshots but not analysed in depth; Lanserhof's mobile page scrolls inside a container and is not fully captured.

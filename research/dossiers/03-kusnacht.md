@@ -1,7 +1,7 @@
 # 03 · Kusnacht Practice — https://kusnachtpractice.com
 
 **Group A · Ultra-premium psychiatric care, confidentiality, individualised treatment, high-ticket communication**
-**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA not yet run
+**Captured:** 2026-10-30 · Chromium (Playwright) 1440×900 and 390×844 · REA 6.8.0 run on the homepage only (passive; network/console empty, third-party origins filtered; see `../evidence/rea-summary.md` and `../evidence/<site>/rea/`)
 **Evidence folder:** `../evidence/03-kusnacht/` (consent banner declined with "Deny" before capture)
 
 Labels: **[V]** Verified · **[I]** Interpretation · **[H]** Hypothesis · **[U]** Unverified.
@@ -127,7 +127,7 @@ Analysis:
 
 ## 10. Limitations, open questions, misapplication risks
 
-- **Limits:** no REA run; hero video not examined; scroll-reveal band unresolved; menu overlay not opened; no form or chat tested; team, FAQ and treatment pages not captured; hover states not captured.
+- **Limits:** REA homepage inspection only; hero video not examined; scroll-reveal band unresolved; menu overlay not opened; no form or chat tested; team, FAQ and treatment pages not captured; hover states not captured.
 - **Open questions:** What do the three "Speak to us" buttons do? Does the team page name clinicians with qualifications? How quickly is a first call answered?
 - **Misapplication risks for BetterHealth:**
   - Kusnacht's price (from CHF 117,300/week), 24/7 residential model and villa hospitality have no equivalent in a small outpatient practice. Copying "ultra luxury" language would promise something BetterHealth does not offer.

@@ -3,7 +3,7 @@
 Research workspace for the 14-site investigation defined in the master prompt.
 Nothing in this folder changes the BetterHealth website.
 
-**Status (2026-10-30):** 12 of 14 sites captured and written up (01–05, 07, 08, 10–14); cross-site synthesis and all six deliverables drafted in `synthesis/`. Neko Health and One Medical are blocked by bot protection and not included. Not yet done: REA run, commercial-evidence search, missing funnel pages. No site code has been written; an art direction must be chosen first. Neko Health (Vercel checkpoint) and One Medical (CloudFront 403) are blocked by bot protection and are not bypassed. REA has not been run. Original blocker history: [`00-availability-report.md`](00-availability-report.md).
+**Status (2026-10-30):** 12 of 14 sites captured and written up (01–05, 07, 08, 10–14); cross-site synthesis and all six deliverables drafted in `synthesis/`. Neko Health and One Medical are blocked by bot protection and not included. REA 6.8.0 has been run on all 12 homepages (`evidence/rea-summary.md`; passive attach after load, so no network trace and no third-party scripts). Not yet done: REA with pre-navigation attach and third-party origins, commercial-evidence search, missing funnel pages. No site code has been written; an art direction must be chosen first. Neko Health (Vercel checkpoint) and One Medical (CloudFront 403) are blocked by bot protection and are not bypassed. Original blocker history: [`00-availability-report.md`](00-availability-report.md).
 
 ## Layout
 
@@ -55,17 +55,17 @@ research/
 
 | # | Site | Group | Captured | REA | Dossier |
 |---|------|-------|----------|-----|---------|
-| 01 | Heartwood Collective | A | captured | – | [dossier](dossiers/01-heartwood.md) |
-| 02 | Biograph | A | captured | – | [dossier](dossiers/02-biograph.md) |
-| 03 | Kusnacht Practice | A | captured | – | [dossier](dossiers/03-kusnacht.md) |
-| 04 | Lanserhof | A | captured | – | [dossier](dossiers/04-lanserhof.md) |
-| 05 | Chenot | A | captured | – | [dossier](dossiers/05-chenot.md) |
+| 01 | Heartwood Collective | A | captured | homepage inspect + bundle | [dossier](dossiers/01-heartwood.md) |
+| 02 | Biograph | A | captured | homepage inspect + bundle | [dossier](dossiers/02-biograph.md) |
+| 03 | Kusnacht Practice | A | captured | homepage inspect + bundle | [dossier](dossiers/03-kusnacht.md) |
+| 04 | Lanserhof | A | captured | homepage inspect + bundle | [dossier](dossiers/04-lanserhof.md) |
+| 05 | Chenot | A | captured | homepage inspect + bundle | [dossier](dossiers/05-chenot.md) |
 | 06 | Neko Health | B | blocked by bot protection | – | – |
-| 07 | Function Health | B | captured | – | [dossier](dossiers/07-function-health.md) |
-| 08 | Wild Health | B | captured | – | [dossier](dossiers/08-wild-health.md) |
+| 07 | Function Health | B | captured | homepage inspect + bundle | [dossier](dossiers/07-function-health.md) |
+| 08 | Wild Health | B | captured | homepage inspect + bundle | [dossier](dossiers/08-wild-health.md) |
 | 09 | One Medical | B | blocked by bot protection | – | – |
-| 10 | Parsley Health | B | captured | – | [dossier](dossiers/10-parsley-health.md) |
-| 11 | Acquisition.com | C | captured | – | [dossier](dossiers/11-acquisition-com.md) |
-| 12 | Gym Launch | C | captured | – | [dossier](dossiers/12-gym-launch.md) |
-| 13 | Spring Health | C | captured | – | [dossier](dossiers/13-spring-health.md) |
-| 14 | Prestige Labs | C | captured | – | [dossier](dossiers/14-prestige-labs.md) |
+| 10 | Parsley Health | B | captured | homepage inspect + bundle | [dossier](dossiers/10-parsley-health.md) |
+| 11 | Acquisition.com | C | captured | homepage inspect + bundle | [dossier](dossiers/11-acquisition-com.md) |
+| 12 | Gym Launch | C | captured | homepage inspect + bundle | [dossier](dossiers/12-gym-launch.md) |
+| 13 | Spring Health | C | captured | homepage inspect + bundle | [dossier](dossiers/13-spring-health.md) |
+| 14 | Prestige Labs | C | captured | homepage inspect + bundle | [dossier](dossiers/14-prestige-labs.md) |
