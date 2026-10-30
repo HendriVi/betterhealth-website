@@ -3,7 +3,7 @@
 Research workspace for the 14-site investigation defined in the master prompt.
 Nothing in this folder changes the BetterHealth website.
 
-**Status (2026-10-30):** network access opened mid-session; 12 of 14 sites captured; dossiers 01–05 (Group A) written. Neko Health (Vercel checkpoint) and One Medical (CloudFront 403) are blocked by bot protection and are not bypassed. REA has not been run. Original blocker history: [`00-availability-report.md`](00-availability-report.md).
+**Status (2026-10-30):** network access opened mid-session; 12 of 14 sites captured; 12 dossiers written (01–05, 07, 08, 10–14). Neko Health (Vercel checkpoint) and One Medical (CloudFront 403) are blocked by bot protection and are not bypassed. REA has not been run. Original blocker history: [`00-availability-report.md`](00-availability-report.md).
 
 ## Layout
 
@@ -62,4 +62,4 @@ research/
 | 11 | Acquisition.com | C | captured | – | [dossier](dossiers/11-acquisition-com.md) |
 | 12 | Gym Launch | C | captured | – | [dossier](dossiers/12-gym-launch.md) |
 | 13 | Spring Health | C | captured | – | [dossier](dossiers/13-spring-health.md) |
-| 14 | Prestige Labs | C | captured | – | – |
+| 14 | Prestige Labs | C | captured | – | [dossier](dossiers/14-prestige-labs.md) |
