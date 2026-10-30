@@ -83,8 +83,86 @@
         "tuning-offsites_mobile_full.jpg"
       ],
       "data": "tuning-offsites_mobile.json"
+    },
+    {
+      "url": "https://www.thehwc.com/companies",
+      "finalUrl": "https://www.thehwc.com/companies",
+      "status": 200,
+      "consentClicked": "Decline all",
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:46:50.025Z",
+      "screens": [
+        "companies_desktop_viewport.png",
+        "companies_desktop_full.jpg"
+      ],
+      "data": "companies_desktop.json"
+    },
+    {
+      "url": "https://www.thehwc.com/investors",
+      "finalUrl": "https://www.thehwc.com/investors",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:46:56.152Z",
+      "screens": [
+        "investors_desktop_viewport.png",
+        "investors_desktop_full.jpg"
+      ],
+      "data": "investors_desktop.json"
+    },
+    {
+      "url": "https://www.thehwc.com/book",
+      "finalUrl": "https://www.thehwc.com/book",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "1440x900",
+      "capturedAt": "2026-10-30T18:47:07.468Z",
+      "screens": [
+        "book_desktop_viewport.png",
+        "book_desktop_full.jpg"
+      ],
+      "data": "book_desktop.json"
+    },
+    {
+      "url": "https://www.thehwc.com/companies",
+      "finalUrl": "https://www.thehwc.com/companies",
+      "status": 200,
+      "consentClicked": "Decline all",
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:47:16.654Z",
+      "screens": [
+        "companies_mobile_viewport.png",
+        "companies_mobile_full.jpg"
+      ],
+      "data": "companies_mobile.json"
+    },
+    {
+      "url": "https://www.thehwc.com/investors",
+      "finalUrl": "https://www.thehwc.com/investors",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:47:24.856Z",
+      "screens": [
+        "investors_mobile_viewport.png",
+        "investors_mobile_full.jpg"
+      ],
+      "data": "investors_mobile.json"
+    },
+    {
+      "url": "https://www.thehwc.com/book",
+      "finalUrl": "https://www.thehwc.com/book",
+      "status": 200,
+      "consentClicked": null,
+      "viewport": "390x844",
+      "capturedAt": "2026-10-30T18:47:37.208Z",
+      "screens": [
+        "book_mobile_viewport.png",
+        "book_mobile_full.jpg"
+      ],
+      "data": "book_mobile.json"
     }
   ],
   "errors": [],
-  "finishedAt": "2026-10-30T18:32:56.049Z"
+  "finishedAt": "2026-10-30T18:47:37.218Z"
 }

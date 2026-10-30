@@ -28,6 +28,10 @@ const opt = (name, dflt) => (args.find(a => a.startsWith(`--${name}=`)) || `=${d
 const maxPages = Number(opt('pages', 6));
 const cdpPort = Number(opt('cdp-port', 9222));
 const only = args.filter(a => !a.startsWith('--'));
+// --extra=/path1,/path2 adds specific pages (resolved against the site URL) to the discovered set.
+const extra = opt('extra', '').split(',').filter(Boolean);
+// --append keeps captures already in manifest.json (use with --extra to add pages without redoing the site).
+const append = args.includes('--append');
 
 const sites = JSON.parse(await fs.readFile(path.join(here, 'sites.json'), 'utf8'))
   .filter(s => only.length === 0 || only.includes(s.id));
@@ -164,9 +168,11 @@ for (const site of sites) {
   const dir = path.join(root, 'evidence', site.id);
   await fs.mkdir(path.join(dir, 'screens'), { recursive: true });
   await fs.mkdir(path.join(dir, 'data'), { recursive: true });
-  const manifest = { site, startedAt: new Date().toISOString(), captures: [], errors: [] };
+  let manifest = { site, startedAt: new Date().toISOString(), captures: [], errors: [] };
+  if (append) manifest = JSON.parse(await fs.readFile(path.join(dir, 'manifest.json'), 'utf8'));
 
-  const pages = [site.url];
+  const pages = append ? [] : [site.url];
+  for (const e of extra) pages.push(new URL(e, site.url).href);
   for (const vp of VIEWPORTS) {
     const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height },
       isMobile: vp.isMobile, hasTouch: vp.hasTouch, deviceScaleFactor: vp.deviceScaleFactor || 1, locale: 'en-US' });
@@ -179,13 +185,14 @@ for (const site of sites) {
         const consent = await dismissConsent(page);
         await settle(page);
         // Extend in place so the running desktop loop also visits the discovered pages.
-        if (vp.name === 'desktop' && url === site.url) {
+        if (!append && vp.name === 'desktop' && url === site.url) {
           for (const p of await discoverPages(page, site.url)) if (!pages.includes(p) && p !== page.url().split('#')[0]) pages.push(p);
         }
         await page.screenshot({ path: path.join(dir, 'screens', `${name}_viewport.png`) });
         await page.screenshot({ path: path.join(dir, 'screens', `${name}_full.png`), fullPage: true }).catch(e => manifest.errors.push({ url, vp: vp.name, step: 'fullpage', error: String(e) }));
         const data = await extract(page);
         await fs.writeFile(path.join(dir, 'data', `${name}.json`), JSON.stringify(data, null, 2));
+        manifest.captures = manifest.captures.filter(c => !(c.url === url && c.viewport === `${vp.width}x${vp.height}`));
         manifest.captures.push({ url, finalUrl: page.url(), status: res?.status() ?? null, consentClicked: consent, viewport: `${vp.width}x${vp.height}`,
           capturedAt: new Date().toISOString(), screens: [`${name}_viewport.png`, `${name}_full.png`], data: `${name}.json` });
         console.log(`ok  ${site.id} ${vp.name} ${url}`);
