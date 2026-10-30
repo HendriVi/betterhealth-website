@@ -61,5 +61,5 @@ research/
 | 10 | Parsley Health | B | captured | – | [dossier](dossiers/10-parsley-health.md) |
 | 11 | Acquisition.com | C | captured | – | [dossier](dossiers/11-acquisition-com.md) |
 | 12 | Gym Launch | C | captured | – | [dossier](dossiers/12-gym-launch.md) |
-| 13 | Spring Health | C | captured | – | – |
+| 13 | Spring Health | C | captured | – | [dossier](dossiers/13-spring-health.md) |
 | 14 | Prestige Labs | C | captured | – | – |
