@@ -12,8 +12,8 @@ research/
   00-availability-report.md   why the investigation is paused and what unblocks it
   scripts/sites.json          the 14 mandatory subjects (ids, groups, entry URLs)
   scripts/capture.mjs         evidence capture harness (Playwright + CDP port for REA)
-  evidence/<site-id>/         raw evidence, written only by the harness or REA
   scripts/digest.py, preview.py, stitch.py, compress.py   helpers (digest data, shrink screenshots, join scroll frames, shrink files)
+  evidence/<site-id>/         raw evidence, written only by the harness or REA
     manifest.json             every capture: URL, final URL, HTTP status, viewport, timestamp, errors
     screens/<page>_<viewport>_{viewport,full}.png
     data/<page>_<viewport>.json   computed styles, fonts, colours, sections, CTAs, forms, full text

@@ -24,13 +24,15 @@ Not captured: team, FAQ, treatment pages, hospitality, health assessments, `/de/
 | What | File |
 |---|---|
 | Homepage first viewport | `screens/home_desktop_viewport.png` |
-| Homepage full page (8,033 px) | `screens/home_desktop_full.jpg` |
+| Homepage full page (8,033 px), use the stitched version | `screens/home_desktop_stitched.jpg` (and `home_desktop_full.jpg`) |
 | Homepage mobile (9,668 px) | `screens/home_mobile_full.jpg` |
 | Pricing | `screens/pricing_desktop_full.jpg` |
 | Contact | `screens/contact_desktop_full.jpg` |
 | Our approach | `screens/our-approach_desktop_full.jpg` |
 
-**Capture caveat [V]:** in `home_desktop_full.jpg` a white band of about 500 px appears directly under the hero and before "Your future is yours to shape". The text and image beneath it render, so it is probably a scroll-triggered reveal that had not fired when the screenshot was taken. **[U]** I have not confirmed this. It is not treated as a design feature.
+**Capture note [V]:** the standard full-page screenshot (`home_desktop_full.jpg`) shows a white band of about 500 px under the hero. A second, screen-by-screen capture (`screens/home_desktop_stitched.jpg`, frames in `home_desktop_frames/`) shows that the hero section is **1,800 px tall (two screens)** and its video, headline and "Get in touch" button stay pinned while the visitor scrolls through it; the band was a full-page-capture artefact. Use the stitched image for desktop. **[I]** The pinned hero is a scroll-linked effect; its exact behaviour (parallax, fade) was not measured.
+
+---
 
 ## 3. Measured visual specifications
 
@@ -49,10 +51,10 @@ From `data/home_desktop.json`.
 
 **Mobile [V]:** H1 24 px; H2 20–24 px. The largest heading on desktop is only 40 px, small for a hero.
 **Colour [V]:** `#2C2825` warm near-black (ink), `#FEFEFE`, `#686F45` olive green (used on the call-to-action panel and the "Get in touch" button), `#111827` (footer links), `#E2E2E2` (rules), `#7D7D7D` (muted). Image colour is warm amber, cream and brown.
-**Layout [V]:** a `max-width` of 1920 px appears 12 times (full-bleed sections), 562 px for text columns. Section vertical padding is 48 px on text sections. Section heights at 1440 px: 1,800 (hero + reveal band) · 905 · 800 · 905 · 800 · 601 · 778 · 896; page 8,033 px.
+**Layout [V]:** a `max-width` of 1920 px appears 12 times (full-bleed sections), 562 px for text columns. Section vertical padding is 48 px on text sections. Section heights at 1440 px: 1,800 (two-screen pinned hero) · 905 · 800 · 905 · 800 · 601 · 778 · 896; page 8,033 px.
 **Structure [V, from screenshot]:**
 - Fixed top bar: menu icon, "Our approach", search icon; centred wordmark "KUSNACHT (K) PRACTICE"; at right a phone number, "Contact us", language selector.
-- Full-viewport hero with a looping video (the text "Pause Video" is in the DOM), "FIND YOUR WAY BACK TO YOURSELF" in white, one line of description at the bottom, and an olive "GET IN TOUCH" button at the lower right.
+- A pinned, two-screen-tall hero (1,800 px) with a looping video (the text "Pause Video" is in the DOM), "FIND YOUR WAY BACK TO YOURSELF" in white, one line of description at the bottom, and an olive "GET IN TOUCH" button at the lower right.
 - Text–image rows: a narrow left text column (about 240 px wide in the screenshot) with a tall portrait image on the right, with a large empty middle.
 - Two **50/50 full-bleed tiles** side by side (Mental health & addiction | Precision medicine; Internal medicine | Rejuvenation & longevity), each with a small label above a larger centred white title on a photograph. Each tile 720 × 800 px.
 - A team list: nine roles (psychiatrists, psychologists and psychotherapists, internal medicine doctors, longevity doctors, precision medicine experts, complementary therapists, personal trainers, nutritionists, nurses) as a hairline-separated list.
