@@ -8,7 +8,7 @@
     "suisseIntl 400 normal"
   ],
   "body": {
-    "text": "This website uses cookies We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our soci",
+    "text": "TREATMENT INQUIRY +41 43 541 11 52 CONTACT US Mental Health & Addiction Precision Medicine Health Assessments Exclusive Treatments About Hospitality Contact Us Drug Addiction Alcoholism Nicotine addic",
     "fontFamily": "suisseIntl, \"suisseIntl Fallback\", Arial, Helvetica, sans-serif",
     "fontSize": "16px",
     "fontWeight": "400",
@@ -367,60 +367,6 @@
     }
   ],
   "ctas": [
-    {
-      "text": "Show details",
-      "fontFamily": "sans-serif",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "24px",
-      "letterSpacing": "0.1px",
-      "textTransform": "none",
-      "color": "rgb(104, 111, 69)",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 236,
-      "y": 510,
-      "w": 116,
-      "h": 24,
-      "href": "https://kusnachtpractice.com/#",
-      "borderRadius": "0px",
-      "padding": "0px"
-    },
-    {
-      "text": "Allow all",
-      "fontFamily": "sans-serif",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "18px",
-      "letterSpacing": "-0.6px",
-      "textTransform": "none",
-      "color": "rgb(255, 255, 255)",
-      "backgroundColor": "rgb(104, 111, 69)",
-      "x": 23,
-      "y": 556,
-      "w": 344,
-      "h": 52,
-      "href": null,
-      "borderRadius": "3.75px",
-      "padding": "15px"
-    },
-    {
-      "text": "Deny",
-      "fontFamily": "sans-serif",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "18px",
-      "letterSpacing": "-0.6px",
-      "textTransform": "none",
-      "color": "rgb(254, 254, 254)",
-      "backgroundColor": "rgb(44, 40, 37)",
-      "x": 23,
-      "y": 616,
-      "w": 344,
-      "h": 52,
-      "href": null,
-      "borderRadius": "3.75px",
-      "padding": "15px"
-    },
     {
       "text": "+41 43 541 11 52",
       "fontFamily": "suisseIntl, \"suisseIntl Fallback\", Arial, Helvetica, sans-serif",
@@ -1437,14 +1383,6 @@
   "forms": [],
   "images": [
     {
-      "src": "data:image/png;base64,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",
-      "alt": "logo",
-      "w": 22,
-      "h": 22,
-      "natural": "46x46",
-      "objectFit": "fill"
-    },
-    {
       "src": "https://cdn.sanity.io/images/7tbm30y2/production/92ac9fdefcaead17430f7aaf9c25e12e03d0e24f-33x32.svg",
       "alt": "The Kusnacht Practice Logo",
       "w": 32,
@@ -1596,11 +1534,11 @@
     ],
     [
       "rgb(44, 40, 37)",
-      212
+      112
     ],
     [
       "rgb(254, 254, 254)",
-      68
+      66
     ],
     [
       "rgb(17, 24, 39)",
@@ -1616,21 +1554,13 @@
     ],
     [
       "rgb(104, 111, 69)",
-      7
-    ],
-    [
-      "rgb(255, 255, 255)",
-      1
+      3
     ]
   ],
   "maxWidths": [
     [
       "1920px",
       10
-    ],
-    [
-      "133px",
-      1
     ],
     [
       "400px",
@@ -1751,5 +1681,5 @@
       "heading": "YOUR PATH TO HEALING STARTS HERE"
     }
   ],
-  "fullText": "This website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.\nShow details\nAllow all\nDeny\n\nTREATMENT INQUIRY\n\n+41 43 541 11 52\nCONTACT US\nMental Health & Addiction\nPrecision Medicine\nHealth Assessments\nExclusive Treatments\nAbout\nHospitality\nContact Us\nDrug Addiction\nAlcoholism\nNicotine addiction\nAnxiety Disorder\nPTSD\nDepression\nTrauma\nBipolar Disorder\nBurnout\nPerinatal Mental Health & Wellbeing\nGET IN TOUCH\nPause Video\nYOUR HEALING BEGINS HERE\nSCROLL TO DISCOVER\nFIND YOUR WAY BACK TO YOURSELF\nThe world-renowned private treatment center dedicated to mental health and addiction in Zurich, Switzerland.\nYOUR FUTURE IS YOURS TO SHAPE\n\nBecause we believe in your potential, we want to guide you towards a life filled with meaning, balance, and lasting renewal. Expect exceptional care grounded in both science and compassion.\n\nTREATMENTS FOR\n\nMENTAL HEALTH & ADDICTION\nDISCOVER\n\nTHE FOUNDATION FOR LASTING HEALTH\n\nPRECISION MEDICINE\nDISCOVER\nYOUR HEALING IS PERSONAL. SO IS OUR APPROACH.\n\nWherever you stand, we meet you there. Our programmes are built around you. We go beyond symptom management to find the root causes. With a team of leading medical experts, we combine advanced mental health treatment with physical restoration and holistic support. Every detail is designed to help you live not just longer, but more fully. The goal is clarity, vitality, and renewed purpose.\n\nDISCOVER MORE\n\nWHERE PRECISION MEETS COMPASSION\n\nINTERNAL MEDICINE\nDISCOVER\n\nBIO-R® METHOD FOR\n\nREJUVENATION & LONGEVITY\nDISCOVER\nMEDICAL EXCELLENCE. DEDICATED IN-HOUSE TEAM.\n\nYour treatment journey at Kusnacht Practice is managed by our unified, in-house team of specialists. By integrating evidence-based care with the latest advancements in psychotherapy, medical treatments, and longevity science, this collaborative approach ensures you receive the highest possible chance for recovery, healing and prevention. Our team works closely with your existing doctors to achieve best-in-class care. At Kusnacht Practice we have more doctors than clients.\n\nMEET YOUR TREATMENT TEAM\nPSYCHIATRISTS\nPSYCHOLOGISTS & PSYCHOTHERAPISTS\nINTERNAL MEDICINE DOCTORS\nLONGEVITY DOCTORS\nPRECISION MEDICINE EXPERTS\nCOMPLEMENTARY THERAPISTS\nPERSONAL TRAINERS\nNUTRITIONISTS\nNURSES\nUNCOMPROMISING PRIVACY FOR HEALING\n\nTotal privacy and discretion encompass everything we do. From the very first contact with Kusnacht Practice to treatment and continuing care, we ensure you remain anonymous. Each client is treated in one of our 10 luxury villas located around residential areas overlooking lake Zurich. These villas are designed to be true sanctuaries for healing, fully discreet, with no exterior signage or branding. Your in-villa team is hand-selected for their professionalism and warmth. From your live-in-counsellor, chef, chauffeur, housekeeping to personal trainer - they all play a central role in your day-to-day recovery.\n\nSTART YOUR JOURNEY\n\nYOUR PATH TO HEALING STARTS HERE\n\nUnderstanding that every journey is unique, we ensure your first step is met with unparalleled discretion and genuine care. Our dedicated team is here to listen, understand, and guide you toward a program crafted exclusively for your needs, in an environment designed for profound healing.\n\nWE’RE READY, CONNECT WITH US\nMENTAL HEALTH & ADDICTION\nINTERNAL MEDICINE\nLONGEVITY & REJUVENATION\nHEALTH ASSESSMENTS\nAESTHETIC MEDICINE\nHOSPITALITY\nOUR TEAM\nMEDIA\nBLOG\nINVESTMENT\nFAQ\nCONTACT\nCAREER\nIMPRINT\nPRIVACY STATEMENT\nLINKEDIN\nINSTAGRAM\nFACEBOOK\nYOUTUBE\nSELECT LANGUAGE\nEN\nEnglishDeutschFrenchالعربية\n\n2026 The Kusnacht Practice AG. All Rights Reserved."
+  "fullText": "TREATMENT INQUIRY\n\n+41 43 541 11 52\nCONTACT US\nMental Health & Addiction\nPrecision Medicine\nHealth Assessments\nExclusive Treatments\nAbout\nHospitality\nContact Us\nDrug Addiction\nAlcoholism\nNicotine addiction\nAnxiety Disorder\nPTSD\nDepression\nTrauma\nBipolar Disorder\nBurnout\nPerinatal Mental Health & Wellbeing\nGET IN TOUCH\nPause Video\nYOUR HEALING BEGINS HERE\nSCROLL TO DISCOVER\nFIND YOUR WAY BACK TO YOURSELF\nThe world-renowned private treatment center dedicated to mental health and addiction in Zurich, Switzerland.\nYOUR FUTURE IS YOURS TO SHAPE\n\nBecause we believe in your potential, we want to guide you towards a life filled with meaning, balance, and lasting renewal. Expect exceptional care grounded in both science and compassion.\n\nTREATMENTS FOR\n\nMENTAL HEALTH & ADDICTION\nDISCOVER\n\nTHE FOUNDATION FOR LASTING HEALTH\n\nPRECISION MEDICINE\nDISCOVER\nYOUR HEALING IS PERSONAL. SO IS OUR APPROACH.\n\nWherever you stand, we meet you there. Our programmes are built around you. We go beyond symptom management to find the root causes. With a team of leading medical experts, we combine advanced mental health treatment with physical restoration and holistic support. Every detail is designed to help you live not just longer, but more fully. The goal is clarity, vitality, and renewed purpose.\n\nDISCOVER MORE\n\nWHERE PRECISION MEETS COMPASSION\n\nINTERNAL MEDICINE\nDISCOVER\n\nBIO-R® METHOD FOR\n\nREJUVENATION & LONGEVITY\nDISCOVER\nMEDICAL EXCELLENCE. DEDICATED IN-HOUSE TEAM.\n\nYour treatment journey at Kusnacht Practice is managed by our unified, in-house team of specialists. By integrating evidence-based care with the latest advancements in psychotherapy, medical treatments, and longevity science, this collaborative approach ensures you receive the highest possible chance for recovery, healing and prevention. Our team works closely with your existing doctors to achieve best-in-class care. At Kusnacht Practice we have more doctors than clients.\n\nMEET YOUR TREATMENT TEAM\nPSYCHIATRISTS\nPSYCHOLOGISTS & PSYCHOTHERAPISTS\nINTERNAL MEDICINE DOCTORS\nLONGEVITY DOCTORS\nPRECISION MEDICINE EXPERTS\nCOMPLEMENTARY THERAPISTS\nPERSONAL TRAINERS\nNUTRITIONISTS\nNURSES\nUNCOMPROMISING PRIVACY FOR HEALING\n\nTotal privacy and discretion encompass everything we do. From the very first contact with Kusnacht Practice to treatment and continuing care, we ensure you remain anonymous. Each client is treated in one of our 10 luxury villas located around residential areas overlooking lake Zurich. These villas are designed to be true sanctuaries for healing, fully discreet, with no exterior signage or branding. Your in-villa team is hand-selected for their professionalism and warmth. From your live-in-counsellor, chef, chauffeur, housekeeping to personal trainer - they all play a central role in your day-to-day recovery.\n\nSTART YOUR JOURNEY\n\nYOUR PATH TO HEALING STARTS HERE\n\nUnderstanding that every journey is unique, we ensure your first step is met with unparalleled discretion and genuine care. Our dedicated team is here to listen, understand, and guide you toward a program crafted exclusively for your needs, in an environment designed for profound healing.\n\nWE’RE READY, CONNECT WITH US\nMENTAL HEALTH & ADDICTION\nINTERNAL MEDICINE\nLONGEVITY & REJUVENATION\nHEALTH ASSESSMENTS\nAESTHETIC MEDICINE\nHOSPITALITY\nOUR TEAM\nMEDIA\nBLOG\nINVESTMENT\nFAQ\nCONTACT\nCAREER\nIMPRINT\nPRIVACY STATEMENT\nLINKEDIN\nINSTAGRAM\nFACEBOOK\nYOUTUBE\nSELECT LANGUAGE\nEN\nEnglishDeutschFrenchالعربية\n\n2026 The Kusnacht Practice AG. All Rights Reserved."
 }

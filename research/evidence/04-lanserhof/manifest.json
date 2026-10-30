@@ -4,14 +4,15 @@
     "group": "A",
     "url": "https://lanserhof.com/en"
   },
-  "startedAt": "2026-10-30T18:34:36.928Z",
+  "startedAt": "2026-10-30T18:42:10.535Z",
   "captures": [
     {
       "url": "https://lanserhof.com/en",
       "finalUrl": "https://lanserhof.com/en",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:35:02.251Z",
+      "capturedAt": "2026-10-30T18:42:31.543Z",
       "screens": [
         "en_desktop_viewport.png",
         "en_desktop_full.jpg"
@@ -22,8 +23,9 @@
       "url": "https://lanserhof.com/en/lanserhof-marbella",
       "finalUrl": "https://lanserhof.com/en/lanserhof-marbella",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:35:10.061Z",
+      "capturedAt": "2026-10-30T18:42:38.284Z",
       "screens": [
         "en-lanserhof-marbella_desktop_viewport.png",
         "en-lanserhof-marbella_desktop_full.jpg"
@@ -34,8 +36,9 @@
       "url": "https://lanserhof.com/en/chat?prompt=Help%20me%20choose%20a%20programme.&submit=true&s=db3e30bddcb6930eba143ecf4ea03a869b59297e06002def471ed10e3d3fcf5f",
       "finalUrl": "https://lanserhof.com/en/chat?prompt=Help%20me%20choose%20a%20programme.&s=db3e30bddcb6930eba143ecf4ea03a869b59297e06002def471ed10e3d3fcf5f&submit=true",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:35:13.487Z",
+      "capturedAt": "2026-10-30T18:42:41.803Z",
       "screens": [
         "en-chat_desktop_viewport.png",
         "en-chat_desktop_full.jpg"
@@ -46,8 +49,9 @@
       "url": "https://lanserhof.com/en/medicine-naturopathy",
       "finalUrl": "https://lanserhof.com/en/medicine-naturopathy",
       "status": 200,
+      "consentClicked": "Reject",
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:35:23.055Z",
+      "capturedAt": "2026-10-30T18:42:50.533Z",
       "screens": [
         "en-medicine-naturopathy_desktop_viewport.png",
         "en-medicine-naturopathy_desktop_full.jpg"
@@ -58,8 +62,9 @@
       "url": "https://lanserhof.com/en/contact",
       "finalUrl": "https://lanserhof.com/en/contact",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:35:26.884Z",
+      "capturedAt": "2026-10-30T18:42:54.912Z",
       "screens": [
         "en-contact_desktop_viewport.png",
         "en-contact_desktop_full.jpg"
@@ -70,8 +75,9 @@
       "url": "https://lanserhof.com/en",
       "finalUrl": "https://lanserhof.com/en",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:35:48.434Z",
+      "capturedAt": "2026-10-30T18:43:16.670Z",
       "screens": [
         "en_mobile_viewport.png",
         "en_mobile_full.jpg"
@@ -82,8 +88,9 @@
       "url": "https://lanserhof.com/en/lanserhof-marbella",
       "finalUrl": "https://lanserhof.com/en/lanserhof-marbella",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:35:53.453Z",
+      "capturedAt": "2026-10-30T18:43:21.738Z",
       "screens": [
         "en-lanserhof-marbella_mobile_viewport.png",
         "en-lanserhof-marbella_mobile_full.jpg"
@@ -94,8 +101,9 @@
       "url": "https://lanserhof.com/en/chat?prompt=Help%20me%20choose%20a%20programme.&submit=true&s=db3e30bddcb6930eba143ecf4ea03a869b59297e06002def471ed10e3d3fcf5f",
       "finalUrl": "https://lanserhof.com/en/chat?prompt=Help%20me%20choose%20a%20programme.&s=db3e30bddcb6930eba143ecf4ea03a869b59297e06002def471ed10e3d3fcf5f&submit=true",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:35:57.819Z",
+      "capturedAt": "2026-10-30T18:43:25.506Z",
       "screens": [
         "en-chat_mobile_viewport.png",
         "en-chat_mobile_full.jpg"
@@ -106,8 +114,9 @@
       "url": "https://lanserhof.com/en/medicine-naturopathy",
       "finalUrl": "https://lanserhof.com/en/medicine-naturopathy",
       "status": 200,
+      "consentClicked": "Reject",
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:36:16.604Z",
+      "capturedAt": "2026-10-30T18:43:31.058Z",
       "screens": [
         "en-medicine-naturopathy_mobile_viewport.png",
         "en-medicine-naturopathy_mobile_full.jpg"
@@ -118,8 +127,9 @@
       "url": "https://lanserhof.com/en/contact",
       "finalUrl": "https://lanserhof.com/en/contact",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:36:20.935Z",
+      "capturedAt": "2026-10-30T18:43:35.317Z",
       "screens": [
         "en-contact_mobile_viewport.png",
         "en-contact_mobile_full.jpg"
@@ -128,5 +138,5 @@
     }
   ],
   "errors": [],
-  "finishedAt": "2026-10-30T18:36:20.947Z"
+  "finishedAt": "2026-10-30T18:43:35.327Z"
 }

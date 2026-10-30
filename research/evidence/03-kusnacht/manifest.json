@@ -4,14 +4,15 @@
     "group": "A",
     "url": "https://kusnachtpractice.com"
   },
-  "startedAt": "2026-10-30T18:33:49.793Z",
+  "startedAt": "2026-10-30T18:42:10.537Z",
   "captures": [
     {
       "url": "https://kusnachtpractice.com",
       "finalUrl": "https://kusnachtpractice.com/",
       "status": 200,
+      "consentClicked": "Deny",
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:33:58.152Z",
+      "capturedAt": "2026-10-30T18:42:18.658Z",
       "screens": [
         "home_desktop_viewport.png",
         "home_desktop_full.jpg"
@@ -22,8 +23,9 @@
       "url": "https://kusnachtpractice.com/pricing/",
       "finalUrl": "https://kusnachtpractice.com/pricing/",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:34:02.174Z",
+      "capturedAt": "2026-10-30T18:42:22.404Z",
       "screens": [
         "pricing_desktop_viewport.png",
         "pricing_desktop_full.jpg"
@@ -34,8 +36,9 @@
       "url": "https://kusnachtpractice.com/our-approach/",
       "finalUrl": "https://kusnachtpractice.com/our-approach/",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:34:08.486Z",
+      "capturedAt": "2026-10-30T18:42:28.111Z",
       "screens": [
         "our-approach_desktop_viewport.png",
         "our-approach_desktop_full.jpg"
@@ -46,8 +49,9 @@
       "url": "https://kusnachtpractice.com/contact/",
       "finalUrl": "https://kusnachtpractice.com/contact/",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:34:11.997Z",
+      "capturedAt": "2026-10-30T18:42:31.525Z",
       "screens": [
         "contact_desktop_viewport.png",
         "contact_desktop_full.jpg"
@@ -58,8 +62,9 @@
       "url": "https://kusnachtpractice.com",
       "finalUrl": "https://kusnachtpractice.com/",
       "status": 200,
+      "consentClicked": "Deny",
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:34:21.393Z",
+      "capturedAt": "2026-10-30T18:42:41.406Z",
       "screens": [
         "home_mobile_viewport.png",
         "home_mobile_full.jpg"
@@ -70,8 +75,9 @@
       "url": "https://kusnachtpractice.com/pricing/",
       "finalUrl": "https://kusnachtpractice.com/pricing/",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:34:26.044Z",
+      "capturedAt": "2026-10-30T18:42:45.909Z",
       "screens": [
         "pricing_mobile_viewport.png",
         "pricing_mobile_full.jpg"
@@ -82,8 +88,9 @@
       "url": "https://kusnachtpractice.com/our-approach/",
       "finalUrl": "https://kusnachtpractice.com/our-approach/",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:34:32.991Z",
+      "capturedAt": "2026-10-30T18:42:52.856Z",
       "screens": [
         "our-approach_mobile_viewport.png",
         "our-approach_mobile_full.jpg"
@@ -94,8 +101,9 @@
       "url": "https://kusnachtpractice.com/contact/",
       "finalUrl": "https://kusnachtpractice.com/contact/",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:34:36.920Z",
+      "capturedAt": "2026-10-30T18:42:57.447Z",
       "screens": [
         "contact_mobile_viewport.png",
         "contact_mobile_full.jpg"
@@ -104,5 +112,5 @@
     }
   ],
   "errors": [],
-  "finishedAt": "2026-10-30T18:34:36.927Z"
+  "finishedAt": "2026-10-30T18:42:57.456Z"
 }

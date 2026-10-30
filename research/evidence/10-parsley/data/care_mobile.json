@@ -3511,11 +3511,11 @@
       "objectFit": "fill"
     },
     {
-      "src": "https://cdn-builder.parsleyhealth.com/api/v1/image/assets%2F996895949aaa465aa438b22f75b680b6%2Fa74a071f7b2b45eab83b32d14ad22bac?width=384&quality=75&format=webp",
+      "src": "",
       "alt": "",
       "w": 120,
       "h": 120,
-      "natural": "120x160",
+      "natural": "0x0",
       "objectFit": "cover"
     },
     {

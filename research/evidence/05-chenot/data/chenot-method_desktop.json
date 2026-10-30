@@ -12,7 +12,7 @@
     "untitled-font-1 normal normal"
   ],
   "body": {
-    "text": "Consent Details About We use cookies At Chenot we want to offer you the best experience possible. Both, in our facilities and on our website, we want you to enjoy the best service. For this we use coo",
+    "text": "Skip to content MENU CLOSE ENGLISH CONTACT US RESERVE YOUR STAY THE CHENOT METHOD ® THE CHENOT METHOD ® The Chenot Method ® is our practical framework for resetting and promoting health. In short, it ",
     "fontFamily": "Verlag, sans-serif",
     "fontSize": "20.8px",
     "fontWeight": "300",
@@ -391,114 +391,6 @@
     }
   ],
   "ctas": [
-    {
-      "text": "Consent",
-      "fontFamily": "Verlag",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "24px",
-      "letterSpacing": "0.1px",
-      "textTransform": "none",
-      "color": "rgb(176, 175, 175)",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 270,
-      "y": 261,
-      "w": 300,
-      "h": 57,
-      "href": "https://www.chenot.com/chenot-method/#",
-      "borderRadius": "0px",
-      "padding": "15px"
-    },
-    {
-      "text": "Details",
-      "fontFamily": "Verlag",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "24px",
-      "letterSpacing": "0.1px",
-      "textTransform": "none",
-      "color": "rgb(84, 83, 83)",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 570,
-      "y": 261,
-      "w": 300,
-      "h": 57,
-      "href": "https://www.chenot.com/chenot-method/#",
-      "borderRadius": "0px",
-      "padding": "15px"
-    },
-    {
-      "text": "About",
-      "fontFamily": "Verlag",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "24px",
-      "letterSpacing": "0.1px",
-      "textTransform": "none",
-      "color": "rgb(84, 83, 83)",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 870,
-      "y": 261,
-      "w": 300,
-      "h": 57,
-      "href": "https://www.chenot.com/chenot-method/#",
-      "borderRadius": "0px",
-      "padding": "15px"
-    },
-    {
-      "text": "DENY",
-      "fontFamily": "Verlag",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "24px",
-      "letterSpacing": "1.5px",
-      "textTransform": "uppercase",
-      "color": "rgb(150, 150, 150)",
-      "backgroundColor": "rgb(255, 255, 255)",
-      "x": 293,
-      "y": 636,
-      "w": 280,
-      "h": 58,
-      "href": null,
-      "borderRadius": "3.75px",
-      "padding": "15px"
-    },
-    {
-      "text": "ALLOW SELECTION",
-      "fontFamily": "Verlag",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "24px",
-      "letterSpacing": "1.5px",
-      "textTransform": "uppercase",
-      "color": "rgb(150, 150, 150)",
-      "backgroundColor": "rgb(255, 255, 255)",
-      "x": 580,
-      "y": 636,
-      "w": 280,
-      "h": 58,
-      "href": null,
-      "borderRadius": "3.75px",
-      "padding": "15px"
-    },
-    {
-      "text": "ALLOW",
-      "fontFamily": "Verlag",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "24px",
-      "letterSpacing": "1.5px",
-      "textTransform": "uppercase",
-      "color": "rgb(0, 0, 0)",
-      "backgroundColor": "rgb(246, 239, 230)",
-      "x": 868,
-      "y": 636,
-      "w": 280,
-      "h": 58,
-      "href": null,
-      "borderRadius": "3.75px",
-      "padding": "15px"
-    },
     {
       "text": "Skip to content",
       "fontFamily": "Verlag, sans-serif",
@@ -1459,14 +1351,6 @@
   ],
   "images": [
     {
-      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAuCAYAAABpnER5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAtXSURBVGhD7VsHUFXHGiaJgiKCgogVKxbA3qIGywvGZxJ7nCT2hsaajHkvYjS+N8mMsYu+8CSJoI4lNjBgiQXB3qIRHR3rU6xBaRcRReXyv/3+PYdz7uEIhgxcM8M38y+7//bvbvnP7uKQm5vrKcSrVP6weAryrInCk2m1Wu0qaIMqlvT0zIsXL2aeTUjITExMzMzJeW4Tb5a/JEW2w5roQGS10CuCDRs20tAhw6h790Dq2vVv1LlzF2rduh116NCJJk2aTGfOJCgpXwVYLRh5yTKQaychOnLkCPXrN4DGjh1HW7duJTHa6NGjTJabN29STMw2GjZsBHl51aARw0fSw4cPOZ95eSUhwhW82Zk8os2btzAxp0+f5nBBuHzpMgUGvkN+vs3o9u3bitas3OIW4dqXPKL4+HiaOXMWPX/+nMPQW605/De/aBg/fgI1a9aCMjIyFI1Z+uIU4dqPPKIHD+7TgvkLBHHPOAzExu6jMaPHKiFAS//4cRYdP36c/cD77/Wh4WLEatCXX9wiXHuSFxMdQzdu3GC/qsN6h2mpQUu/cuVKunr1KvuB5OQHtGVLpPCpaUpShGsf8kgs+BkUFxfHfr1+z5499NFHg9kvIfUYcSEhS9mvTy+hhktShGsv8jDibt5MZL9ef+jQIRo37hP26zFjxpd06tQpJaQvy14iXHuRd+vWLTZDJKQOOHv2LAVPn6GEJDIzH9IQYftlZT1SNMby7CHCtQ95ufT06VNULvxE4uuB17L4+P20ePESsRH0plmzZlOQsPkG9P9AGMlt6d133+e0EsbyAKOuuEW49iJPQvpBYnb2EzZ8T548SXPmfMsj88qVK3ThwgWKioqiHj16kjUHJgxgW47Fkk7paWnst40rThGu/cgzigQM3/Xrf1JCErD7OnV6y7Aza/muXr1CKSlKF2ziilOEa1/yVGjh3+/dox07drBfrx806ENaunQZ+zW9jDt48CA9ewZbUa8vbhGuPcmDcQxbTQI6otTUFDp27Bj7tbREcfviyFd8kqWnp3NY1WPUxeczeUpChGs/8ojSxDrVqmUbnQlCYgd+RP+7dk0J2aYfPHgoBQdrO7HVaqXvvgsVhJb0egcRrj1HHrBo0WLy9q5Hd+7c4bBoi5iCT+EzCNGTJ4916x7RggULTQztkhLh2ps8YMqUT6l27Tp0+PBhRaMif1ogw2Khzz//J4WHRygafbqSEuHalzyIBMwTDw9PGj1qDJ0+/ZuitcWDBw9o+fIw6t27r2FHNiu3uEW49icPIpGQkMC7ar16Dal9+4708cdDaPLkqXz8hIPSbt3epqlTP6Xr168rOQCz8kpChPtqkKeKxD1hruB0Ze7c+TR79r95bdu+fbvYmZVmMszyl6QI99UiD1IYzPLYQ4T76pH3VxHhlpJXVBFuKXlFFeGWkldUEW4peUUV4ZqTVxBsC7CFPq6wNC8DY1o1bCZ6FBZvxB9Jq8GEPAl8nK9bt55trCVLQtjOwoe8BpwGZ9OuXbv4sPLe3busMwruKSIjI2lf7D4+MVb1ly5d4nzbtm3PJ7Dxjh49qqTFvcZh+nnrz+yXsK0DcuLECdqyeTMf4+ePl8DLg40bN9LChYv4xDoqaislJSUpsYBMn5aWStHRMaIt2/K1DYJ2nzt3zkgeTjpSadKkKVSzpjeVK1eBXn+9rBBHcnZ25SOh0ND/8gc6gCcRHh5e5ODgQCtXrmKdsdG48UJ8He/6lJqayjpg2rR/sN7VtTLXoxfoO3ToqKQk+vrrb1gXExOjaGzrAHr0+DunwcsDCS0e973TpwdzG5ydK1LZsuWElKcKFVypYcPG9O2cucpFuwRu8FCWk5MzlS/vQm5u7lSpkodI75bXPpzw5ObmauTdFaMHJ7bIhILr1KlPAQHdhC6AatSonZcxPDycK8EvWbduAyonKlizZi3rjB0D2WgoiNeTFxz8JddRT+Rv1aot31Oo0rixL1/4qAgRIx8d9vSsRrGxsYpWqwPo02cAvfZaGX7rIiHjLBYL9er1HvfJxcWN37q0aNGaXxtUqeLFOkdHZ65PnubIa84mTfz4uKxly9Z86lOrVh3W4dFRgwaNaMaMmSp5ucmCQPHB3Yd/GbA8ccIkunL5Ck81FHrmtzPUv99AGvTBh3nTF+ThOxS/TkHkOTqWJz+/5jbkofI33nCigLe68h0uzvHUhz24LcvOzhapZBlLxBRzcakkyKvOM0JOaUDGA337DuBZEhQ0XtFI4PUBiHN1def74GPHjlNGhoX7EBcXzxdLGP1oI9oECD6U9jyiGzeu84+JgYPlCzq0DyfXyrTNTY6OjmYSUNDEiZO5EDPoh7eePOO9g4qwsO8LIM+Rn5G9GBp5FSpU4l+/YsXKXGeC4amZGXkHDhzg/iBPUJA6Im2BW7z+/QeKNPhxqvGFkx5paSlixPlyH8LCwhStRB55I0aM4nXNx6cxH/0o0QZRIf0qeRitOFvLysriu1VNsvjXwi//IvICArryL6nmxcjDTZq+TpCHH6h581bUrl0HnmZNxGjApqPCjLzPPpvGnW7a1N9wfK8X4lMaTE2UO0esfxIy7v79JCYPfQgNDWWdGsfkPc3OTu7SpTs3cODAQRwhoa/EKJK8+oK86tVr8ZqG9cAoTZv6UVWxzpiRx2ueyK9Pj3L69Olv8/gH5GHNA9Hnz5/ntahMmXJi7WrFV5QA8hjJw0Mg/EBjxgQpGiB/P4C+fZHfkd/+6VEoeZmZGclvvtmJydN2K8BYkV408mrVqkuVK1fJ2y314u7uSTXEOmVGHqaKuqur4uDwOjVq1JSnkwqVPGwswIXzF3ijwkbUsWNnPqrCgo8NQ09eYGBPJhSnzhLm/QCGDh3OaW3fybwEeTk5Ock9e/bikYDdVStUX4lRtGmLrfyLL6azDQRzQhWEcZiJHc2MPEyptm3aC5sqml9+Ig9sr/3794uGafWo5GFkqk80Dh44SNWq1eROYdHHpTj8evJwsFqmjBOPKg36Psjy8RejGmkniI1S1QGFkoc1Dw9pnMtX5BEEA1GDvhIVMqyShxEDQ9gMERER3HEz8vBL43TYHFq9ZuQBIBsju5JoM0wpNzcPG/IWCgMfna5atTodOXxE0QK2fYqMjBIWBmYOrIY1ilbGvxR5ly9fYrvHw6MqG475L2NIjKRttHPnTiWkkYfpXhRTpWDyAFmGOXkybtWq1WzGYPrDHNGTd+f2bZ7e2HH9/VvQr79qV5wq8JgSfcASgjUUdqGELP8lyJNGMj5ZkIjXKfFL4u5gxY/htHz597wmYFRiZ92xQxL4Z8lDXVjH1q1dx6bO+vXrWVavXk179+4VqWQZBZEHYEfHrAEBGnkyfq0oG20GsbVr16XJ4usJhK9YEc4bCaY+4mDb7t69m/Po2//S5AHz5s0XJHkyIU5OWMRdeFpiG0cBPj5N+B0xgDtUL6+avMhHRBT8eVa/vg+lpKSwDsAijp3Q3b0qrzUwmFVB+jZt2ikpRZvmzmMdTA6YNRJaHcBXX83mNKNGjVE0WvwPP/zIUxf9QT+MffL2rkuR/MIUUPPJvElJv4svrXpcdkhICOvUuHzkAXjuMFpY5hgV6DRsv86dA0QD/2XzIY1fJfDtd/hTJ//7ElkBPsT9/GB+9NN1nGjZsv/wNOnSpVs+adu2vc0DR4xMX19/GjhgkPiuhg0I2NYD4H3yyJGjlZBtHG7mJnwykTeoBg18eGnC/3bgG/ta3gsFwLZci7APsSH5+zenTZs2sU6NU8nTjCoDME3Ug4C/AkRfFN+LgU8sHBb8WYA3B6vVukHIL0J2qiI2ERPR4mUa23T6OC2Nebxe/yIprAyjFJbG2F4p5mn1ok+v0/8iwj+J6VyKosHB4f++8H9d3TTp1gAAAABJRU5ErkJggg==",
-      "alt": "logo",
-      "w": 54,
-      "h": 31,
-      "natural": "79x46",
-      "objectFit": "fill"
-    },
-    {
       "src": "https://www.chenot.com/wp-content/uploads/2024/02/Chenot-logo-light.svg",
       "alt": "",
       "w": 140,
@@ -1550,15 +1434,11 @@
   "colors": [
     [
       "rgb(0, 0, 0)",
-      1438
+      1434
     ],
     [
       "rgb(255, 255, 255)",
-      449
-    ],
-    [
-      "rgb(84, 83, 83)",
-      172
+      446
     ],
     [
       "rgb(221, 202, 176)",
@@ -1573,32 +1453,12 @@
       12
     ],
     [
-      "rgb(176, 175, 175)",
-      5
-    ],
-    [
       "color(srgb 1 1 1 / 0.5)",
       4
     ],
     [
-      "rgb(150, 150, 150)",
-      2
-    ],
-    [
-      "rgb(207, 206, 205)",
-      2
-    ],
-    [
       "color(srgb 1 1 1 / 0.75)",
       2
-    ],
-    [
-      "rgb(246, 239, 230)",
-      1
-    ],
-    [
-      "rgb(151, 148, 148)",
-      1
     ],
     [
       "rgb(255, 249, 245)",
@@ -1613,14 +1473,6 @@
     [
       "990px",
       2
-    ],
-    [
-      "900px",
-      1
-    ],
-    [
-      "133px",
-      1
     ]
   ],
   "sections": [
@@ -1742,5 +1594,5 @@
       "heading": "CHENOT DESTINATIONS"
     }
   ],
-  "fullText": "Consent\nDetails\nAbout\nWe use cookies\nAt Chenot we want to offer you the best experience possible. Both, in our facilities and on our website, we want you to enjoy the best service. For this we use cookies, to also give you the best experience on our website. Some of them are technical, but there is also cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. \nConsent Selection\nNecessary & Technical\nPreferences\nStatistics\nMarketing\nDENY\nALLOW SELECTION\nALLOW\nSkip to content\nMENU\nCLOSE\nENGLISH\nCONTACT US\nRESERVE YOUR STAY\nTHE CHENOT METHOD ®\nTHE CHENOT METHOD ®\n\nThe Chenot Method ® is our practical framework for resetting and promoting health. In short, it is designed to enable you to stay fit and healthy for as long as possible. Centred around the concept of detoxification, our goal is to support your body’s natural healing mechanisms to repair and rejuvenate from within, futureproofing it from age-related diseases and restoring it to a state of youthful vigour and functionality.\n\nA SCIENTIFIC AND PRACTICAL FRAMEWORK\n\nChenot’s Chief Operating and Scientific Officer, Dr. George Gaitanos explains the Chenot Method ®, our world-renowned protocol for optimising your health, resetting – or even reversing – biological age.\n\nWATCH THE FILM\nOPTIMISE YOUR HEALTH\n\nAt Chenot, we do not treat disease. Instead, we address the root cause: ageing. Ageing as a process, and our goal is to support your own body’s natural healing mechanisms to repair and rejuvenate from within, extending your health span, enhancing resilience, and futureproofing against age-related diseases.\n\nREPLENISH LOST ENERGY\n\nThink of each of your cells as a battery. With time they become rusty and lose energy. They accumulate damage and lose their ability to recharge. The Chenot Method ® has been designed to clean the batteries and replenish lost energy, helping you strengthen your resilience and gain higher levels of functionality.\n\nCHENOT LIFESTYLE BIOMARKERS ®\n\n80% of your health is influenced by your lifestyle, and only 20% is predetermined by your genes. Our unique advanced diagnostics, the Chenot Lifestyle Biomarkers®, act as a monitoring system to measure the impact of lifestyle on your health wellness and ageing process, The results from these diagnostics can be used to personalise your treatment programme and help you establish health promoting habits at home.\n\nPROVOKE ADAPTIVE RESPONSES WITH CHENOT METHOD\n\n\n\nHormesis is central to the Chenot Method ®. Its unique application integrates and transmits signals of controlled stress to the body. The activation of energy channels, stimulation of physiological functions, detoxification techniques and diet plan combine to act as positive stressors to trigger preventive, repairing and regenerative actions. The body, in turn, responds by building up its biological internal medicine and regains energy, functional capacity and inner harmony.\n\nEDIBLE SCIENCE\n\nInformed by over half a century of ongoing evidence-based research and created by our talented team of chefs and nutritional scientists, the Chenot Diet® delivers 850 calories across three meals a day for seven days.\n\nCHENOT DESTINATIONS\nITALY\nCHENOT ESPACE L’ALBERETA\nMOROCCO\nCHENOT SPA SELMAN MARRAKECH\nSWITZERLAND\nCHENOT PALACE WEGGIS\nMONTENEGRO\nCHENOT ESPACE PORTONOVI\nAZERBAIJAN\nCHENOT PALACE GABALA\nCONNECT WITH US\n\nStay up to date on all the latest Chenot news. By signing up, you accept the Terms & Conditions of Chenot’s Privacy Policy.\n\nSECTION\nEmail Address *\nFacebook-f\n \nInstagram\n \nLinkedin-in\n \nYoutube\n \nX-twitter\nCHENOT PALACE\nWEGGIS, SWITZERLAND\nGABALA, AZERBAIJAN\nCHENOT ESPACE\nL’ALBERETA, ITALY\nPORTONOVI, MONTENEGRO\nCHENOT SPA\nMARRAKECH, MOROCCO\nCHENOT GROUP\nABOUT CHENOT\nTHE CHENOT METHOD ®\nTHE CHENOT DIET ®\nCHENOT PRODUCTS\nEXCLUSIVE EXPERIENCES\nBUSINESS DEVELOPMENT\nMORE INFORMATION\nCONTACT US\nNEWS & FEATURES\nBROCHURE\nPRESS & AWARDS\nCAREERS\nPRIVACY POLICY\nTERMS & CONDITIONS\n© 1974 – 2026 CHENOT GROUP"
+  "fullText": "Skip to content\nMENU\nCLOSE\nENGLISH\nCONTACT US\nRESERVE YOUR STAY\nTHE CHENOT METHOD ®\nTHE CHENOT METHOD ®\n\nThe Chenot Method ® is our practical framework for resetting and promoting health. In short, it is designed to enable you to stay fit and healthy for as long as possible. Centred around the concept of detoxification, our goal is to support your body’s natural healing mechanisms to repair and rejuvenate from within, futureproofing it from age-related diseases and restoring it to a state of youthful vigour and functionality.\n\nA SCIENTIFIC AND PRACTICAL FRAMEWORK\n\nChenot’s Chief Operating and Scientific Officer, Dr. George Gaitanos explains the Chenot Method ®, our world-renowned protocol for optimising your health, resetting – or even reversing – biological age.\n\nWATCH THE FILM\nOPTIMISE YOUR HEALTH\n\nAt Chenot, we do not treat disease. Instead, we address the root cause: ageing. Ageing as a process, and our goal is to support your own body’s natural healing mechanisms to repair and rejuvenate from within, extending your health span, enhancing resilience, and futureproofing against age-related diseases.\n\nREPLENISH LOST ENERGY\n\nThink of each of your cells as a battery. With time they become rusty and lose energy. They accumulate damage and lose their ability to recharge. The Chenot Method ® has been designed to clean the batteries and replenish lost energy, helping you strengthen your resilience and gain higher levels of functionality.\n\nCHENOT LIFESTYLE BIOMARKERS ®\n\n80% of your health is influenced by your lifestyle, and only 20% is predetermined by your genes. Our unique advanced diagnostics, the Chenot Lifestyle Biomarkers®, act as a monitoring system to measure the impact of lifestyle on your health wellness and ageing process, The results from these diagnostics can be used to personalise your treatment programme and help you establish health promoting habits at home.\n\nPROVOKE ADAPTIVE RESPONSES WITH CHENOT METHOD\n\n\n\nHormesis is central to the Chenot Method ®. Its unique application integrates and transmits signals of controlled stress to the body. The activation of energy channels, stimulation of physiological functions, detoxification techniques and diet plan combine to act as positive stressors to trigger preventive, repairing and regenerative actions. The body, in turn, responds by building up its biological internal medicine and regains energy, functional capacity and inner harmony.\n\nEDIBLE SCIENCE\n\nInformed by over half a century of ongoing evidence-based research and created by our talented team of chefs and nutritional scientists, the Chenot Diet® delivers 850 calories across three meals a day for seven days.\n\nCHENOT DESTINATIONS\nITALY\nCHENOT ESPACE L’ALBERETA\nMOROCCO\nCHENOT SPA SELMAN MARRAKECH\nSWITZERLAND\nCHENOT PALACE WEGGIS\nMONTENEGRO\nCHENOT ESPACE PORTONOVI\nAZERBAIJAN\nCHENOT PALACE GABALA\nCONNECT WITH US\n\nStay up to date on all the latest Chenot news. By signing up, you accept the Terms & Conditions of Chenot’s Privacy Policy.\n\nSECTION\nEmail Address *\nFacebook-f\n \nInstagram\n \nLinkedin-in\n \nYoutube\n \nX-twitter\nCHENOT PALACE\nWEGGIS, SWITZERLAND\nGABALA, AZERBAIJAN\nCHENOT ESPACE\nL’ALBERETA, ITALY\nPORTONOVI, MONTENEGRO\nCHENOT SPA\nMARRAKECH, MOROCCO\nCHENOT GROUP\nABOUT CHENOT\nTHE CHENOT METHOD ®\nTHE CHENOT DIET ®\nCHENOT PRODUCTS\nEXCLUSIVE EXPERIENCES\nBUSINESS DEVELOPMENT\nMORE INFORMATION\nCONTACT US\nNEWS & FEATURES\nBROCHURE\nPRESS & AWARDS\nCAREERS\nPRIVACY POLICY\nTERMS & CONDITIONS\n© 1974 – 2026 CHENOT GROUP"
 }

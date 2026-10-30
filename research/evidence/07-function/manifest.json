@@ -4,14 +4,15 @@
     "group": "B",
     "url": "https://www.functionhealth.com"
   },
-  "startedAt": "2026-10-30T18:38:03.557Z",
+  "startedAt": "2026-10-30T18:42:57.987Z",
   "captures": [
     {
       "url": "https://www.functionhealth.com",
       "finalUrl": "https://www.functionhealth.com/",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:38:20.351Z",
+      "capturedAt": "2026-10-30T18:43:50.815Z",
       "screens": [
         "home_desktop_viewport.png",
         "home_desktop_full.jpg"
@@ -22,8 +23,9 @@
       "url": "https://www.functionhealth.com/about",
       "finalUrl": "https://www.functionhealth.com/about",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:38:25.627Z",
+      "capturedAt": "2026-10-30T18:43:56.612Z",
       "screens": [
         "about_desktop_viewport.png",
         "about_desktop_full.jpg"
@@ -34,8 +36,9 @@
       "url": "https://www.functionhealth.com/pricing",
       "finalUrl": "https://www.functionhealth.com/pricing",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:38:30.652Z",
+      "capturedAt": "2026-10-30T18:44:01.590Z",
       "screens": [
         "pricing_desktop_viewport.png",
         "pricing_desktop_full.jpg"
@@ -46,8 +49,9 @@
       "url": "https://www.functionhealth.com/how-it-works",
       "finalUrl": "https://www.functionhealth.com/how-it-works",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:38:36.818Z",
+      "capturedAt": "2026-10-30T18:44:07.331Z",
       "screens": [
         "how-it-works_desktop_viewport.png",
         "how-it-works_desktop_full.jpg"
@@ -58,8 +62,9 @@
       "url": "https://www.functionhealth.com/contact-us",
       "finalUrl": "https://www.functionhealth.com/contact-us",
       "status": 200,
+      "consentClicked": null,
       "viewport": "1440x900",
-      "capturedAt": "2026-10-30T18:38:40.420Z",
+      "capturedAt": "2026-10-30T18:44:11.036Z",
       "screens": [
         "contact-us_desktop_viewport.png",
         "contact-us_desktop_full.jpg"
@@ -70,8 +75,9 @@
       "url": "https://www.functionhealth.com",
       "finalUrl": "https://www.functionhealth.com/",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:39:00.274Z",
+      "capturedAt": "2026-10-30T18:44:51.871Z",
       "screens": [
         "home_mobile_viewport.png",
         "home_mobile_full.jpg"
@@ -82,8 +88,9 @@
       "url": "https://www.functionhealth.com/about",
       "finalUrl": "https://www.functionhealth.com/about",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:39:08.152Z",
+      "capturedAt": "2026-10-30T18:44:59.730Z",
       "screens": [
         "about_mobile_viewport.png",
         "about_mobile_full.jpg"
@@ -94,8 +101,9 @@
       "url": "https://www.functionhealth.com/pricing",
       "finalUrl": "https://www.functionhealth.com/pricing",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:39:14.479Z",
+      "capturedAt": "2026-10-30T18:45:06.051Z",
       "screens": [
         "pricing_mobile_viewport.png",
         "pricing_mobile_full.jpg"
@@ -106,8 +114,9 @@
       "url": "https://www.functionhealth.com/how-it-works",
       "finalUrl": "https://www.functionhealth.com/how-it-works",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:39:22.125Z",
+      "capturedAt": "2026-10-30T18:45:13.482Z",
       "screens": [
         "how-it-works_mobile_viewport.png",
         "how-it-works_mobile_full.jpg"
@@ -118,8 +127,9 @@
       "url": "https://www.functionhealth.com/contact-us",
       "finalUrl": "https://www.functionhealth.com/contact-us",
       "status": 200,
+      "consentClicked": null,
       "viewport": "390x844",
-      "capturedAt": "2026-10-30T18:39:26.375Z",
+      "capturedAt": "2026-10-30T18:45:17.630Z",
       "screens": [
         "contact-us_mobile_viewport.png",
         "contact-us_mobile_full.jpg"
@@ -128,5 +138,5 @@
     }
   ],
   "errors": [],
-  "finishedAt": "2026-10-30T18:39:26.392Z"
+  "finishedAt": "2026-10-30T18:45:17.640Z"
 }

@@ -8,7 +8,7 @@
     "suisseIntl 400 normal"
   ],
   "body": {
-    "text": "This website uses cookies We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our soci",
+    "text": "OUR APPROACH +41 43 541 11 52 CONTACT US EN EnglishDeutschFrenchالعربية Mental Health & Addiction Precision Medicine Health Assessments Exclusive Treatments About Hospitality Contact Us Drug Addiction",
     "fontFamily": "suisseIntl, \"suisseIntl Fallback\", Arial, Helvetica, sans-serif",
     "fontSize": "16px",
     "fontWeight": "400",
@@ -194,7 +194,7 @@
       "textTransform": "uppercase",
       "color": "rgb(44, 40, 37)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 863,
+      "x": 862,
       "y": 1763,
       "w": 171,
       "h": 16
@@ -210,7 +210,7 @@
       "textTransform": "uppercase",
       "color": "rgb(44, 40, 37)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 859,
+      "x": 855,
       "y": 1875,
       "w": 171,
       "h": 16
@@ -428,7 +428,7 @@
       "textTransform": "none",
       "color": "rgb(44, 40, 37)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 1050,
+      "x": 1049,
       "y": 1763,
       "w": 358,
       "h": 63
@@ -443,7 +443,7 @@
       "textTransform": "none",
       "color": "rgb(44, 40, 37)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 1047,
+      "x": 1042,
       "y": 1875,
       "w": 358,
       "h": 84
@@ -615,60 +615,6 @@
     }
   ],
   "ctas": [
-    {
-      "text": "Show details",
-      "fontFamily": "sans-serif",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "24px",
-      "letterSpacing": "0.1px",
-      "textTransform": "none",
-      "color": "rgb(104, 111, 69)",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "x": 262,
-      "y": 846,
-      "w": 116,
-      "h": 30,
-      "href": "https://kusnachtpractice.com/our-approach/#",
-      "borderRadius": "0px",
-      "padding": "0px"
-    },
-    {
-      "text": "Allow all",
-      "fontFamily": "sans-serif",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "18px",
-      "letterSpacing": "-0.6px",
-      "textTransform": "none",
-      "color": "rgb(255, 255, 255)",
-      "backgroundColor": "rgb(104, 111, 69)",
-      "x": 1079,
-      "y": 685,
-      "w": 286,
-      "h": 52,
-      "href": null,
-      "borderRadius": "3.75px",
-      "padding": "15px"
-    },
-    {
-      "text": "Deny",
-      "fontFamily": "sans-serif",
-      "fontSize": "15px",
-      "fontWeight": "600",
-      "lineHeight": "18px",
-      "letterSpacing": "-0.6px",
-      "textTransform": "none",
-      "color": "rgb(254, 254, 254)",
-      "backgroundColor": "rgb(44, 40, 37)",
-      "x": 1079,
-      "y": 744,
-      "w": 286,
-      "h": 52,
-      "href": null,
-      "borderRadius": "3.75px",
-      "padding": "15px"
-    },
     {
       "text": "OUR APPROACH",
       "fontFamily": "suisseIntl, \"suisseIntl Fallback\", Arial, Helvetica, sans-serif",
@@ -1595,14 +1541,6 @@
   "forms": [],
   "images": [
     {
-      "src": "data:image/png;base64,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",
-      "alt": "logo",
-      "w": 46,
-      "h": 46,
-      "natural": "46x46",
-      "objectFit": "fill"
-    },
-    {
       "src": "https://cdn.sanity.io/images/7tbm30y2/production/50a56ca4bafcb71b4740804ab20626d5c7a7b506-222x24.svg",
       "alt": "The Kusnacht Practices Logo",
       "w": 220,
@@ -1746,11 +1684,11 @@
     ],
     [
       "rgb(44, 40, 37)",
-      275
+      175
     ],
     [
       "rgb(254, 254, 254)",
-      55
+      53
     ],
     [
       "rgb(17, 24, 39)",
@@ -1761,10 +1699,6 @@
       8
     ],
     [
-      "rgb(104, 111, 69)",
-      6
-    ],
-    [
       "rgb(226, 226, 226)",
       6
     ],
@@ -1773,30 +1707,14 @@
       6
     ],
     [
-      "rgb(255, 255, 255)",
-      1
+      "rgb(104, 111, 69)",
+      2
     ]
   ],
   "maxWidths": [
     [
       "1920px",
       13
-    ],
-    [
-      "1440px",
-      1
-    ],
-    [
-      "1600px",
-      1
-    ],
-    [
-      "133px",
-      1
-    ],
-    [
-      "286px",
-      1
     ],
     [
       "220px",
@@ -1930,5 +1848,5 @@
       "heading": "YOUR PATH TO HEALING STARTS HERE"
     }
   ],
-  "fullText": "This website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.\nShow details\nAllow all\nDeny\nOUR APPROACH\n+41 43 541 11 52\nCONTACT US\nEN\nEnglishDeutschFrenchالعربية\nMental Health & Addiction\nPrecision Medicine\nHealth Assessments\nExclusive Treatments\nAbout\nHospitality\nContact Us\nDrug Addiction\nAlcoholism\nNicotine addiction\nAnxiety Disorder\nPTSD\nDepression\nTrauma\nBipolar Disorder\nBurnout\nPerinatal Mental Health & Wellbeing\nGET IN TOUCH\n\nPRECISION CARE, HUMAN CONNECTION\n\nOUR APPROACH\n\nOur diligently individualised, holistic model recognises that lasting well-being requires more than treatment. It requires alignment. Your treatment is carefully crafted from the ground up, with every aspect tailored to your needs. From advanced psychiatry and somatic care to nutrition, fitness, resilience, and beyond, we integrate the full spectrum of expertise for sustainable transformation.\n\nMENTAL HEALTH & ADDICTION\nINTERNAL MEDICINE\nBIO-R® METHOD\nHOSPITALITY\nYOUR JOURNEY WITH US\n\nWe combine medical excellence with a personal, concierge-level approach. Whether you’re addressing ongoing health issues or seeking preventive insight, our assessments are designed to provide a comprehensive, tailored understanding of your body and mind.\n\n1. REQUEST FOR TREATMENT\n\nYour journey begins with a confidential conversation. We listen to your needs, clarify your goals, and determine whether our programme is the right fit for you.\n\n2. PRE-ADMISSION\n\nTogether with a lead doctor, we gather your medical history, clarify key questions, and align on expectations. Admission paperwork and pre-payment are required before your arrival.\n\n3. RESIDENTIAL TREATMENT\n\nYour personalised programme begins in one of our private residences. With 24/7 care and a tailored daily schedule, every element is designed to support your healing and transformation.\n\n4. DISCHARGE\n\nBefore your departure, we review your progress and share a comprehensive report with personalised medical and therapeutic recommendations to support your next chapter.\n\n5. CONTINUOUS CARE\n\nWe stay by your side as you transition home. Through regular consultations, we help you maintain momentum, adjust your plan, and ensure long-term outcomes.\n\n6. RECHARGE STAYS\n\nOur Recharge Stays offer the opportunity to return for focused reset, renewed assessments, and a full system reset whenever you need to reconnect with your health goals.\n\nA SHARED VISION. A SINGULAR FOCUS: YOU.\n\nWe co-create a vision of the life you want to live. One shaped by clarity, care, and the quiet confidence that healing is possible. From leading medical minds to chefs, therapists, and lifestyle experts, our team works in harmony to support your transformation. Every detail of your bespoke plan is shaped around your goals, aligned across disciplines, and devoted to one purpose: helping you move forward with strength, purpose, and renewed possibility.\n\nTHERAPEUTIC MODALITIES & THERAPIST\n\nYour care is guided by a dedicated team of in-house experts, ranging from internists and psychiatrists to advanced medical specialists. This integrated approach ensures every aspect of your physical and mental health is addressed with clinical precision and compassion. Working in close collaboration, our doctors together with complementary therapists develop a personalised treatment plan tailored to your unique needs. It combines scientifically guided therapies with nutrition, personal training, yoga and much more. This is care designed not only to heal, but to restore clarity, resilience, and lasting wellbeing.\n\nSUPPORT THAT MOVES WITH YOU\n\nOur complementary therapists support your healing journey through practices that restore balance on every level. Yoga, meditation, forest bathing, massage therapy, acupuncture, and dedicated sleep support are integrated as powerful rituals of renewal. These experiences are moments of stillness, energy, and alignment that help you reconnect with your body, breath, and sense of self.\n\nLEADING CARE. LASTING RESULTS.\n\nThe Kusnacht Practice offers an unparalleled standard of care, shaped by world-leading expertise and a culture of precision. Strategically located in Zurich, we draw from a global nexus of medical innovation to deliver deeply personalised treatment rooted in clinical mastery.\n\nCutting-edge diagnostic tools, evidence-based modalities, and the highest medical standards inform every element of your care. Our environment is designed not only for healing but for lasting transformation, tailored entirely to your needs. Our team of leading specialists embodies this excellence in every interaction, combining rigour, discretion, and human warmth. It’s a practice built on deep medical insight, where trust is earned through results.\n\nONGOING SUPPORT FOR SUSTAINABLE RECOVERY\n\nReturning home after treatment marks the beginning of a crucial new chapter. That’s why we offer one of the world’s most comprehensive Continuing Care Programmes, designed by our medical team to support every client.\n\nThis programme bridges your transition to daily life, helping you sustain the progress made and fully integrate your new health strategies. From personalised mentoring to scheduled return visits, we provide consistent, compassionate support that evolves with you.\n\nYour care may include regular face-to-face meetings, audio/video check-ins, and expert guidance from a dedicated mentor who understands your journey. We tailor every detail in close dialogue with you, ensuring your transition feels supported, intentional, and fully aligned with your long-term wellbeing.\n\nSTART YOUR JOURNEY\n\nYOUR PATH TO HEALING STARTS HERE\n\nUnderstanding that every journey is unique, we ensure your first step is met with unparalleled discretion and genuine care. Our dedicated team is here to listen, understand, and guide you toward a program crafted exclusively for your needs, in an environment designed for profound healing.\n\nWE’RE READY, CONNECT WITH US\nMENTAL HEALTH & ADDICTION\nINTERNAL MEDICINE\nLONGEVITY & REJUVENATION\nHEALTH ASSESSMENTS\nAESTHETIC MEDICINE\nHOSPITALITY\nOUR TEAM\nMEDIA\nBLOG\nINVESTMENT\nFAQ\nCONTACT\nCAREER\nIMPRINT\nPRIVACY STATEMENT\nLINKEDIN\nINSTAGRAM\nFACEBOOK\nYOUTUBE\n\n2026 The Kusnacht Practice AG. All Rights Reserved."
+  "fullText": "OUR APPROACH\n+41 43 541 11 52\nCONTACT US\nEN\nEnglishDeutschFrenchالعربية\nMental Health & Addiction\nPrecision Medicine\nHealth Assessments\nExclusive Treatments\nAbout\nHospitality\nContact Us\nDrug Addiction\nAlcoholism\nNicotine addiction\nAnxiety Disorder\nPTSD\nDepression\nTrauma\nBipolar Disorder\nBurnout\nPerinatal Mental Health & Wellbeing\nGET IN TOUCH\n\nPRECISION CARE, HUMAN CONNECTION\n\nOUR APPROACH\n\nOur diligently individualised, holistic model recognises that lasting well-being requires more than treatment. It requires alignment. Your treatment is carefully crafted from the ground up, with every aspect tailored to your needs. From advanced psychiatry and somatic care to nutrition, fitness, resilience, and beyond, we integrate the full spectrum of expertise for sustainable transformation.\n\nMENTAL HEALTH & ADDICTION\nINTERNAL MEDICINE\nBIO-R® METHOD\nHOSPITALITY\nYOUR JOURNEY WITH US\n\nWe combine medical excellence with a personal, concierge-level approach. Whether you’re addressing ongoing health issues or seeking preventive insight, our assessments are designed to provide a comprehensive, tailored understanding of your body and mind.\n\n1. REQUEST FOR TREATMENT\n\nYour journey begins with a confidential conversation. We listen to your needs, clarify your goals, and determine whether our programme is the right fit for you.\n\n2. PRE-ADMISSION\n\nTogether with a lead doctor, we gather your medical history, clarify key questions, and align on expectations. Admission paperwork and pre-payment are required before your arrival.\n\n3. RESIDENTIAL TREATMENT\n\nYour personalised programme begins in one of our private residences. With 24/7 care and a tailored daily schedule, every element is designed to support your healing and transformation.\n\n4. DISCHARGE\n\nBefore your departure, we review your progress and share a comprehensive report with personalised medical and therapeutic recommendations to support your next chapter.\n\n5. CONTINUOUS CARE\n\nWe stay by your side as you transition home. Through regular consultations, we help you maintain momentum, adjust your plan, and ensure long-term outcomes.\n\n6. RECHARGE STAYS\n\nOur Recharge Stays offer the opportunity to return for focused reset, renewed assessments, and a full system reset whenever you need to reconnect with your health goals.\n\nA SHARED VISION. A SINGULAR FOCUS: YOU.\n\nWe co-create a vision of the life you want to live. One shaped by clarity, care, and the quiet confidence that healing is possible. From leading medical minds to chefs, therapists, and lifestyle experts, our team works in harmony to support your transformation. Every detail of your bespoke plan is shaped around your goals, aligned across disciplines, and devoted to one purpose: helping you move forward with strength, purpose, and renewed possibility.\n\nTHERAPEUTIC MODALITIES & THERAPIST\n\nYour care is guided by a dedicated team of in-house experts, ranging from internists and psychiatrists to advanced medical specialists. This integrated approach ensures every aspect of your physical and mental health is addressed with clinical precision and compassion. Working in close collaboration, our doctors together with complementary therapists develop a personalised treatment plan tailored to your unique needs. It combines scientifically guided therapies with nutrition, personal training, yoga and much more. This is care designed not only to heal, but to restore clarity, resilience, and lasting wellbeing.\n\nSUPPORT THAT MOVES WITH YOU\n\nOur complementary therapists support your healing journey through practices that restore balance on every level. Yoga, meditation, forest bathing, massage therapy, acupuncture, and dedicated sleep support are integrated as powerful rituals of renewal. These experiences are moments of stillness, energy, and alignment that help you reconnect with your body, breath, and sense of self.\n\nLEADING CARE. LASTING RESULTS.\n\nThe Kusnacht Practice offers an unparalleled standard of care, shaped by world-leading expertise and a culture of precision. Strategically located in Zurich, we draw from a global nexus of medical innovation to deliver deeply personalised treatment rooted in clinical mastery.\n\nCutting-edge diagnostic tools, evidence-based modalities, and the highest medical standards inform every element of your care. Our environment is designed not only for healing but for lasting transformation, tailored entirely to your needs. Our team of leading specialists embodies this excellence in every interaction, combining rigour, discretion, and human warmth. It’s a practice built on deep medical insight, where trust is earned through results.\n\nONGOING SUPPORT FOR SUSTAINABLE RECOVERY\n\nReturning home after treatment marks the beginning of a crucial new chapter. That’s why we offer one of the world’s most comprehensive Continuing Care Programmes, designed by our medical team to support every client.\n\nThis programme bridges your transition to daily life, helping you sustain the progress made and fully integrate your new health strategies. From personalised mentoring to scheduled return visits, we provide consistent, compassionate support that evolves with you.\n\nYour care may include regular face-to-face meetings, audio/video check-ins, and expert guidance from a dedicated mentor who understands your journey. We tailor every detail in close dialogue with you, ensuring your transition feels supported, intentional, and fully aligned with your long-term wellbeing.\n\nSTART YOUR JOURNEY\n\nYOUR PATH TO HEALING STARTS HERE\n\nUnderstanding that every journey is unique, we ensure your first step is met with unparalleled discretion and genuine care. Our dedicated team is here to listen, understand, and guide you toward a program crafted exclusively for your needs, in an environment designed for profound healing.\n\nWE’RE READY, CONNECT WITH US\nMENTAL HEALTH & ADDICTION\nINTERNAL MEDICINE\nLONGEVITY & REJUVENATION\nHEALTH ASSESSMENTS\nAESTHETIC MEDICINE\nHOSPITALITY\nOUR TEAM\nMEDIA\nBLOG\nINVESTMENT\nFAQ\nCONTACT\nCAREER\nIMPRINT\nPRIVACY STATEMENT\nLINKEDIN\nINSTAGRAM\nFACEBOOK\nYOUTUBE\n\n2026 The Kusnacht Practice AG. All Rights Reserved."
 }
