@@ -59,7 +59,7 @@ research/
 | 08 | Wild Health | B | captured | – | [dossier](dossiers/08-wild-health.md) |
 | 09 | One Medical | B | blocked by bot protection | – | – |
 | 10 | Parsley Health | B | captured | – | [dossier](dossiers/10-parsley-health.md) |
-| 11 | Acquisition.com | C | captured | – | – |
+| 11 | Acquisition.com | C | captured | – | [dossier](dossiers/11-acquisition-com.md) |
 | 12 | Gym Launch | C | captured | – | – |
 | 13 | Spring Health | C | captured | – | – |
 | 14 | Prestige Labs | C | captured | – | – |
