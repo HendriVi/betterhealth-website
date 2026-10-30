@@ -3,7 +3,7 @@
 Research workspace for the 14-site investigation defined in the master prompt.
 Nothing in this folder changes the BetterHealth website.
 
-**Status (2026-10-30):** network access opened mid-session; 12 of 14 sites captured; 12 dossiers written (01–05, 07, 08, 10–14). Neko Health (Vercel checkpoint) and One Medical (CloudFront 403) are blocked by bot protection and are not bypassed. REA has not been run. Original blocker history: [`00-availability-report.md`](00-availability-report.md).
+**Status (2026-10-30):** 12 of 14 sites captured and written up (01–05, 07, 08, 10–14); cross-site synthesis and all six deliverables drafted in `synthesis/`. Neko Health and One Medical are blocked by bot protection and not included. Not yet done: REA run, commercial-evidence search, missing funnel pages. No site code has been written; an art direction must be chosen first. Neko Health (Vercel checkpoint) and One Medical (CloudFront 403) are blocked by bot protection and are not bypassed. REA has not been run. Original blocker history: [`00-availability-report.md`](00-availability-report.md).
 
 ## Layout
 
@@ -18,7 +18,13 @@ research/
     screens/<page>_<viewport>_{viewport,full}.png
     data/<page>_<viewport>.json   computed styles, fonts, colours, sections, CTAs, forms, full text
   dossiers/<site-id>.md       one dossier per site (written only from evidence/)
-  synthesis/                  cross-site matrix + the six final deliverables (after all 14)
+  synthesis/02-comparative-report.md          cross-site matrix and findings
+  synthesis/03-visual-design-specification.md  shared rules, components, tokens for 3 directions
+  synthesis/04-copywriting-positioning-playbook.md
+  synthesis/05-art-directions.md              three directions for selection
+  synthesis/06-implementation-qc-protocol.md  build and QC loop (scripts/qc-check.mjs, compare-shots.py)
+  synthesis/tokens/direction-{A,B,C}.json     token files for the checker
+  (deliverable 1, the research library, is dossiers/ + evidence/)
 ```
 
 ## Inspection protocol
