@@ -58,7 +58,7 @@ research/
 | 07 | Function Health | B | captured | – | [dossier](dossiers/07-function-health.md) |
 | 08 | Wild Health | B | captured | – | [dossier](dossiers/08-wild-health.md) |
 | 09 | One Medical | B | blocked by bot protection | – | – |
-| 10 | Parsley Health | B | captured | – | – |
+| 10 | Parsley Health | B | captured | – | [dossier](dossiers/10-parsley-health.md) |
 | 11 | Acquisition.com | C | captured | – | – |
 | 12 | Gym Launch | C | captured | – | – |
 | 13 | Spring Health | C | captured | – | – |
