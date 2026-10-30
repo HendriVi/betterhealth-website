@@ -188,6 +188,8 @@ Each component lists structure, content rules, and sizing. Direction tokens (Par
 | Section rhythm | alternating dark and bone sections; the diagram section is always dark | |
 | Diagram | the central "clinical map" at 1,200 × 800 px in 1.5 px ice strokes on graphite | |
 
+**Hybrid C + A (owner decision 2026-10-30):** the build uses C's faces, palette and map. From A it takes structures only (numbered sections, hairline rules, a margin-note rail, mono confidence tags, the formulation sheet, the fee as a schedule). Added tokens: `--sheet #F7F5EF` (panels; ink on sheet 16.78:1), `--ink-2 #444A53` (secondary text on light; 7.63:1 on bone, 8.20:1 on sheet), `--line-light #CFC8B8` (decorative rules). Lead paragraphs are 20 px / 1.5. On light sections the primary button is graphite with bone text; on dark sections it is ice with `#0C1A1F` text. The header always uses the dark ground.
+
 **Palette note [V from measurements]:** none of the three palettes is in the family of Parsley (`#284849/#F8F6F2/#4A786A`), Spring Health (`#01382E/#8DFF9D`) or the current BetterHealth CSS (`#153533/#fffcf4/#738b7f/#7bbeb2`). Function's terracotta (`#B05A36`), Kusnacht's olive (`#686F45`) and Heartwood's green/gold/brown are also not used.
 
 ---

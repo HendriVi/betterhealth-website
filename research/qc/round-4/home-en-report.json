@@ -1,0 +1,93 @@
+{
+  "url": "http://127.0.0.1:8770/next/en/index.html",
+  "label": "home-en",
+  "tokens": "research/synthesis/tokens/direction-C.json",
+  "checkedAt": "2026-10-30T20:53:39.236Z",
+  "viewports": {
+    "390": {
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [],
+      "colours": [],
+      "contrast": [],
+      "h1Count": 1,
+      "headingSkips": [],
+      "imagesWithoutAlt": [],
+      "touchTargets": [],
+      "sizes": {
+        "h1": 40,
+        "h2": 30,
+        "h3": 24,
+        "p": 20
+      },
+      "sizeFailures": [],
+      "hiddenText": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    "768": {
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [],
+      "colours": [],
+      "contrast": [],
+      "h1Count": 1,
+      "headingSkips": [],
+      "imagesWithoutAlt": [],
+      "touchTargets": [],
+      "sizes": {
+        "h1": 42.24,
+        "h2": 30,
+        "h3": 24,
+        "p": 20
+      },
+      "sizeFailures": [],
+      "hiddenText": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    "1024": {
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [],
+      "colours": [],
+      "contrast": [],
+      "h1Count": 1,
+      "headingSkips": [],
+      "imagesWithoutAlt": [],
+      "touchTargets": [],
+      "sizes": {
+        "h1": 56.32,
+        "h2": 36.864,
+        "h3": 24,
+        "p": 20
+      },
+      "sizeFailures": [],
+      "hiddenText": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    "1440": {
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [],
+      "colours": [],
+      "contrast": [],
+      "h1Count": 1,
+      "headingSkips": [],
+      "imagesWithoutAlt": [],
+      "touchTargets": [],
+      "sizes": {
+        "h1": 72,
+        "h2": 44,
+        "h3": 24,
+        "p": 20
+      },
+      "sizeFailures": [],
+      "hiddenText": [],
+      "consoleErrors": [],
+      "failedRequests": []
+    }
+  },
+  "failures": []
+}

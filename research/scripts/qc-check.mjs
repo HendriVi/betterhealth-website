@@ -50,7 +50,7 @@ for (const vp of VIEWPORTS) {
   await page.screenshot({ path: path.join(outDir, `${label}-${vp.name}-viewport.png`) });
   await page.screenshot({ path: path.join(outDir, `${label}-${vp.name}-full.png`), fullPage: true });
 
-  const data = await page.evaluate(({ allowedColours, allowedFonts, isMobile }) => {
+  const data = await page.evaluate(({ allowedColours, allowedFonts, isMobile, vpWidth }) => {
     const toHex = s => { const m = s.match(/rgba?\(([^)]+)\)/); if (!m) return null; const [r, g, b, a = 1] = m[1].split(/[ ,/]+/).filter(Boolean).map(Number); if (a === 0) return null; return '#' + [r, g, b].map(v => Math.round(v).toString(16).padStart(2, '0')).join(''); };
     const lum = h => { const [r, g, b] = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) / 255).map(c => c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
     const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
@@ -89,10 +89,10 @@ for (const vp of VIEWPORTS) {
     let last = 0; for (const h of document.querySelectorAll('h1,h2,h3,h4,h5,h6')) { const l = +h.tagName[1]; if (l === 1) out.headings.h1++; if (last && l > last + 1) out.headings.skipped.push(`${sel(h)} h${last}->h${l}`); last = l; }
     for (const t of ['h1', 'h2', 'h3', 'p']) { const e = [...document.querySelectorAll(t)].find(visible); if (e) out.sizes[t] = parseFloat(getComputedStyle(e).fontSize); }
     if (isMobile) for (const el of document.querySelectorAll('a,button')) { if (!visible(el) || el.closest('p,li > p')) continue; const r = el.getBoundingClientRect(); if (r.width < 44 || r.height < 44) out.targets.push({ sel: sel(el), w: Math.round(r.width), h: Math.round(r.height) }); }
-    out.overflow = document.documentElement.scrollWidth > window.innerWidth + 1;
+    out.overflow = document.documentElement.scrollWidth > vpWidth + 1; // nominal width: on mobile, a zoomed-out page would make innerWidth equal scrollWidth
     out.scrollWidth = document.documentElement.scrollWidth;
     return out;
-  }, { allowedColours: [...allowedColours], allowedFonts, isMobile: !!vp.mobile });
+  }, { allowedColours: [...allowedColours], allowedFonts, isMobile: !!vp.mobile, vpWidth: vp.width });
 
   const sizeFail = [];
   for (const [t, v] of Object.entries(data.sizes)) { const rng = tokens.sizes?.[vp.name]?.[t]; if (rng && (v < rng[0] - 1 || v > rng[1] + 1)) sizeFail.push({ tag: t, size: v, allowed: rng }); }
