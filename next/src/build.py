@@ -97,7 +97,7 @@ def render(L, base):
         A(f'<li><span class="idx">0{i+1}</span><p class="exp">{esc(a)}</p><p class="q"><span class="label">{esc(L["rec_q"])}</span> {esc(q)}</p></li>')
     A(f'</ol><p class="note">{esc(L["rec_note"])}</p></div></div></section>')
     # method + sheet
-    A(f'<section class="theme-light" id="ablauf"><div class="container"><div class="sec-head"><div class="label">{esc(L["method_label"])}</div><h2>{esc(L["method_h2"])}</h2></div><div class="method-grid"><ol class="steps">')
+    A(f'<section class="theme-light" id="ablauf"><div class="container"><div class="sec-head"><div class="label">{esc(L["method_label"])}</div><h2>{esc(L["method_h2"])}</h2><p class="sec-lead">{esc(L["method_lead"])}</p></div><div class="method-grid"><ol class="steps">')
     for i, (t, d) in enumerate(L['steps']):
         A(f'<li><span class="idx">0{i+1}</span><div><h3>{esc(t)}</h3><p>{esc(d)}</p></div></li>')
     A('</ol>')
@@ -117,14 +117,14 @@ def render(L, base):
     # team
     A(f'<section class="theme-light" id="team"><div class="container"><div class="sec-head"><div class="label">{esc(L["team_label"])}</div><h2>{esc(L["team_h2"])}</h2></div><div class="team-grid"><div class="portrait" role="img" aria-label="{attr(L["portrait"])}"><span>{esc(L["portrait"])}</span></div><div class="team-text"><h3 class="name">{FACTS["clinician"]}</h3><p class="role">{L["team_role"]}</p><p>{esc(L["team_text"])}</p><div class="label">{esc(L["team_cred_title"])}</div><p>{L["team_cred"]}</p><p class="infl">{esc(L["team_infl"])}</p></div></div></div></section>')
     # fees
-    A(f'<section class="theme-dark" id="honorar"><div class="container"><div class="sec-head"><div class="label">{esc(L["fee_label"])}</div><h2>{esc(L["fee_h2"])}</h2></div><div class="schedule"><div class="sched-head"><span class="sched-name">{esc(L["fee_name"])}</span><span class="sched-fee">{esc(L["fee_amount"])}</span></div><dl>')
+    A(f'<section class="theme-dark" id="honorar"><div class="container"><div class="sec-head"><div class="label">{esc(L["fee_label"])}</div><h2>{esc(L["fee_h2"])}</h2></div><div class="schedule"><p class="sched-draft">{L["fee_draft"]}</p><div class="sched-head"><span class="sched-name">{esc(L["fee_name"])}</span><span class="sched-fee">{esc(L["fee_amount"])}</span></div><dl>')
     A(f'<dt>{esc(L["fee_dur_k"])}</dt><dd>{esc(L["fee_dur"])}</dd>')
     A(f'<dt>{esc(L["fee_inc_k"])}</dt><dd><ul>' + ''.join(f'<li>{esc(x)}</li>' for x in L['fee_inc']) + '</ul></dd>')
     A(f'<dt>{esc(L["fee_exc_k"])}</dt><dd><ul>' + ''.join(f'<li>{esc(x)}</li>' for x in L['fee_exc']) + '</ul></dd>')
     A(f'<dt>{esc(L["fee_next_k"])}</dt><dd>{esc(L["fee_next"])}</dd><dt>{esc(L["fee_terms_k"])}</dt><dd>{L["fee_terms"]}</dd></dl>')
     A(f'<p class="sched-note">{esc(L["fee_note"])}</p><a class="btn btn-graphite" href="#kontakt">{esc(L["fee_cta"])}</a></div></div></section>')
     # limits
-    A(f'<section class="theme-light" id="grenzen"><div class="container"><div class="sec-head"><div class="label">{esc(L["lim_label"])}</div><h2>{esc(L["lim_h2"])}</h2></div><div class="lim-grid"><div><div class="label">{esc(L["lim_yes_k"])}</div><ul class="lim">' + ''.join(f'<li>{esc(x)}</li>' for x in L['lim_yes']) + f'</ul></div><div><div class="label">{esc(L["lim_no_k"])}</div><ul class="lim">' + ''.join(f'<li>{esc(x)}</li>' for x in L['lim_no']) + f'</ul></div></div><p class="orient">{esc(L["lim_orient"])}</p><div class="emergency" role="note"><span class="label">{esc(L["emer_k"])}</span><p>{esc(L["emer"])}</p></div></div></section>')
+    A(f'<section class="theme-light" id="grenzen"><div class="container"><div class="sec-head"><div class="label">{esc(L["lim_label"])}</div><h2>{esc(L["lim_h2"])}</h2></div><div class="lim-grid"><div><div class="label">{esc(L["lim_yes_k"])}</div><ul class="lim">' + ''.join(f'<li>{esc(x)}</li>' for x in L['lim_yes']) + f'</ul></div><div><div class="label">{esc(L["lim_no_k"])}</div><ul class="lim">' + ''.join(f'<li>{esc(x)}</li>' for x in L['lim_no']) + f'</ul></div></div><p class="orient">{esc(L["lim_orient"])}</p><p class="orient">{esc(L["lim_extra"])}</p><div class="emergency" role="note"><span class="label">{esc(L["emer_k"])}</span><p>{esc(L["emer"])}</p></div></div></section>')
     # faq
     A(f'<section class="theme-light alt" id="fragen"><div class="container"><div class="sec-head"><div class="label">{esc(L["faq_label"])}</div><h2>{esc(L["faq_h2"])}</h2></div><div class="faq">')
     first = True

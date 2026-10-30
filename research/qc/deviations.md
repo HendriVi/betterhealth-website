@@ -12,3 +12,5 @@ Checker: `research/scripts/qc-check.mjs` with `research/synthesis/tokens/directi
 | 4 | 1440 | page height | 9,785 px vs the 9,500 px target in spec §1.1 | **accepted deviation** | none; within the 6.7–13.6k range measured on comparable sites | accepted (owner may overrule) |
 | 4 | all | all objective checks, DE and EN | pass at 1440, 1024, 768, 390 | — | — | — |
 | 4 | 1440 | aesthetic (see `critical-assessment-round-4.md`) | material/imagery 3/5: no photographs yet; fee panel leaves an empty dark area on the right | open | needs portrait and practice photographs; consider two-column fee layout | open |
+| 5 | all | content update from the owner's reference document | all objective checks pass in DE and EN at 1440, 1024, 768, 390 | — | — | — |
+| 5 | 1440 | page height | 10,358 px (was 9,785) after added content | **accepted deviation** | none | accepted (owner may overrule) |

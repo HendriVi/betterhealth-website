@@ -85,3 +85,30 @@ Site wording follows this. It does **not** claim "psychiatric practice", "precis
 ## 7. Not yet available
 
 Portrait and room photographs (the site shows a labelled placeholder frame), a working contact form endpoint (the form shows a preview notice until the owner chooses a handler after the data-protection review), legal pages (Datenschutz, Impressum), postcode, email address.
+
+## 8. Practice reference document (owner, 2026-10-30): what it changed
+
+**Handling:** the document is **not stored in this repository**. The repository is **public**, and the document contains internal prices, cost estimates and professional credentials of named people that are not yet verified. Only conclusions that the site needs are recorded here.
+
+**Applied to the site**
+- Concerns now follow the owner's list: exhaustion and incomplete recovery; non-restorative sleep; concentration and cognitive fatigue; reduced stress tolerance; anxiety, worry and rumination; drive and mood; symptoms with several interacting influences.
+- Method wording: "understand what shapes it, identify what can be changed, measure whether it works"; decisions are made together; the review step checks whether the expected change happened and reconsiders the formulation if it did not.
+- Science wording is framed as the practice's understanding ("scientific theories help us formulate questions; clinical evidence, your circumstances and professional judgment decide which steps are justified"). No claim of validated methods, superior outcomes, a single root cause, or equipment the practice does not operate.
+- Tests are described only as "further investigation where a specific question exists, also by referral, with reason and cost beforehand". No test list, no laboratory, HRV, EEG, imaging or mitochondrial services are shown, because availability is not decided.
+- New honesty statement: no extra investigations just because they are possible or affordable; if existing care meets the need, this service may be unnecessary.
+- The contact form asks the visitor not to send reports or documents; first contact collects only what is needed to reply.
+- Statements that a named person reads every enquiry were removed (not decided).
+
+**Left as flagged placeholders (not published until confirmed)**
+- The clinician's title, specialist qualification, degrees, registration and her formal role (owner materials state credentials, but they are unverified and need her consent to publish).
+- Fee and scope of the first assessment (draft, flagged on the page). An earlier, higher concept price exists in internal materials and is not reproduced here.
+- Opening hours, postcode, payment and cancellation terms, privacy link, and whether the written summary is guaranteed in every case.
+
+**Conflicts for the owner to resolve**
+1. Address: the owner dictated Ziegelrain 25, Aarau; older material proposed a different address in Aarau.
+2. First-assessment price: the owner said about CHF 500–1,000; older internal concepts were higher.
+3. The exclusion list (borderline personality disorder, schizophrenia, schizoaffective disorder) was stated verbally; the reference document lists exclusion criteria as not decided. The responsible clinician must approve it.
+4. Which legal entity provides and is responsible for the clinical service (needed for the imprint and privacy notice).
+5. The founder is not a physician and must never be presented as one; the site does not name him as a clinician.
+
+**Before any clinical wording is final:** a qualified physician reviews all statements linking stress, prediction, bodily signals, inflammation or biomarkers to individual symptoms.

@@ -190,6 +190,7 @@ section { padding-block: 72px; }
 
 /* fees: schedule on dark with a sheet panel (A accent) */
 .schedule { background: var(--sheet); color: var(--ink); border: 1px solid var(--ink); padding: 32px 28px; max-width: 880px; }
+.sched-draft { margin: 0 0 16px; font-size: 14px; }
 .sched-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px; border-bottom: 1px solid var(--ink); padding-bottom: 16px; }
 .sched-name { font-family: var(--f-display); font-size: 24px; font-weight: 500; }
 .sched-fee { font-family: var(--f-display); font-size: 44px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.1; }
