@@ -331,3 +331,58 @@ EN = {
     "foot_copy": "© BetterHealth",
     "preview_banner": "Preview – content provisional, not for publication",
 }
+
+
+# ---------------------------------------------------------------- legal pages (drafts; have a lawyer review before launch)
+FACTS["form_endpoint"] = ""   # set to the URL of your own server to send the form; empty = preview notice only
+
+LEGAL_DE = {
+    "back": "Zur Startseite", "draft": PH("Entwurf – vor Veröffentlichung juristisch prüfen"),
+    "privacy": {
+        "title": "Datenschutz", "slug": "datenschutz.html",
+        "blocks": [
+            ("Verantwortliche Stelle", f"{PH('Name der GmbH')}, {FACTS['street']}, {FACTS['city']}, Schweiz. Telefon {FACTS['phone_display']}. E-Mail {PH('E-Mail-Adresse')}."),
+            ("Besuch dieser Website", f"Beim Aufruf der Website protokolliert der Server technisch notwendige Angaben (IP-Adresse, Zeitpunkt, aufgerufene Seite). Hosting: {PH('Hoster und Standort')}. Wir setzen keine Cookies, keine Analyse- und keine Werbewerkzeuge ein. Schriften und Skripte werden von unserem eigenen Server geladen, nicht von Dritten."),
+            ("Kontaktaufnahme", f"Wenn Sie uns anrufen oder das Formular nutzen, bearbeiten wir Ihre Angaben (Vorname, Telefonnummer oder E-Mail, bevorzugte Zeit, freiwillige Nachricht), um Ihnen zu antworten. Das Formular ist für den ersten Kontakt gedacht. Bitte senden Sie keine Berichte, Befunde oder Unterlagen darüber. Aufbewahrung: {PH('Dauer')}."),
+            ("Gesundheitsdaten", "Medizinische Informationen bearbeiten wir erst im Rahmen einer Behandlung oder Beratung und nach den Regeln des Arztgeheimnisses. Sie werden nicht über das Kontaktformular oder gewöhnliche E-Mail ausgetauscht."),
+            ("Weitergabe", f"Wir geben Ihre Angaben ohne Ihre Einwilligung nicht an Dritte weiter, ausser eine gesetzliche Pflicht besteht. Dienstleister, die für uns arbeiten (zum Beispiel Hosting, E-Mail): {PH('Liste')}."),
+            ("Ihre Rechte", "Sie können Auskunft über Ihre Daten verlangen sowie deren Berichtigung oder Löschung, soweit das Gesetz dies zulässt. Wenden Sie sich dafür an die oben genannte Stelle."),
+            ("Stand", PH("Datum")),
+        ]},
+    "imprint": {
+        "title": "Impressum", "slug": "impressum.html",
+        "blocks": [
+            ("Betreiberin", f"{PH('Name der GmbH')}, {FACTS['street']}, {FACTS['city']}, Schweiz."),
+            ("Kontakt", f"Telefon {FACTS['phone_display']}. E-Mail {PH('E-Mail-Adresse')}."),
+            ("Handelsregister", f"{PH('UID und Sitz')}"),
+            ("Verantwortliche Fachperson", f"{FACTS['clinician']}, Fachärztin für Psychiatrie und Psychotherapie FMH. Berufsausübungsbewilligung und Aufsichtsbehörde: {PH('Angabe')}."),
+            ("Hinweis", "Die Inhalte dieser Website ersetzen keine persönliche ärztliche Beratung. BetterHealth ist kein Notfalldienst. Im Notfall: 144 oder 112; rund um die Uhr zuhören: 143."),
+        ]},
+}
+LEGAL_EN = {
+    "back": "Back to the home page", "draft": PH("Draft – have a lawyer review before publishing"),
+    "privacy": {
+        "title": "Privacy", "slug": "privacy.html",
+        "blocks": [
+            ("Controller", f"{PH('Name of the GmbH')}, {FACTS['street']}, {FACTS['city']}, Switzerland. Telephone {FACTS['phone_display']}. Email {PH('email address')}."),
+            ("Visiting this website", f"When you open the website, the server records technically necessary data (IP address, time, page requested). Hosting: {PH('host and location')}. We use no cookies, no analytics and no advertising tools. Fonts and scripts are loaded from our own server, not from third parties."),
+            ("Getting in touch", f"If you call us or use the form, we process your details (first name, telephone or email, preferred time, optional message) to reply to you. The form is meant for first contact. Please do not send reports, findings or documents through it. Retention: {PH('period')}."),
+            ("Health data", "We process medical information only as part of treatment or consultation and under the rules of medical confidentiality. It is not exchanged through the contact form or ordinary email."),
+            ("Sharing", f"We do not pass your details to third parties without your consent, unless a legal duty requires it. Service providers working for us (for example hosting, email): {PH('list')}."),
+            ("Your rights", "You can ask for information about your data and for its correction or deletion, as far as the law allows. Please contact the controller named above."),
+            ("Last updated", PH("date")),
+        ]},
+    "imprint": {
+        "title": "Imprint", "slug": "imprint.html",
+        "blocks": [
+            ("Operator", f"{PH('Name of the GmbH')}, {FACTS['street']}, {FACTS['city']}, Switzerland."),
+            ("Contact", f"Telephone {FACTS['phone_display']}. Email {PH('email address')}."),
+            ("Commercial register", f"{PH('UID and registered seat')}"),
+            ("Responsible professional", f"{FACTS['clinician']}, specialist in psychiatry and psychotherapy (FMH). Licence to practise and supervisory authority: {PH('details')}."),
+            ("Notice", "The content of this website does not replace personal medical advice. BetterHealth is not an emergency service. In an emergency: 144 or 112; to talk to someone around the clock: 143."),
+        ]},
+}
+DE["form_sent"] = "Danke. Wir haben Ihre Anfrage erhalten und melden uns innert 24 Stunden, spätestens nach 48."
+DE["form_failed"] = f"Das hat leider nicht geklappt. Bitte rufen Sie an: {FACTS['phone_display']}."
+EN["form_sent"] = "Thank you. We have your request and will reply within 24 hours, 48 at the latest."
+EN["form_failed"] = f"That did not work. Please call: {FACTS['phone_display']}."

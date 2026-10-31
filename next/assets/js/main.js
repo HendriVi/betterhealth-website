@@ -71,7 +71,12 @@
       });
       var status = doc.getElementById('form-status');
       if (!ok) { status.hidden = true; var first = form.querySelector('[aria-invalid="true"]'); if (first) first.focus(); return; }
-      status.hidden = false; status.textContent = form.dataset.preview;
+      status.hidden = false;
+      var endpoint = form.dataset.endpoint;
+      if (!endpoint) { status.textContent = form.dataset.preview; return; }
+      fetch(endpoint, { method: 'POST', body: new FormData(form) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); status.textContent = form.dataset.sent; form.reset(); })
+        .catch(function () { status.textContent = form.dataset.failed; });
     });
   }
 })();

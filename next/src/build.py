@@ -3,7 +3,7 @@
 Usage: python3 next/src/build.py"""
 import html, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-from content import DE, EN, FACTS
+from content import DE, EN, FACTS, LEGAL_DE, LEGAL_EN
 
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 
@@ -52,6 +52,7 @@ def render(L, base):
     n = L['nav']
     other_href = ('en/' if L['lang'] == 'de' else '../')
     tel = FACTS['phone_tel']; phone = FACTS['phone_display']
+    legal_priv = 'datenschutz.html' if L['lang'] == 'de' else 'privacy.html'; legal_imp = 'impressum.html' if L['lang'] == 'de' else 'imprint.html'
     h = []
     A = h.append
     A(f'<!doctype html><html lang="{L["html_lang"]}" class="no-js"><head><meta charset="utf-8">')
@@ -139,7 +140,7 @@ def render(L, base):
     A(f'<div class="label">{esc(L["con_phone_k"])}</div><p><a class="bigtel" href="tel:{tel}">{phone}</a></p>')
     A(f'<div class="label">{esc(L["con_hours_k"])}</div><p>{L["con_hours"]}</p>')
     A(f'<div class="label">{esc(L["con_addr_k"])}</div><p>{esc(L["con_addr"])} {L["con_zip"]}</p></div>')
-    A(f'<form class="form" id="contact-form" novalidate data-preview="{attr(L["form_preview"])}" data-err-name="{attr(L["form_error_name"])}" data-err-contact="{attr(L["form_error_contact"])}">')
+    A(f'<form class="form" id="contact-form" novalidate data-preview="{attr(L["form_preview"])}" data-err-name="{attr(L["form_error_name"])}" data-err-contact="{attr(L["form_error_contact"])}" data-endpoint="{attr(FACTS["form_endpoint"])}" data-sent="{attr(L["form_sent"])}" data-failed="{attr(L["form_failed"])}">')
     A(f'<div class="field"><label for="f-name">{esc(L["form_name"])} <span class="req">({esc(L["form_required"])})</span></label><input id="f-name" name="name" type="text" autocomplete="given-name" required aria-describedby="e-name"><p class="err" id="e-name" hidden></p></div>')
     A(f'<div class="field"><label for="f-contact">{esc(L["form_contact"])} <span class="req">({esc(L["form_required"])})</span></label><input id="f-contact" name="contact" type="text" autocomplete="email" required aria-describedby="e-contact"><p class="err" id="e-contact" hidden></p></div>')
     A(f'<div class="field"><label for="f-time">{esc(L["form_time"])}</label><select id="f-time" name="time">' + ''.join(f'<option>{esc(o)}</option>' for o in L['form_time_opts']) + '</select></div>')
@@ -149,13 +150,32 @@ def render(L, base):
     A('</main>')
     # footer
     A(f'<footer class="site-footer theme-dark"><div class="container foot-grid"><div><div class="brand">BetterHealth</div><p>{esc(FACTS["street"])}, {esc(FACTS["city"])}</p><p><a href="tel:{tel}">{phone}</a></p></div>')
-    A(f'<div><p>{esc(L["foot_note"])}</p></div><div class="foot-links"><span>{esc(L["foot_privacy"])} <em>({esc(L["foot_soon"])})</em></span><span>{esc(L["foot_imprint"])} <em>({esc(L["foot_soon"])})</em></span><a href="{other_href}" hreflang="{L["other_lang"]}" lang="{L["other_lang"]}">{esc(L["other_label"])}</a></div></div>')
+    A(f'<div><p>{esc(L["foot_note"])}</p></div><div class="foot-links"><a href="{legal_priv}">{esc(L["foot_privacy"])}</a><a href="{legal_imp}">{esc(L["foot_imprint"])}</a><a href="{other_href}" hreflang="{L["other_lang"]}" lang="{L["other_lang"]}">{esc(L["other_label"])}</a></div></div>')
     A(f'<div class="container"><p class="copy">{esc(L["foot_copy"])}</p></div></footer>')
     A(f'<script src="{base}assets/js/main.js" defer></script></body></html>')
+    return ''.join(h)
+
+
+def render_legal(L, LG, kind, base):
+    d = LG[kind]; other_kind = {'privacy': 'imprint', 'imprint': 'privacy'}[kind]
+    home = 'index.html'
+    other_lang_href = ('en/' + (LEGAL_EN[kind]['slug'])) if L['lang'] == 'de' else ('../' + (LEGAL_DE[kind]['slug']))
+    h = []; A = h.append
+    A(f'<!doctype html><html lang="{L["html_lang"]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">')
+    A(f'<title>{esc(d["title"])} · BetterHealth</title><link rel="stylesheet" href="{base}assets/css/main.css"></head><body>')
+    A(f'<header class="site-header"><div class="container bar"><a class="brand" href="{home}">BetterHealth</a><div class="bar-actions"><a class="nav-lang textlink" href="{other_lang_href}" hreflang="{L["other_lang"]}" lang="{L["other_lang"]}">{esc(L["other_label"])}</a></div></div></header>')
+    A(f'<main id="main"><section class="theme-light legal"><div class="container"><div class="legal-body"><h1>{esc(d["title"])}</h1><p>{LG["draft"]}</p>')
+    for t, txt in d['blocks']:
+        A(f'<h2>{esc(t)}</h2><p>{txt}</p>')
+    A(f'<p><a class="textlink-dark" href="{home}">{esc(LG["back"])}</a></p></div></div></section></main>')
+    A(f'<footer class="site-footer theme-dark"><div class="container"><p class="copy">{esc(L["foot_copy"])} · {esc(L["foot_note"])}</p></div></footer></body></html>')
     return ''.join(h)
 
 if __name__ == '__main__':
     os.makedirs(os.path.join(ROOT, 'en'), exist_ok=True)
     open(os.path.join(ROOT, 'index.html'), 'w', encoding='utf8').write(render(DE, ''))
     open(os.path.join(ROOT, 'en', 'index.html'), 'w', encoding='utf8').write(render(EN, '../'))
-    print('built next/index.html and next/en/index.html')
+    for kind in ('privacy', 'imprint'):
+        open(os.path.join(ROOT, LEGAL_DE[kind]['slug']), 'w', encoding='utf8').write(render_legal(DE, LEGAL_DE, kind, ''))
+        open(os.path.join(ROOT, 'en', LEGAL_EN[kind]['slug']), 'w', encoding='utf8').write(render_legal(EN, LEGAL_EN, kind, '../'))
+    print('built home, privacy and imprint pages in German and English')
