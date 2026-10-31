@@ -112,3 +112,14 @@ Portrait and room photographs (the site shows a labelled placeholder frame), a w
 5. The founder is not a physician and must never be presented as one; the site does not name him as a clinician.
 
 **Before any clinical wording is final:** a qualified physician reviews all statements linking stress, prediction, bodily signals, inflammation or biomarkers to individual symptoms.
+
+## 9. Owner decisions of 2026-10-31
+
+| Item | Decision |
+|---|---|
+| Clinician | **Dr. med. Yolanda Vieli**, Fachärztin für Psychiatrie und Psychotherapie FMH, Master of Science in Biochemie, ETH Zürich (published at the owner's instruction; to be checked against her registry entry and her consent) |
+| Address | **Ziegelrain 25, Aarau**: confirmed (postcode still to add) |
+| Exclusions | Borderline personality disorder, schizophrenia, schizoaffective disorder: confirmed as stated |
+| First step | **CHF 500**, about 75 minutes of conversation with a **systems hypothesis**, positioned as the entry to the programmes that follow. Programmes are quoted individually in writing. Duration and scope remain drafts |
+| Why CHF 500 | The owner's own argument: low enough to be an easy decision, above the hourly rate of private practices (about CHF 200–350 in the sources found), and the premium signal comes from the quality of the hypothesis and from the programmes that follow. If a written formulation is added to this step, the sensible fee is higher (about CHF 750–1,000). The entry fee is deliberately **not** a free or discounted offer; the page states that the visitor leaves with a first view of their situation even if they do not continue |
+| Legal structure | A GmbH; name, registration, contracting party and record-keeper still to be provided |
