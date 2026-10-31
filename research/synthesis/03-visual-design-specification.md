@@ -212,3 +212,5 @@ A build passes visual review only if **all objective criteria pass** and the **c
 11. No content hidden until scroll (all text visible in a full-page screenshot with JavaScript on).
 
 **Aesthetic (critical assessment):** composition, hierarchy, rhythm, material (imagery/line), voice-visual fit, and absence of generic "template" signs. Defined with a rubric and anti-patterns in `06-implementation-qc-protocol.md`.
+
+**Multi-page build note (2026-10-31):** inner pages open with a page header (label, H1 `clamp(36px, 4.2vw, 56px)`, lead). The person-name heading in the clinician block is 32 px. "More" links use the light-ground link style on light sections and the ice/pale style on dark sections.

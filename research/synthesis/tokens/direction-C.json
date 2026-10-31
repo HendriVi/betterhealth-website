@@ -20,7 +20,7 @@
   "sizes": {
     "1440": {
       "h1": [
-        71,
+        55,
         72
       ],
       "h2": [
@@ -29,7 +29,7 @@
       ],
       "h3": [
         23,
-        25
+        33
       ],
       "p": [
         17,
@@ -38,7 +38,7 @@
     },
     "390": {
       "h1": [
-        40,
+        36,
         40
       ],
       "h2": [
@@ -46,8 +46,8 @@
         30
       ],
       "h3": [
-        24,
-        24
+        23,
+        33
       ],
       "p": [
         17,
@@ -55,5 +55,5 @@
       ]
     }
   },
-  "_note": "Direction C with accents of A: adds --sheet #f7f5ef, --ink-2 #444a53, --line-light #cfc8b8; lead paragraphs 20px."
+  "_note": "Direction C with accents of A: adds --sheet #f7f5ef, --ink-2 #444a53, --line-light #cfc8b8; lead paragraphs 20px. Inner-page titles use H1 clamp(36px,4.2vw,56px). H3 range includes the 32px person name."
 }
